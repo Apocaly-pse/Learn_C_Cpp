@@ -1,0 +1,5 @@
+Info	c++11-14/Depth_understanding_of_C++11/delegate_ctor/3-11-delegate-ctor-init-list.cpp	/^    Info() { InitRest(); }              \/\/ 目标ctorj$/;"	f	class:Info
+Info	c++11-14/Depth_understanding_of_C++11/delegate_ctor/3-11-delegate-ctor-init-list.cpp	/^    Info(char e) : Info() { name = e; } \/\/ delegating ctor$/;"	f	class:Info
+Info	c++11-14/Depth_understanding_of_C++11/delegate_ctor/3-11-delegate-ctor-init-list.cpp	/^    Info(int i) : Info() { type = i; }  \/\/ delegating ctor$/;"	f	class:Info
+Info	c++11-14/Depth_understanding_of_C++11/delegate_ctor/3-11-delegate-ctor-init-list.cpp	/^class Info {$/;"	c	file:
+InitRest	c++11-14/Depth_understanding_of_C++11/delegate_ctor/3-11-delegate-ctor-init-list.cpp	/^    void InitRest() { \/* 其他初始化 *\/$/;"	f	class:Info	file:
