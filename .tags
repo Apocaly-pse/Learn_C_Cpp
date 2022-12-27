@@ -952,9 +952,7 @@ capacity	c++11-14/rvalue-ref-move/8-StrVec-class.cpp	/^    size_t capacity() con
 cb_hrot	fltk_proj/CubeView_fltk/CubeViewUI.cxx	/^void CubeViewUI::cb_hrot(Fl_Roller* o, void* v) {$/;"	f	class:CubeViewUI
 cb_hrot_i	fltk_proj/CubeView_fltk/CubeViewUI.cxx	/^void CubeViewUI::cb_hrot_i(Fl_Roller* o, void*) {$/;"	f	class:CubeViewUI
 cb_vrot	fltk_proj/CubeView_fltk/CubeViewUI.cxx	/^void CubeViewUI::cb_vrot(Fl_Roller* o, void* v) {$/;"	f	class:CubeViewUI
-cb_vrot	fltk_proj/CubeView_fltk/CubeViewUI_cb.cxx	/^void CubeViewUI::cb_vrot(Fl_Roller* o, void* v) {$/;"	f	class:CubeViewUI
 cb_vrot_i	fltk_proj/CubeView_fltk/CubeViewUI.cxx	/^void CubeViewUI::cb_vrot_i(Fl_Roller* o, void*) {$/;"	f	class:CubeViewUI
-cb_vrot_i	fltk_proj/CubeView_fltk/CubeViewUI_cb.cxx	/^void CubeViewUI::cb_vrot_i(Fl_Roller* o, void*) {$/;"	f	class:CubeViewUI
 cb_xpan	fltk_proj/CubeView_fltk/CubeViewUI.cxx	/^void CubeViewUI::cb_xpan(Fl_Value_Slider* o, void* v) {$/;"	f	class:CubeViewUI
 cb_xpan_i	fltk_proj/CubeView_fltk/CubeViewUI.cxx	/^void CubeViewUI::cb_xpan_i(Fl_Value_Slider* o, void*) {$/;"	f	class:CubeViewUI
 cb_ypan	fltk_proj/CubeView_fltk/CubeViewUI.cxx	/^void CubeViewUI::cb_ypan(Fl_Value_Slider* o, void* v) {$/;"	f	class:CubeViewUI
