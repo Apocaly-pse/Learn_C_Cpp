@@ -6,7 +6,9 @@ int main() {
     while (1) {
         scanf("%s", input);
         sum = 0;
-        for (i = 0; input[i] != '\0'; i++) { sum = sum * 10 + input[i] - '0'; }
+        for (i = 0; input[i] != '\0'; i++) {
+            sum = sum * 10 + input[i] - '0';
+        }
         printf("input=%d\n", sum);
     }
 }

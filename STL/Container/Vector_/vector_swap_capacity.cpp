@@ -4,7 +4,7 @@
 using namespace std;
 
 
-void test1() {
+void t1() {
     // 尾插法插入元素
     vector<int> v;
     for (int i = 0; i < 10000; i++) { v.push_back(i * 2 + 1); }
@@ -25,6 +25,6 @@ void test1() {
 }
 
 int main(int argc, char const *argv[]) {
-    test1();
+    t1();
     return 0;
 }

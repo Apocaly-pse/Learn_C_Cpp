@@ -13,6 +13,14 @@ void t1() {
     // from char to string
 
     cout << max({"abb", "bcc", "aaa"}) << endl;
+    /*
+    A4_c
+    A2_c
+    c
+    NSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+    NSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+    aaa
+    */
 }
 
 int main(int argc, char const *argv[]) {

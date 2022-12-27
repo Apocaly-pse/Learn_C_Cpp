@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void test1() {
+void t1() {
     // char const *s;
     string s;
     s = "abc132";
@@ -26,7 +26,7 @@ void t2() {
 }
 
 int main(int argc, char const *argv[]) {
-    /* test1(); */
-    t2();
+    t1();
+    // t2();
     return 0;
 }

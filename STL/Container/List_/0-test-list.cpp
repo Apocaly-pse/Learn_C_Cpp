@@ -8,7 +8,7 @@
 using namespace std;
 
 int main(int argc, char const *argv[]) {
-    list<int> lst(1);
+    list<int> lst{1};
     lst.push_back(12);
     cout << lst.size() << endl;
     if (lst.size() != 0) cout << "true" << endl;

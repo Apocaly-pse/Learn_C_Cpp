@@ -5,6 +5,7 @@ using namespace std;
 using namespace chrono;
 const int SIZE = 100000000;
 
+
 void t1() {
     vector<int> v;
     for (int i = 0; i < SIZE; i++) v.push_back(i);

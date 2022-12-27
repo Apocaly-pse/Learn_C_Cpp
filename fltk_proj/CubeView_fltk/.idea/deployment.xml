@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="gcc-x86_64 (b37190f7-f4d0-4c90-984f-f74fc7c0ff4a)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/tmp.ZymYIQMc3Y" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
