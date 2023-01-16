@@ -1,6 +1,5 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
-
 
 class Foo {
 public:
@@ -17,8 +16,8 @@ public:
     }
 
     // virtual or not
-    ~Foo() { cout << "dtor.this=" << this << " id=" << _id << endl; }
-    // virtual ~Foo() {cout << "dtor.this=" << this << " id=" << _id << endl;}
+    // ~Foo() { cout << "dtor.this=" << this << " id=" << _id << endl; }
+    // virtual ~Foo() { cout << "dtor.this=" << this << " id=" << _id << endl; }
 
     static void* operator new(size_t size);
     static void operator delete(void* pdead, size_t size);
@@ -27,24 +26,24 @@ public:
 };
 
 void* Foo::operator new(size_t size) {
-    Foo* p = (Foo*) malloc(size);
-    cout << "Foo::new" << endl;
+    Foo* p = (Foo*)malloc(size);
+    cout << "Foo::new, size=" << size << endl;
     return p;
 }
 
 void Foo::operator delete(void* pdead, size_t size) {
-    cout << "Foo::delete" << endl;
+    cout << "Foo::delete, size=" << size << endl;
     free(pdead);
 }
 
 void* Foo::operator new[](size_t size) {
-    Foo* p = (Foo*) malloc(size);
-    cout << "Foo::new[]" << endl;
+    Foo* p = (Foo*)malloc(size);
+    cout << "Foo::new[], size=" << size << endl;
     return p;
 }
 
 void Foo::operator delete[](void* pdead, size_t size) {
-    cout << "Foo::delete[]" << endl;
+    cout << "Foo::delete[], size=" << size << endl;
     free(pdead);
 }
 
@@ -56,20 +55,16 @@ void t1() {
     Foo* pf1 = ::new Foo;
     ::delete pf1;
     /*
-    Foo::new
-    default ctor.this=0x6000003c8270 id=0
-    dtor.this=0x6000003c8270 id=0
+    Foo::new, size=56
+    default ctor.this=0x600001ccc1c0 id=0
+    dtor.this=0x600001ccc1c0 id=0
     Foo::delete
-    default ctor.this=0x6000003c8270 id=0
-    dtor.this=0x6000003c8270 id=0
     */
 
     // if not overload new and delete: call system new and delete
     /*
-    default ctor.this=0x60000141c270 id=0
-    dtor.this=0x60000141c270 id=0
-    default ctor.this=0x60000141c270 id=0
-    dtor.this=0x60000141c270 id=0
+    default ctor.this=0x600001cc8000 id=0
+    dtor.this=0x600001cc8000 id=0
     */
 }
 
@@ -103,40 +98,45 @@ void t3() {
     delete[] pArr;
     /*
     sizeof(Foo)=48
-    Foo::new
-    ctor.this=0x600000cfc270 id=7
-    dtor.this=0x600000cfc270 id=7
+    Foo::new, size=48
+    ctor.this=0x600000f18000 id=7
+    sizeof(new Foo)=48
+    dtor.this=0x600000f18000 id=7
     Foo::delete
-    Foo::new[]
-    default ctor.this=0x600003efc008 id=0
-    default ctor.this=0x600003efc038 id=0
-    default ctor.this=0x600003efc068 id=0
-    default ctor.this=0x600003efc098 id=0
-    default ctor.this=0x600003efc0c8 id=0
-    dtor.this=0x600003efc0c8 id=0
-    dtor.this=0x600003efc098 id=0
-    dtor.this=0x600003efc068 id=0
-    dtor.this=0x600003efc038 id=0
-    dtor.this=0x600003efc008 id=0
+    Foo::new[], size=248
+    default ctor.this=0x600003d1c008 id=0
+    default ctor.this=0x600003d1c038 id=0
+    default ctor.this=0x600003d1c068 id=0
+    default ctor.this=0x600003d1c098 id=0
+    default ctor.this=0x600003d1c0c8 id=0
+    sizeof(new Foo[5])=48
+    dtor.this=0x600003d1c0c8 id=0
+    dtor.this=0x600003d1c098 id=0
+    dtor.this=0x600003d1c068 id=0
+    dtor.this=0x600003d1c038 id=0
+    dtor.this=0x600003d1c008 id=0
     Foo::delete[]
-    *///===================================
-    /*virtual dtor:
-    sizeof(Foo)=56// has a vptr,48+8
-    Foo::new
-    ctor.this=0x600001e801c0 id=7
-    dtor.this=0x600001e801c0 id=7
+    */
+    //===================================
+    /*
+    sizeof(Foo)=56
+    Foo::new, size=56
+    ctor.this=0x6000039701c0 id=7
+    sizeof(new Foo)=56
+    dtor.this=0x6000039701c0 id=7
     Foo::delete
-    Foo::new[]
-    default ctor.this=0x159604508 id=0
-    default ctor.this=0x159604540 id=0
-    default ctor.this=0x159604578 id=0
-    default ctor.this=0x1596045b0 id=0
-    default ctor.this=0x1596045e8 id=0
-    dtor.this=0x1596045e8 id=0
-    dtor.this=0x1596045b0 id=0
-    dtor.this=0x159604578 id=0
-    dtor.this=0x159604540 id=0
-    dtor.this=0x159604508 id=0
+    Foo::new[], size=288
+    default ctor.this=0x139e04588 id=0
+    default ctor.this=0x139e045c0 id=0
+    default ctor.this=0x139e045f8 id=0
+    default ctor.this=0x139e04630 id=0
+    default ctor.this=0x139e04668 id=0
+    sizeof(new Foo[5])=56
+    dtor.this=0x139e04668 id=0
+    dtor.this=0x139e04630 id=0
+    dtor.this=0x139e045f8 id=0
+    dtor.this=0x139e045c0 id=0
+    dtor.this=0x139e04588 id=0
     Foo::delete[]
     */
 }

@@ -4,23 +4,31 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-A	advanced-syntax/namespace/friend-declare-real-args-search.cc	/^namespace A {$/;"	n	file:
 A	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-30-local-and-anonymous-type-as-template-args.cpp	/^        struct A{} a;$/;"	s	file:
-A	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-1-ctor_derived.cpp	/^    A(int i) {}$/;"	f	struct:A
+A	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-1-ctor_derived.cpp	/^    A() { cout << "A::A()\\n"; }$/;"	f	struct:A
+A	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-1-ctor_derived.cpp	/^    A(int i) { cout << "A::A(int)\\n"; }$/;"	f	struct:A
 A	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-1-ctor_derived.cpp	/^struct A {$/;"	s	file:
-A	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-4-inherit-ctor-using.cpp	/^    A(double d, int i) {}$/;"	f	struct:A
+A	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-2-unvarnished-transmission.cpp	/^    A(double d, int i) { cout << "A(double,int)\\n"; }$/;"	f	struct:A
+A	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-2-unvarnished-transmission.cpp	/^    A(int i) { cout << "A(int)\\n"; }$/;"	f	struct:A
+A	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-2-unvarnished-transmission.cpp	/^struct A {$/;"	s	file:
+A	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-4-inherit-ctor-using.cpp	/^    A() { cout << "A::A()\\n"; }$/;"	f	struct:A
+A	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-4-inherit-ctor-using.cpp	/^    A(double d, int i) { cout << "A::A(double, int)\\n"; }$/;"	f	struct:A
 A	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-4-inherit-ctor-using.cpp	/^    A(float f, int i, const char* c) {}$/;"	f	struct:A
-A	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-4-inherit-ctor-using.cpp	/^    A(int i) {}$/;"	f	struct:A
+A	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-4-inherit-ctor-using.cpp	/^    A(int i) { cout << "A::A(int)\\n"; }$/;"	f	struct:A
 A	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-4-inherit-ctor-using.cpp	/^struct A {$/;"	s	file:
 A	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-5-init-inherit-ctor-with-member-var-init.cpp	/^    A(double d, int i) {}$/;"	f	struct:A
 A	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-5-init-inherit-ctor-with-member-var-init.cpp	/^    A(float f, int i, const char* c) {}$/;"	f	struct:A
-A	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-5-init-inherit-ctor-with-member-var-init.cpp	/^    A(int i) : m_i(i) {}$/;"	f	struct:A
+A	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-5-init-inherit-ctor-with-member-var-init.cpp	/^    A(int i) {}$/;"	f	struct:A
 A	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-5-init-inherit-ctor-with-member-var-init.cpp	/^struct A {$/;"	s	file:
-A	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-6-inherit-ctor-with-default-args.cpp	/^    A(int a = 3, double = 2.4) {}$/;"	f	struct:A
+A	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-6-inherit-ctor-with-default-args.cpp	/^    A(int = 3, double = 2.4) { cout << "use A::A\\n"; }$/;"	f	struct:A
 A	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-6-inherit-ctor-with-default-args.cpp	/^struct A {$/;"	s	file:
-A	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-7-duplicate-same-type-ctor.cpp	/^    A(int) {}$/;"	f	struct:A
+A	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-7-duplicate-same-type-ctor.cpp	/^    A() { cout << "A::A()\\n"; }$/;"	f	struct:A
+A	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-7-duplicate-same-type-ctor.cpp	/^    A(int) { cout << "A::A(int)\\n"; }$/;"	f	struct:A
 A	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-7-duplicate-same-type-ctor.cpp	/^struct A {$/;"	s	file:
-A	cpp-memory-manager/00-test-ctor-dtor-call-directly.cpp	/^    A(int i) : id(i) { cout << "ctor. this=" << this << id << endl; }$/;"	f	class:A
+A	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-8-no-default-ctor.cpp	/^    A(int) { cout << "use A::A(int)\\n"; }$/;"	f	struct:A
+A	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-8-no-default-ctor.cpp	/^struct A {$/;"	s	file:
+A	c++11-14/namespace/friend-declare-real-args-search.cc	/^namespace A {$/;"	n	file:
+A	cpp-memory-manager/00-test-ctor-dtor-call-directly.cpp	/^    A(int i) : id(i) { cout << "ctor. this=" << this << ' ' << id << endl; }$/;"	f	class:A
 A	cpp-memory-manager/00-test-ctor-dtor-call-directly.cpp	/^class A {$/;"	c	file:
 A	cpp-memory-manager/1-array-new-array-delete.cpp	/^    A() : id(0) {$/;"	f	class:A
 A	cpp-memory-manager/1-array-new-array-delete.cpp	/^    A(int i) : id(i) { cout << "ctor. this=" << this << ", id=" << id << endl; }$/;"	f	class:A
@@ -34,32 +42,36 @@ A	oop_ood/oop/optim-no-elide-ctors.cpp	/^    A(A& a) {$/;"	f	class:A
 A	oop_ood/oop/optim-no-elide-ctors.cpp	/^    A(A&& a) {$/;"	f	class:A
 A	oop_ood/oop/optim-no-elide-ctors.cpp	/^    A(int val) {$/;"	f	class:A
 A	oop_ood/oop/optim-no-elide-ctors.cpp	/^class A {$/;"	c	file:
-ALPHA	fltk_proj/CubeView_fltk/CubeView.cxx	/^#define ALPHA /;"	d	file:
-APP_NAME	fltk_proj/CubeView_fltk/Makefile	/^APP_NAME= $(TARGET)$/;"	m
+ALPHA	fltk_proj/CubeView/CubeView.cxx	/^#define ALPHA /;"	d	file:
+APP_NAME	fltk_proj/Chinese/Makefile	/^APP_NAME= $(TARGET)$/;"	m
+APP_NAME	fltk_proj/CubeView/Makefile	/^APP_NAME= $(TARGET)$/;"	m
 APP_NAME	fltk_proj/hello-world/Makefile	/^APP_NAME= $(TARGET)$/;"	m
-ARCHITECTURE_ID	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^#   define ARCHITECTURE_ID /;"	d	file:
-ARCHITECTURE_ID	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^#  define ARCHITECTURE_ID /;"	d	file:
-ARCHITECTURE_ID	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^#  define ARCHITECTURE_ID$/;"	d	file:
-ARCHITECTURE_ID	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define ARCHITECTURE_ID /;"	d	file:
-ARCHITECTURE_ID	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define ARCHITECTURE_ID /;"	d	file:
-ARCHITECTURE_ID	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define ARCHITECTURE_ID$/;"	d	file:
+APP_NAME	fltk_proj/watch-gif/Makefile	/^APP_NAME= $(TARGET)$/;"	m
 AREA	C_grammar/x-macros/special_#_##.c	/^#define AREA(/;"	d	file:
 ASIZE	STL/Container/Array_/test_array.cpp	/^const long ASIZE = 700000L;$/;"	v
 ASIZE	STL/STL-sample.cpp	/^const long ASIZE = 500000L;$/;"	v
+AcceptRef	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-20-const-ref-reduce-consume.cpp	/^void AcceptRef(const Copyable &) {}$/;"	f
+AcceptVal	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-20-const-ref-reduce-consume.cpp	/^void AcceptVal(Copyable) {}$/;"	f
 Account	oop_ood/static_test/static_test.cc	/^class Account {$/;"	c	file:
 Airplane	cpp-memory-manager/6-per-class-allocator-2.cpp	/^class Airplane { \/\/支援 customized memory management$/;"	c	namespace:jj05	file:
 AirplaneRep	cpp-memory-manager/6-per-class-allocator-2.cpp	/^    struct AirplaneRep {$/;"	s	class:jj05::Airplane	file:
 AlternatePerson	C_grammar/ptr/struct-ptr/init-struct.c	/^} AlternatePerson;$/;"	t	typeref:struct:_alternatePerson	file:
 Attacker	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-21-danger-define-friend-with-template.cpp	/^class Attacker {$/;"	c	file:
-B	advanced-syntax/namespace/real-args-search-overload.cc	/^class B : public NS::Q {};$/;"	c	file:
 B	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-30-local-and-anonymous-type-as-template-args.cpp	/^        typedef struct {int i;}B;    \/\/ B是匿名类型$/;"	t	typeref:struct:__anon2	file:
-B	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-1-ctor_derived.cpp	/^    B(int i) : A(i), d(i) {}$/;"	f	struct:B
+B	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-1-ctor_derived.cpp	/^    B() { cout << "B::B()\\n"; }$/;"	f	struct:B
+B	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-1-ctor_derived.cpp	/^    B(int i) : A(i), d(i) { cout << "B::B(int)\\n"; } \/\/ 先初始化A再构造B$/;"	f	struct:B
 B	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-1-ctor_derived.cpp	/^struct B : A {$/;"	s	file:
+B	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-2-unvarnished-transmission.cpp	/^    B(double d, int i) : A(d, i) { cout << "B(double,int):A\\n"; }$/;"	f	struct:B
+B	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-2-unvarnished-transmission.cpp	/^    B(int i) : A(i) { cout << "B(int):A\\n"; }$/;"	f	struct:B
+B	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-2-unvarnished-transmission.cpp	/^struct B : A {$/;"	s	file:
 B	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-4-inherit-ctor-using.cpp	/^struct B : A {$/;"	s	file:
 B	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-5-init-inherit-ctor-with-member-var-init.cpp	/^struct B : A {$/;"	s	file:
 B	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-6-inherit-ctor-with-default-args.cpp	/^struct B : A {$/;"	s	file:
-B	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-7-duplicate-same-type-ctor.cpp	/^    B(int) {}$/;"	f	struct:B
+B	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-7-duplicate-same-type-ctor.cpp	/^    B() { cout << "B::B()\\n"; }$/;"	f	struct:B
+B	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-7-duplicate-same-type-ctor.cpp	/^    B(int) { cout << "B::B(int)\\n"; }$/;"	f	struct:B
 B	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-7-duplicate-same-type-ctor.cpp	/^struct B {$/;"	s	file:
+B	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-8-no-default-ctor.cpp	/^struct B : A {$/;"	s	file:
+B	c++11-14/namespace/real-args-search-overload.cc	/^class B : public NS::Q {};$/;"	c	file:
 B	c++11-14/smart-ptr/1-unique_ptr-cppref-eg.cpp	/^struct B {$/;"	s	file:
 B	cpp-memory-manager/1-array-new-array-delete.cpp	/^    B() : id1(0) {$/;"	f	class:B
 B	cpp-memory-manager/1-array-new-array-delete.cpp	/^    B(int i) : id1(i) {$/;"	f	class:B
@@ -118,13 +130,13 @@ BUF_SIZE	network/TCP_IP_Network/chap18/chat_server.c	/^#define BUF_SIZE /;"	d	fi
 BUF_SIZE	network/TCP_IP_Network/chap24/webserv_linux.c	/^#define BUF_SIZE /;"	d	file:
 Bad	cpp-memory-manager/4-overload-placement-new.cpp	/^class Bad {};$/;"	c	file:
 Bad	oop_ood/new_del/overload-new_delete-with-bracket.cpp	/^class Bad {};$/;"	c	file:
-Base	advanced-syntax/RTTI/RTTI-1.cc	/^class Base {$/;"	c	file:
-Base	advanced-syntax/RTTI/dynamic_cast-1.cc	/^class Base {$/;"	c	file:
-Base	advanced-syntax/RTTI/dynamic_cast-2.cc	/^class Base {$/;"	c	file:
-Base	advanced-syntax/RTTI/dynamic_cast-3.cc	/^class Base {$/;"	c	file:
-Base	advanced-syntax/RTTI/dynamic_cast-4.cc	/^class Base {$/;"	c	file:
 Base	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-25-override.cpp	/^struct Base {$/;"	s	file:
 Base	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-3-using-derived-base.cpp	/^struct Base {$/;"	s	file:
+Base	c++11-14/RTTI/RTTI-1.cc	/^class Base {$/;"	c	file:
+Base	c++11-14/RTTI/dynamic_cast-1.cc	/^class Base {$/;"	c	file:
+Base	c++11-14/RTTI/dynamic_cast-2.cc	/^class Base {$/;"	c	file:
+Base	c++11-14/RTTI/dynamic_cast-3.cc	/^class Base {$/;"	c	file:
+Base	c++11-14/RTTI/dynamic_cast-4.cc	/^class Base {$/;"	c	file:
 Base	c++11-14/other-special-keywords-syntax/override-final-test.cpp	/^struct Base {$/;"	s	file:
 Base	oop_ood/ood/derived_class_use_base_func.cpp	/^class Base {$/;"	c	file:
 Base	oop_ood/ood/inheritance-1.cpp	/^    Base() { cout << "ctor, base." << endl; }$/;"	f	class:Base
@@ -143,11 +155,11 @@ BigMemoryPool	c++11-14/rvalue-ref-move/11-rval-with-move.cc	/^    BigMemoryPool(
 BigMemoryPool	c++11-14/rvalue-ref-move/11-rval-with-move.cc	/^    BigMemoryPool(const BigMemoryPool& other) : pool_(new char[PoolSize]) {$/;"	f	class:BigMemoryPool
 BigMemoryPool	c++11-14/rvalue-ref-move/11-rval-with-move.cc	/^class BigMemoryPool {$/;"	c	file:
 BlockList	c++11-14/other-special-keywords-syntax/pointer_traits_test.cc	/^struct BlockList {$/;"	s	file:
-C	advanced-syntax/namespace/friend-declare-real-args-search.cc	/^class C {$/;"	c	namespace:A	file:
 C	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-15-parentheses-init.cpp	/^    C(int i) : c(i){};$/;"	f	struct:C
 C	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-15-parentheses-init.cpp	/^struct C {$/;"	s	file:
-C	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-7-duplicate-same-type-ctor.cpp	/^    C(int) {}$/;"	f	struct:C
+C	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-7-duplicate-same-type-ctor.cpp	/^    C(int a) { cout << "C::C(int)\\n"; }$/;"	f	struct:C
 C	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-7-duplicate-same-type-ctor.cpp	/^struct C : A, B {$/;"	s	file:
+C	c++11-14/namespace/friend-declare-real-args-search.cc	/^class C {$/;"	c	namespace:A	file:
 C	c++11-14/other-special-keywords-syntax/range-for-loop.cpp	/^    C(const string &s1) : s(s1){};$/;"	f	class:C
 C	c++11-14/other-special-keywords-syntax/range-for-loop.cpp	/^class C {$/;"	c	file:
 C	oop_ood/ood/vptr_vtb_test.cpp	/^class C : public B {$/;"	c	file:
@@ -179,57 +191,15 @@ CDocument	oop_ood/ood/inheritance_test1.cc	/^class CDocument {$/;"	c	file:
 CHUNK	cpp-memory-manager/7-static-allocator.cpp	/^    const int CHUNK = 5; \/\/小一點方便觀察$/;"	m	class:jj09::allocator	file:
 CHUNK	cpp-memory-manager/8-macro-for-static-allocator.cpp	/^    const int CHUNK = 5; \/\/小一點方便觀察$/;"	m	class:jj10::allocator	file:
 CMyDoc	oop_ood/ood/inheritance_test1.cc	/^class CMyDoc : public CDocument {$/;"	c	file:
-COMPILER_ID	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_ID /;"	d	file:
-COMPILER_ID	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_ID /;"	d	file:
-COMPILER_VERSION	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION /;"	d	file:
-COMPILER_VERSION	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION /;"	d	file:
-COMPILER_VERSION_INTERNAL	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION_INTERNAL /;"	d	file:
-COMPILER_VERSION_INTERNAL	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_INTERNAL /;"	d	file:
-COMPILER_VERSION_INTERNAL	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_INTERNAL /;"	d	file:
-COMPILER_VERSION_INTERNAL	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION_INTERNAL /;"	d	file:
-COMPILER_VERSION_INTERNAL	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_INTERNAL /;"	d	file:
-COMPILER_VERSION_INTERNAL	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_INTERNAL /;"	d	file:
-COMPILER_VERSION_INTERNAL_STR	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_INTERNAL_STR /;"	d	file:
-COMPILER_VERSION_INTERNAL_STR	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_INTERNAL_STR /;"	d	file:
-COMPILER_VERSION_MAJOR	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_MAJOR /;"	d	file:
-COMPILER_VERSION_MAJOR	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION_MAJOR /;"	d	file:
-COMPILER_VERSION_MAJOR	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_MAJOR /;"	d	file:
-COMPILER_VERSION_MAJOR	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_MAJOR /;"	d	file:
-COMPILER_VERSION_MAJOR	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_MAJOR /;"	d	file:
-COMPILER_VERSION_MAJOR	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION_MAJOR /;"	d	file:
-COMPILER_VERSION_MAJOR	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_MAJOR /;"	d	file:
-COMPILER_VERSION_MAJOR	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_MAJOR /;"	d	file:
-COMPILER_VERSION_MINOR	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_MINOR /;"	d	file:
-COMPILER_VERSION_MINOR	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION_MINOR /;"	d	file:
-COMPILER_VERSION_MINOR	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_MINOR /;"	d	file:
-COMPILER_VERSION_MINOR	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_MINOR /;"	d	file:
-COMPILER_VERSION_MINOR	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_MINOR /;"	d	file:
-COMPILER_VERSION_MINOR	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION_MINOR /;"	d	file:
-COMPILER_VERSION_MINOR	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_MINOR /;"	d	file:
-COMPILER_VERSION_MINOR	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_MINOR /;"	d	file:
-COMPILER_VERSION_PATCH	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_PATCH /;"	d	file:
-COMPILER_VERSION_PATCH	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION_PATCH /;"	d	file:
-COMPILER_VERSION_PATCH	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_PATCH /;"	d	file:
-COMPILER_VERSION_PATCH	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_PATCH /;"	d	file:
-COMPILER_VERSION_PATCH	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_PATCH /;"	d	file:
-COMPILER_VERSION_PATCH	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION_PATCH /;"	d	file:
-COMPILER_VERSION_PATCH	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_PATCH /;"	d	file:
-COMPILER_VERSION_PATCH	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_PATCH /;"	d	file:
-COMPILER_VERSION_TWEAK	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_TWEAK /;"	d	file:
-COMPILER_VERSION_TWEAK	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_TWEAK /;"	d	file:
-COMPILER_VERSION_TWEAK	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_TWEAK /;"	d	file:
-COMPILER_VERSION_TWEAK	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_TWEAK /;"	d	file:
-CUBECOLOR	fltk_proj/CubeView_fltk/CubeView.cxx	/^#define CUBECOLOR /;"	d	file:
-CXX	fltk_proj/CubeView_fltk/Makefile	/^CXX      = $(shell fltk-config --cxx)$/;"	m
+CUBECOLOR	fltk_proj/CubeView/CubeView.cxx	/^#define CUBECOLOR /;"	d	file:
+CXX	fltk_proj/Chinese/Makefile	/^CXX      = $(shell fltk-config --cxx)$/;"	m
+CXX	fltk_proj/CubeView/Makefile	/^CXX      = $(shell fltk-config --cxx)$/;"	m
 CXX	fltk_proj/hello-world/Makefile	/^CXX      = $(shell fltk-config cxx)$/;"	m
-CXXFLAGS	fltk_proj/CubeView_fltk/Makefile	/^CXXFLAGS = $(shell fltk-config --use-gl --use-images --cxxflags ) -I.$/;"	m
+CXX	fltk_proj/watch-gif/Makefile	/^CXX      = $(shell fltk-config --cxx)$/;"	m
+CXXFLAGS	fltk_proj/Chinese/Makefile	/^CXXFLAGS = $(shell fltk-config --use-gl --use-images --cxxflags ) -I.$/;"	m
+CXXFLAGS	fltk_proj/CubeView/Makefile	/^CXXFLAGS = $(shell fltk-config --use-gl --use-images --cxxflags ) -I.$/;"	m
 CXXFLAGS	fltk_proj/hello-world/Makefile	/^CXXFLAGS = $(shell fltk-config --use-gl --use-images --cxxflags ) -I. -framework Cocoa$/;"	m
-CXX_STD	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#      define CXX_STD /;"	d	file:
-CXX_STD	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#    define CXX_STD /;"	d	file:
-CXX_STD	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define CXX_STD /;"	d	file:
-C_VERSION	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^#  define C_VERSION /;"	d	file:
-C_VERSION	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^#  define C_VERSION$/;"	d	file:
-C_VERSION	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^# define C_VERSION /;"	d	file:
+CXXFLAGS	fltk_proj/watch-gif/Makefile	/^CXXFLAGS = $(shell fltk-config --use-gl --use-images --cxxflags ) -I.$/;"	m
 Circle	oop_ood/oop/Circle.cpp	/^    Circle() { cout << "default ctor..\\n"; }$/;"	f	class:Circle
 Circle	oop_ood/oop/Circle.cpp	/^class Circle {$/;"	c	file:
 Complex	c++11-14/explicit-keyword.cpp	/^        Complex(int re, int im = 0)$/;"	f	struct:Complex
@@ -247,6 +217,11 @@ Composite	oop_ood/ood/delegation_inheritance-composition.cpp	/^class Composite :
 ConstTest1	cpp_fundamental/cast/const_cast-2.cpp	/^void ConstTest1() {$/;"	f
 ConstTest2	cpp_fundamental/cast/const_cast-2.cpp	/^void ConstTest2() {$/;"	f
 Container	c++11-14/other-special-keywords-syntax/type-alias.cpp	/^struct Container {$/;"	s	file:
+ConvertTo	c++11-14/Depth_understanding_of_C++11/chap3/explicit/3-28-explicit.cpp	/^class ConvertTo {};$/;"	c	file:
+Convertable	c++11-14/Depth_understanding_of_C++11/chap3/explicit/3-28-explicit.cpp	/^class Convertable {$/;"	c	file:
+Copyable	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-20-const-ref-reduce-consume.cpp	/^    Copyable() {}$/;"	f	struct:Copyable
+Copyable	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-20-const-ref-reduce-consume.cpp	/^    Copyable(const Copyable &o) { cout << "Copied" << endl; }$/;"	f	struct:Copyable
+Copyable	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-20-const-ref-reduce-consume.cpp	/^struct Copyable {$/;"	s	file:
 CppCon	c++17-20/c++20/modules_import/cppcon.cpp	/^namespace CppCon {$/;"	n	file:
 Ctor	STL/Container/Vector_/vector_test_.cpp	/^    static size_t Ctor;  \/\/累計 ctor      的呼叫次數$/;"	m	class:MyStrNoMove	file:
 Ctor	STL/Container/Vector_/vector_test_.cpp	/^    static size_t Ctor;  \/\/累計 ctor      的呼叫次數$/;"	m	class:MyString	file:
@@ -260,11 +235,11 @@ Ctor	c++11-14/rvalue-ref-move/2-test-stl-moveable.cpp	/^    static size_t Ctor; 
 Ctor	c++11-14/rvalue-ref-move/4-design-move-aware-class.cpp	/^    static size_t Ctor;  \/\/ ctor$/;"	m	class:MyString	file:
 Ctor	c++11-14/rvalue-ref-move/test-moveable.cpp	/^    static size_t Ctor;  \/\/ ctor$/;"	m	class:MyStrNoMove	file:
 Ctor	c++11-14/rvalue-ref-move/test-moveable.cpp	/^    static size_t Ctor;  \/\/ ctor$/;"	m	class:MyString	file:
-CubeView	fltk_proj/CubeView_fltk/CubeView.cxx	/^CubeView::CubeView(int x, int y, int w, int h, const char *l)$/;"	f	class:CubeView
-CubeView	fltk_proj/CubeView_fltk/CubeView.h	/^class CubeView : public Fl_Gl_Window {$/;"	c
-CubeViewUI	fltk_proj/CubeView_fltk/CubeViewUI.cxx	/^CubeViewUI::CubeViewUI() {$/;"	f	class:CubeViewUI
-CubeViewUI	fltk_proj/CubeView_fltk/CubeViewUI.h	/^class CubeViewUI {$/;"	c
-CubeViewUI_h	fltk_proj/CubeView_fltk/CubeViewUI.h	/^#define CubeViewUI_h$/;"	d
+CubeView	fltk_proj/CubeView/CubeView.cxx	/^CubeView::CubeView(int x, int y, int w, int h, const char *l)$/;"	f	class:CubeView
+CubeView	fltk_proj/CubeView/CubeView.h	/^class CubeView : public Fl_Gl_Window {$/;"	c
+CubeViewUI	fltk_proj/CubeView/CubeViewUI.cxx	/^CubeViewUI::CubeViewUI() {$/;"	f	class:CubeViewUI
+CubeViewUI	fltk_proj/CubeView/CubeViewUI.h	/^class CubeViewUI {$/;"	c
+CubeViewUI_h	fltk_proj/CubeView/CubeViewUI.h	/^#define CubeViewUI_h$/;"	d
 Customer	STL/Functor/general_hash_func.cpp	/^    Customer(string fn, string ln, long nu_) : fname(fn), lname(ln), nu(nu_) {}$/;"	f	class:Customer
 Customer	STL/Functor/general_hash_func.cpp	/^class Customer {$/;"	c	file:
 Customer	oop_ood/oop/customer_1.cpp	/^    Customer(string fn, string ln, long nu_) : fname(fn), lname(ln), nu(nu_) {}$/;"	f	class:Customer
@@ -290,10 +265,10 @@ DCtor	c++11-14/rvalue-ref-move/2-test-stl-moveable.cpp	/^    static size_t DCtor
 DCtor	c++11-14/rvalue-ref-move/4-design-move-aware-class.cpp	/^    static size_t DCtor; \/\/ default ctor$/;"	m	class:MyString	file:
 DCtor	c++11-14/rvalue-ref-move/test-moveable.cpp	/^    static size_t DCtor; \/\/ default ctor$/;"	m	class:MyStrNoMove	file:
 DCtor	c++11-14/rvalue-ref-move/test-moveable.cpp	/^    static size_t DCtor; \/\/ default ctor$/;"	m	class:MyString	file:
-DEBUG	fltk_proj/CubeView_fltk/Makefile	/^DEBUG    = -g$/;"	m
+DEBUG	fltk_proj/Chinese/Makefile	/^DEBUG    = -g$/;"	m
+DEBUG	fltk_proj/CubeView/Makefile	/^DEBUG    = -g$/;"	m
 DEBUG	fltk_proj/hello-world/Makefile	/^DEBUG    = -g$/;"	m
-DEC	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^#define DEC(/;"	d	file:
-DEC	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define DEC(/;"	d	file:
+DEBUG	fltk_proj/watch-gif/Makefile	/^DEBUG    = -g$/;"	m
 DECLARE_POOL_ALLOC	cpp-memory-manager/8-macro-for-static-allocator.cpp	/^#define DECLARE_POOL_ALLOC(/;"	d	file:
 DEFINE	System/nju-os/1-simulate-digital-circuit.c	/^#define DEFINE(/;"	d	file:
 DefClass	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-27-default-args-in-func-template.cpp	/^class DefClass {}; \/\/ c++98编译通过，c++11编译通过$/;"	c	file:
@@ -301,8 +276,8 @@ DefParm	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-27-def
 DefTempParm	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-27-default-args-in-func-template.cpp	/^void DefTempParm(){}; \/\/ c++98编译失败，c++11编译通过$/;"	f
 Defence	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-21-danger-define-friend-with-template.cpp	/^    void Defence(int x, int y) {}$/;"	f	class:Defender
 Defender	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-21-danger-define-friend-with-template.cpp	/^class Defender {$/;"	c	file:
-Derived	advanced-syntax/RTTI/RTTI-1.cc	/^class Derived : public Base {$/;"	c	file:
 Derived	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-3-using-derived-base.cpp	/^struct Derived : Base {$/;"	s	file:
+Derived	c++11-14/RTTI/RTTI-1.cc	/^class Derived : public Base {$/;"	c	file:
 Derived	oop_ood/ood/Composition-1.cpp	/^    Derived() { cout << "ctor, Derived." << endl; }$/;"	f	class:Derived
 Derived	oop_ood/ood/Composition-1.cpp	/^class Derived {$/;"	c	file:
 Derived	oop_ood/ood/derived_class_use_base_func.cpp	/^class Derived : public Base {$/;"	c	file:
@@ -312,19 +287,21 @@ Derived	oop_ood/ood/inheritance_composition_1.cpp	/^    Derived() { cout << "cto
 Derived	oop_ood/ood/inheritance_composition_1.cpp	/^class Derived : public Base {$/;"	c	file:
 Derived	oop_ood/ood/inheritance_composition_2.cpp	/^    Derived() { cout << "ctor, Derived." << endl; }$/;"	f	class:Derived
 Derived	oop_ood/ood/inheritance_composition_2.cpp	/^class Derived : public Base {$/;"	c	file:
-Derived1	advanced-syntax/RTTI/dynamic_cast-1.cc	/^class Derived1 : public Base {$/;"	c	file:
-Derived1	advanced-syntax/RTTI/dynamic_cast-2.cc	/^class Derived1 : public Base {$/;"	c	file:
-Derived1	advanced-syntax/RTTI/dynamic_cast-3.cc	/^class Derived1 : public Base {$/;"	c	file:
-Derived1	advanced-syntax/RTTI/dynamic_cast-4.cc	/^class Derived1 : public Base {$/;"	c	file:
+Derived1	c++11-14/RTTI/dynamic_cast-1.cc	/^class Derived1 : public Base {$/;"	c	file:
+Derived1	c++11-14/RTTI/dynamic_cast-2.cc	/^class Derived1 : public Base {$/;"	c	file:
+Derived1	c++11-14/RTTI/dynamic_cast-3.cc	/^class Derived1 : public Base {$/;"	c	file:
+Derived1	c++11-14/RTTI/dynamic_cast-4.cc	/^class Derived1 : public Base {$/;"	c	file:
 Derived1	c++11-14/other-special-keywords-syntax/override-final-test.cpp	/^struct Derived1 : Base {$/;"	s	file:
-Derived2	advanced-syntax/RTTI/dynamic_cast-1.cc	/^class Derived2 : public Base {$/;"	c	file:
-Derived2	advanced-syntax/RTTI/dynamic_cast-2.cc	/^class Derived2 : public Base {$/;"	c	file:
-Derived2	advanced-syntax/RTTI/dynamic_cast-3.cc	/^class Derived2 : public Base {$/;"	c	file:
-Derived2	advanced-syntax/RTTI/dynamic_cast-4.cc	/^class Derived2 : public Base {$/;"	c	file:
+Derived2	c++11-14/RTTI/dynamic_cast-1.cc	/^class Derived2 : public Base {$/;"	c	file:
+Derived2	c++11-14/RTTI/dynamic_cast-2.cc	/^class Derived2 : public Base {$/;"	c	file:
+Derived2	c++11-14/RTTI/dynamic_cast-3.cc	/^class Derived2 : public Base {$/;"	c	file:
+Derived2	c++11-14/RTTI/dynamic_cast-4.cc	/^class Derived2 : public Base {$/;"	c	file:
 Derived2	c++11-14/other-special-keywords-syntax/override-final-test.cpp	/^struct Derived2 : Base {$/;"	s	file:
 Derived4	c++11-14/other-special-keywords-syntax/override-final-test.cpp	/^struct Derived4 : Base2 {$/;"	s	file:
 DerivedMid	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-25-override.cpp	/^struct DerivedMid : public Base {$/;"	s	file:
 DerivedTop	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-25-override.cpp	/^struct DerivedTop : public DerivedMid {$/;"	s	file:
+Display1	c++11-14/Depth_understanding_of_C++11/chap3/explicit/3-26-implicit-cast.cpp	/^void Display1(Rational1 ra) {$/;"	f
+Display2	c++11-14/Depth_understanding_of_C++11/chap3/explicit/3-26-implicit-cast.cpp	/^void Display2(Rational2 ra) {$/;"	f
 Dtor	STL/Container/Vector_/vector_test_.cpp	/^    static size_t Dtor;  \/\/累計 dtor 的呼叫次數$/;"	m	class:MyStrNoMove	file:
 Dtor	STL/Container/Vector_/vector_test_.cpp	/^    static size_t Dtor;  \/\/累計 dtor 的呼叫次數$/;"	m	class:MyString	file:
 Dtor	STL/Container/Vector_/vector_test_.cpp	/^size_t MyStrNoMove::Dtor  = 0;$/;"	m	class:MyStrNoMove	file:
@@ -373,11 +350,15 @@ Foo	oop_ood/new_del/overload-new_delete.cpp	/^class Foo {$/;"	c	file:
 Fraction	oop_ood/conversion_function.cpp	/^    Fraction(int num, int den = 1) : m_num(num), m_den(den) {}$/;"	f	class:Fraction
 Fraction	oop_ood/conversion_function.cpp	/^class Fraction {$/;"	c	file:
 Fun	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-30-local-and-anonymous-type-as-template-args.cpp	/^        void Fun()$/;"	f
+Func	c++11-14/Depth_understanding_of_C++11/chap3/explicit/3-28-explicit.cpp	/^void Func(ConvertTo ct) {}$/;"	f
 Functor	c++11-14/lambda-exp/lambda-test-1.cc	/^    Functor(int t) : id1(t) {}$/;"	f	class:Functor
 Functor	c++11-14/lambda-exp/lambda-test-1.cc	/^class Functor {$/;"	c	file:
 Gcd	cpp_fundamental/variable_base_datatype/function_Pointer.cpp	/^int Gcd(int x, int y) {$/;"	f
 Generator	c++17-20/coroutine_c++20/3-coroutine-handle-example.cc	/^    explicit Generator(const Handle coroutine) : m_coroutine{coroutine} {}$/;"	f	class:Generator
 Generator	c++17-20/coroutine_c++20/3-coroutine-handle-example.cc	/^class Generator {$/;"	c	file:
+GetTemp	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-18-record-call-ctor-count.cpp	/^HasPtrMem GetTemp() { return HasPtrMem(); }$/;"	f
+GetTemp	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-19-move-ctor.cpp	/^HasPtrMem GetTemp() {$/;"	f
+GetTemp	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-22-right-move-rval.cpp	/^Moveable GetTemp() {$/;"	f
 GetWelcome	c++17-20/c++20/modules_import/cppcon.cpp	/^export auto GetWelcome() { return GetWelcomeHelper(); }$/;"	f	namespace:CppCon
 GetWelcomeHelper	c++17-20/c++20/modules_import/cppcon.cpp	/^auto GetWelcomeHelper() { return "Welcome to CppCon 2021!"; }$/;"	f	namespace:CppCon
 Goo	cpp-memory-manager/10-operator-new-delete.cpp	/^    Goo(long x = 0) : _x(x) {}$/;"	f	class:jj12::Goo
@@ -394,21 +375,38 @@ Group	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-17-init-
 Group	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-17-init-non-static-member.cpp	/^    Group(int a) : data(a) {} \/\/ 这里就不需要初始化mem、name成员了$/;"	f	class:Group
 Group	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-17-init-non-static-member.cpp	/^    Group(int a, Mem m, string n) : data(a), mem(m), name(n) {}$/;"	f	class:Group
 Group	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-17-init-non-static-member.cpp	/^class Group {$/;"	c	file:
-HChange	fltk_proj/CubeView_fltk/CubeViewUI.h	/^  Fl_Group *HChange;$/;"	m	class:CubeViewUI
-HEX	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^#define HEX(/;"	d	file:
-HEX	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define HEX(/;"	d	file:
+HChange	fltk_proj/CubeView/CubeViewUI.h	/^  Fl_Group *HChange;$/;"	m	class:CubeViewUI
 HanMeiMei	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-19-friend-new-usage.cpp	/^class HanMeiMei {$/;"	c	file:
-HasPtrMem	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-16-copt-ctor-with-mem-leak.cpp	/^    HasPtrMem() : d(new int(0)) {}$/;"	f	class:HasPtrMem
-HasPtrMem	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-16-copt-ctor-with-mem-leak.cpp	/^    HasPtrMem(const HasPtrMem& h)$/;"	f	class:HasPtrMem
-HasPtrMem	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-16-copt-ctor-with-mem-leak.cpp	/^class HasPtrMem {$/;"	c	file:
-ID_VOID_MAIN	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^# define ID_VOID_MAIN$/;"	d	file:
+HasPtrMem	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-16-shallow-copy-with-mem-leak.cpp	/^    HasPtrMem() : d(new int(0)) {}$/;"	f	class:HasPtrMem
+HasPtrMem	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-16-shallow-copy-with-mem-leak.cpp	/^class HasPtrMem {$/;"	c	file:
+HasPtrMem	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-17-deep-copy.cpp	/^    HasPtrMem() : d(new int(0)) {}$/;"	f	class:HasPtrMem
+HasPtrMem	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-17-deep-copy.cpp	/^    HasPtrMem(const HasPtrMem& h) : d(new int(*h.d)) {}$/;"	f	class:HasPtrMem
+HasPtrMem	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-17-deep-copy.cpp	/^class HasPtrMem {$/;"	c	file:
+HasPtrMem	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-18-record-call-ctor-count.cpp	/^    HasPtrMem() : d(new int(0)) { cout << "Construct: " << ++n_cstr << endl; }$/;"	f	class:HasPtrMem
+HasPtrMem	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-18-record-call-ctor-count.cpp	/^    HasPtrMem(const HasPtrMem& h) : d(new int(*h.d)) {$/;"	f	class:HasPtrMem
+HasPtrMem	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-18-record-call-ctor-count.cpp	/^class HasPtrMem {$/;"	c	file:
+HasPtrMem	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-19-move-ctor.cpp	/^    HasPtrMem() : d(new int(3)) { cout << "Construct: " << ++n_cstr << endl; }$/;"	f	class:HasPtrMem
+HasPtrMem	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-19-move-ctor.cpp	/^    HasPtrMem(HasPtrMem&& h) : d(h.d) { \/\/ 移动构造函数$/;"	f	class:HasPtrMem
+HasPtrMem	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-19-move-ctor.cpp	/^    HasPtrMem(const HasPtrMem& h) : d(new int(*h.d)) {$/;"	f	class:HasPtrMem
+HasPtrMem	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-19-move-ctor.cpp	/^class HasPtrMem {$/;"	c	file:
+Hello	fltk_proj/Chinese/use-chinese.cxx	/^Hello::Hello() {$/;"	f	class:Hello
+Hello	fltk_proj/Chinese/use-chinese.h	/^class Hello {$/;"	c
+Hello	fltk_proj/watch-gif/show_gif.cxx	/^Hello::Hello() {$/;"	f	class:Hello
+Hello	fltk_proj/watch-gif/show_gif.h	/^class Hello {$/;"	c
+HugeMem	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-22-right-move-rval.cpp	/^    HugeMem(HugeMem&& hm) : sz(hm.sz), c(hm.c) { hm.c = nullptr; }$/;"	f	class:HugeMem
+HugeMem	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-22-right-move-rval.cpp	/^    HugeMem(int size) : sz(size > 0 ? size : 1) { c = new int[sz]; }$/;"	f	class:HugeMem
+HugeMem	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-22-right-move-rval.cpp	/^class HugeMem {$/;"	c	file:
 IMPLEMENT_POOL_ALLOC	cpp-memory-manager/8-macro-for-static-allocator.cpp	/^#define IMPLEMENT_POOL_ALLOC(/;"	d	file:
 Image	oop_ood/ood/delegation_inheritance-Prototype.cpp	/^class Image {$/;"	c	file:
-Info	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-10-refact-verbose-delegate-ctor.cpp	/^    Info() : type(1), name('a') { InitRest(); }$/;"	f	class:Info
-Info	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-10-refact-verbose-delegate-ctor.cpp	/^    Info(char e) : type(1), name(e) { InitRest(); }$/;"	f	class:Info
-Info	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-10-refact-verbose-delegate-ctor.cpp	/^    Info(int i) : type(i), name('a') { InitRest(); }$/;"	f	class:Info
+Info	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-09-verbose-delegate-ctor.cpp	/^    Info() : type(1), name('a') { InitRest(); }$/;"	f	class:Info
+Info	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-09-verbose-delegate-ctor.cpp	/^    Info(char e) : type(1), name(e) { InitRest(); }$/;"	f	class:Info
+Info	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-09-verbose-delegate-ctor.cpp	/^    Info(int i) : type(i), name('a') { InitRest(); }$/;"	f	class:Info
+Info	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-09-verbose-delegate-ctor.cpp	/^class Info {$/;"	c	file:
+Info	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-10-refact-verbose-delegate-ctor.cpp	/^    Info() { InitRest(); }$/;"	f	class:Info
+Info	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-10-refact-verbose-delegate-ctor.cpp	/^    Info(char e) {$/;"	f	class:Info
+Info	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-10-refact-verbose-delegate-ctor.cpp	/^    Info(int i) {$/;"	f	class:Info
 Info	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-10-refact-verbose-delegate-ctor.cpp	/^class Info {$/;"	c	file:
-Info	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-11-delegate-ctor-init-list.cpp	/^    Info() { InitRest(); }              \/\/ 目标ctorj$/;"	f	class:Info
+Info	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-11-delegate-ctor-init-list.cpp	/^    Info() { InitRest(); } \/\/ 目标ctor$/;"	f	class:Info
 Info	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-11-delegate-ctor-init-list.cpp	/^    Info(char e) : Info() { name = e; } \/\/ delegating ctor$/;"	f	class:Info
 Info	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-11-delegate-ctor-init-list.cpp	/^    Info(int i) : Info() { type = i; }  \/\/ delegating ctor$/;"	f	class:Info
 Info	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-11-delegate-ctor-init-list.cpp	/^class Info {$/;"	c	file:
@@ -418,20 +416,16 @@ Info	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-12-delegate-cto
 Info	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-12-delegate-ctor-with-init-value.cpp	/^    Info(int i, char e) : type(i), name(e) {$/;"	f	class:Info	file:
 Info	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-12-delegate-ctor-with-init-value.cpp	/^class Info {$/;"	c	file:
 Info	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-13-delegate-ctor-and-init.cpp	/^    Info() : Info(1) {}           \/\/ 委派构造函数$/;"	f	class:Info
-Info	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-13-delegate-ctor-and-init.cpp	/^    Info(char e) : Info(1, e) {}$/;"	f	class:Info
+Info	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-13-delegate-ctor-and-init.cpp	/^    Info(char e) : Info(1, e) {} \/\/ 委派构造函数$/;"	f	class:Info
 Info	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-13-delegate-ctor-and-init.cpp	/^    Info(int i) : Info(i, 'a') {} \/\/ 既是目标构造函数，也是委派构造函数$/;"	f	class:Info
-Info	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-13-delegate-ctor-and-init.cpp	/^    Info(int i, char e) : type(i), name(e) { \/* 其他初始化 *\/$/;"	f	class:Info	file:
+Info	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-13-delegate-ctor-and-init.cpp	/^    Info(int i, char e) : type(i), name(e) { type += 1; } \/\/ 目标构造函数$/;"	f	class:Info	file:
 Info	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-13-delegate-ctor-and-init.cpp	/^class Info {$/;"	c	file:
-Info	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-9-verbose-delegate-ctor.cpp	/^    Info() : type(1), name('a') { InitRest(); }$/;"	f	class:Info
-Info	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-9-verbose-delegate-ctor.cpp	/^    Info(char e) : type(1), name(e) { InitRest(); }$/;"	f	class:Info
-Info	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-9-verbose-delegate-ctor.cpp	/^    Info(int i) : type(i), name('a') { InitRest(); }$/;"	f	class:Info
-Info	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-9-verbose-delegate-ctor.cpp	/^class Info {$/;"	c	file:
 Init	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-14-init-member.cpp	/^    Init() : a(0) {}$/;"	f	class:Init
 Init	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-14-init-member.cpp	/^    Init(int d) : a(d) {}$/;"	f	class:Init
 Init	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-14-init-member.cpp	/^class Init {$/;"	c	file:
-InitRest	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-10-refact-verbose-delegate-ctor.cpp	/^    void InitRest() { \/* 其他初始化 *\/$/;"	f	class:Info	file:
-InitRest	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-11-delegate-ctor-init-list.cpp	/^    void InitRest() { \/* 其他初始化 *\/$/;"	f	class:Info	file:
-InitRest	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-9-verbose-delegate-ctor.cpp	/^    void InitRest() { \/* 其他初始化 *\/$/;"	f	class:Info	file:
+InitRest	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-09-verbose-delegate-ctor.cpp	/^    void InitRest() { cout << "call InitRest()\\n"; }$/;"	f	class:Info	file:
+InitRest	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-10-refact-verbose-delegate-ctor.cpp	/^    void InitRest() { cout << "call InitRest()\\n"; }$/;"	f	class:Info	file:
+InitRest	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-11-delegate-ctor-init-list.cpp	/^    void InitRest() {$/;"	f	class:Info	file:
 IntWidgetMap	effective/effective_stl/24-map_insert.cpp	/^typedef map<int, Widget> IntWidgetMap;$/;"	t	file:
 Iter	c++11-14/template-advanced/variadic_templates/3_max.cpp	/^struct Iter {$/;"	s	file:
 Iter	c++17-20/coroutine_c++20/3-coroutine-handle-example.cc	/^        explicit Iter(const Handle coroutine) : m_coroutine{coroutine} {}$/;"	f	class:Generator::Iter
@@ -439,12 +433,18 @@ Iter	c++17-20/coroutine_c++20/3-coroutine-handle-example.cc	/^    class Iter {$/
 Jim	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-19-friend-new-usage.cpp	/^class Jim {$/;"	c	file:
 L	cpp-memory-manager/7-static-allocator.cpp	/^    long L;$/;"	m	class:jj09::Foo	file:
 L	cpp-memory-manager/8-macro-for-static-allocator.cpp	/^    long L;$/;"	m	class:jj10::Foo	file:
-LDFLAGS	fltk_proj/CubeView_fltk/Makefile	/^LDFLAGS  = $(shell fltk-config --use-gl --use-images --ldflags )$/;"	m
+LDFLAGS	fltk_proj/Chinese/Makefile	/^LDFLAGS  = $(shell fltk-config --use-gl --use-images --ldflags )$/;"	m
+LDFLAGS	fltk_proj/CubeView/Makefile	/^LDFLAGS  = $(shell fltk-config --use-gl --use-images --ldflags )$/;"	m
 LDFLAGS	fltk_proj/hello-world/Makefile	/^LDFLAGS  = $(shell fltk-config --use-gl --use-images --ldflags )$/;"	m
-LDSTATIC	fltk_proj/CubeView_fltk/Makefile	/^LDSTATIC = $(shell fltk-config --use-gl --use-images --ldstaticflags )$/;"	m
+LDFLAGS	fltk_proj/watch-gif/Makefile	/^LDFLAGS  = $(shell fltk-config --use-gl --use-images --ldflags )$/;"	m
+LDSTATIC	fltk_proj/Chinese/Makefile	/^LDSTATIC = $(shell fltk-config --use-gl --use-images --ldstaticflags )$/;"	m
+LDSTATIC	fltk_proj/CubeView/Makefile	/^LDSTATIC = $(shell fltk-config --use-gl --use-images --ldstaticflags )$/;"	m
 LDSTATIC	fltk_proj/hello-world/Makefile	/^LDSTATIC = $(shell fltk-config --use-gl --use-images --ldstaticflags )$/;"	m
-LINK	fltk_proj/CubeView_fltk/Makefile	/^LINK     = $(CXX)$/;"	m
+LDSTATIC	fltk_proj/watch-gif/Makefile	/^LDSTATIC = $(shell fltk-config --use-gl --use-images --ldstaticflags )$/;"	m
+LINK	fltk_proj/Chinese/Makefile	/^LINK     = $(CXX)$/;"	m
+LINK	fltk_proj/CubeView/Makefile	/^LINK     = $(CXX)$/;"	m
 LINK	fltk_proj/hello-world/Makefile	/^LINK     = $(CXX)$/;"	m
+LINK	fltk_proj/watch-gif/Makefile	/^LINK     = $(CXX)$/;"	m
 LOG	C_grammar/x-macros/default_pre_define.cc	/^#define LOG(/;"	d	file:
 LOG	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-4-__VA_ARGS.cpp	/^#define LOG(/;"	d	file:
 LSAT	oop_ood/ood/delegation_inheritance-Prototype.cpp	/^enum imageType { LSAT, SPOT };$/;"	e	enum:imageType	file:
@@ -487,13 +487,24 @@ MCtor	c++11-14/rvalue-ref-move/test-moveable.cpp	/^    static size_t MCtor; \/\/
 MCtor	c++11-14/rvalue-ref-move/test-moveable.cpp	/^    static size_t MCtor; \/\/ move-ctor$/;"	m	class:MyString	file:
 M_age	cpp_fundamental/template/class_template-1.cpp	/^    T2 M_age;$/;"	m	class:Person	file:
 M_name	cpp_fundamental/template/class_template-1.cpp	/^    T1 M_name;$/;"	m	class:Person	file:
-MainView	fltk_proj/CubeView_fltk/CubeViewUI.h	/^  Fl_Group *MainView;$/;"	m	class:CubeViewUI
+MainView	fltk_proj/CubeView/CubeViewUI.h	/^  Fl_Group *MainView;$/;"	m	class:CubeViewUI
+Maythrow	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-23-noescept-rval.cpp	/^    Maythrow() {}$/;"	f	struct:Maythrow
+Maythrow	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-23-noescept-rval.cpp	/^    Maythrow(Maythrow&&) { std::cout << "Maythorow move constructor." << endl; }$/;"	f	struct:Maythrow
+Maythrow	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-23-noescept-rval.cpp	/^    Maythrow(const Maythrow&) {$/;"	f	struct:Maythrow
+Maythrow	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-23-noescept-rval.cpp	/^struct Maythrow {$/;"	s	file:
 Mem	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-16-init-list-and-parentheses.cpp	/^    Mem() { cout << "Mem default, num: " << num << endl; }$/;"	f	struct:Mem
 Mem	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-16-init-list-and-parentheses.cpp	/^    Mem(int i) : num(i) { cout << "Mem, num: " << num << endl; }$/;"	f	struct:Mem
 Mem	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-16-init-list-and-parentheses.cpp	/^struct Mem {$/;"	s	file:
 Mem	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-17-init-non-static-member.cpp	/^    Mem(int i) : m(i) {}$/;"	f	class:Mem
 Mem	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-17-init-non-static-member.cpp	/^class Mem {$/;"	c	file:
 Move	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-21-danger-define-friend-with-template.cpp	/^    void Move(int x, int y) {}$/;"	f	class:Attacker
+Moveable	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-21-error-compulsory-move-rval.cpp	/^    Moveable() : i(new int(3)) {}$/;"	f	class:Moveable
+Moveable	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-21-error-compulsory-move-rval.cpp	/^    Moveable(Moveable&& m) : i(m.i) { m.i = nullptr; }$/;"	f	class:Moveable
+Moveable	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-21-error-compulsory-move-rval.cpp	/^    Moveable(const Moveable& m) : i(new int(*m.i)) {}$/;"	f	class:Moveable
+Moveable	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-21-error-compulsory-move-rval.cpp	/^class Moveable {$/;"	c	file:
+Moveable	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-22-right-move-rval.cpp	/^    Moveable() : i(new int(3)), h(1024) {}$/;"	f	class:Moveable
+Moveable	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-22-right-move-rval.cpp	/^    Moveable(Moveable&& m)$/;"	f	class:Moveable
+Moveable	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-22-right-move-rval.cpp	/^class Moveable {$/;"	c	file:
 MyPair	STL/Adapter/bind_test_by_clang.cpp	/^struct MyPair {$/;"	s	file:
 MyPair	STL/Adapter/bind_test_by_g++.cpp	/^struct MyPair {$/;"	s	file:
 MyStr	c++11-14/template-advanced/alias-template.cpp	/^    MyStr(const string& s1) : s(s1) {}$/;"	f	struct:MyStr
@@ -540,7 +551,7 @@ N	C_grammar/x-macros/macro-scope-undef.c	/^#define N /;"	d	file:
 N1	C_grammar/x-macros/pragma_hdrstop/constant.h	/^static const int N1 = 100;$/;"	v
 N2	C_grammar/x-macros/pragma_hdrstop/constant.h	/^const int N2 = 100000;/;"	v
 NAME_SIZE	network/TCP_IP_Network/chap18/chat_client.c	/^#define NAME_SIZE /;"	d	file:
-NS	advanced-syntax/namespace/real-args-search-overload.cc	/^namespace NS {$/;"	n	file:
+NS	c++11-14/namespace/real-args-search-overload.cc	/^namespace NS {$/;"	n	file:
 NUM_THREAD	network/TCP_IP_Network/chap18/mutex.c	/^#define NUM_THREAD /;"	d	file:
 NUM_THREAD	network/TCP_IP_Network/chap18/thread4.c	/^#define NUM_THREAD /;"	d	file:
 NUM_THREADS	C_grammar/ptr/ptr_in_thread/calculate-vector-product.c	/^#define NUM_THREADS /;"	d	file:
@@ -550,10 +561,15 @@ NewString	effective/effective_cpp/chap2/item7_inherit_non_virtual_dtor.cpp	/^cla
 NoCopy	c++11-14/other-special-keywords-syntax/=default_=delete.cpp	/^struct NoCopy { \/\/禁用copy, 可用于单例模式$/;"	s	file:
 NoDtor	c++11-14/other-special-keywords-syntax/=default_=delete.cpp	/^struct NoDtor {$/;"	s	file:
 Node	c++11-14/smart-ptr/1-unique_ptr-cppref-eg.cpp	/^    struct Node {$/;"	s	struct:List	file:
+Nothrow	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-23-noescept-rval.cpp	/^    Nothrow() {}$/;"	f	struct:Nothrow
+Nothrow	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-23-noescept-rval.cpp	/^    Nothrow(const Nothrow&) {$/;"	f	struct:Nothrow
+Nothrow	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-23-noescept-rval.cpp	/^struct Nothrow {$/;"	s	file:
 NumOfA	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-16-init-list-and-parentheses.cpp	/^    void NumOfA() { cout << "number of A: " << a.num << endl; }$/;"	f	class:Group
 NumOfB	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-16-init-list-and-parentheses.cpp	/^    void NumOfB() { cout << "number of B: " << b.num << endl; }$/;"	f	class:Group
-OBJS	fltk_proj/CubeView_fltk/Makefile	/^OBJS =  CubeMain.o CubeView.o CubeViewUI.o$/;"	m
+OBJS	fltk_proj/Chinese/Makefile	/^OBJS =  main.o use-chinese.o$/;"	m
+OBJS	fltk_proj/CubeView/Makefile	/^OBJS =  CubeMain.o CubeView.o CubeViewUI.o$/;"	m
 OBJS	fltk_proj/hello-world/Makefile	/^OBJS =  test1.o$/;"	m
+OBJS	fltk_proj/watch-gif/Makefile	/^OBJS =  main.o use-chinese.o$/;"	m
 ONE	cpp_fundamental/cast/static_cast_1.cpp	/^enum EU { ONE = 1, TWO, THREE };$/;"	e	enum:EU	file:
 ONE	cpp_fundamental/cast/static_cast_1.cpp	/^enum class E { ONE = 1, TWO, THREE };$/;"	m	class:E	file:
 OPSZ	network/TCP_IP_Network/chap05/03-op_server.c	/^const int OPSZ = 4;$/;"	v
@@ -566,15 +582,22 @@ P	C_grammar/enum_struct_union_bitfield/test2.c	/^} P;$/;"	t	typeref:struct:class
 P	STL/Container/Vector_/vector_push_custom_data_types.cpp	/^    P(string name, int age) {$/;"	f	class:P
 P	STL/Container/Vector_/vector_push_custom_data_types.cpp	/^class P {$/;"	c	file:
 P	System/thread_with_c/threads.h	/^#define P /;"	d
-P	advanced-syntax/exception/1-throw-exception.cpp	/^    P(int a) try : age(a) {$/;"	f	class:P
-P	advanced-syntax/exception/1-throw-exception.cpp	/^class P {$/;"	c	file:
 P	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-19-friend-new-usage.cpp	/^typedef Poly P;$/;"	t	file:
+P	c++11-14/Exception/1-throw-exception.cpp	/^    P(int a) try : age(a) {$/;"	f	class:P
+P	c++11-14/Exception/1-throw-exception.cpp	/^class P {$/;"	c	file:
 P	c++11-14/explicit-keyword.cpp	/^    P(int a, int b) { cout << "P(int a,int b) \\n"; }$/;"	f	class:P
 P	c++11-14/explicit-keyword.cpp	/^    explicit P(int a, int b, int c) {$/;"	f	class:P
 P	c++11-14/explicit-keyword.cpp	/^class P {$/;"	c	file:
 P	c++11-14/initialize/2-init-lists.cc	/^    P(initializer_list<int> initlist) {$/;"	f	class:P
 P	c++11-14/initialize/2-init-lists.cc	/^    P(int a, int b) { cout << "P(int, int), a=" << a << " b=" << b << endl; }$/;"	f	class:P
 P	c++11-14/initialize/2-init-lists.cc	/^class P {$/;"	c	file:
+P	cpp-memory-manager/12-use-ctor-in-class.cpp	/^    P() {$/;"	f	class:P
+P	cpp-memory-manager/12-use-ctor-in-class.cpp	/^    P(int a) {$/;"	f	class:P
+P	cpp-memory-manager/12-use-ctor-in-class.cpp	/^    P(int a, double b) : m_a(a), m_b(b) { cout << "call P(int, double)\\n"; }$/;"	f	class:P	file:
+P	cpp-memory-manager/12-use-ctor-in-class.cpp	/^class P {$/;"	c	file:
+P	cpp-memory-manager/13-operator-new-array-sizeof.cpp	/^class P {$/;"	c	file:
+P	cpp-memory-manager/14-overload-global-placement-new.cpp	/^class P {$/;"	c	file:
+P	cpp-memory-manager/15-base-class-p.cpp	/^class P {$/;"	c	file:
 P	cpp_fundamental/operator-overload/arithmetic-relation-operator.cpp	/^    P() {}$/;"	f	class:P
 P	cpp_fundamental/operator-overload/arithmetic-relation-operator.cpp	/^    P(int a1_, int a2_) : a1(a1_), a2(a2_) {}$/;"	f	class:P
 P	cpp_fundamental/operator-overload/arithmetic-relation-operator.cpp	/^class P {$/;"	c	file:
@@ -588,14 +611,6 @@ P	oop_ood/this_ptr.cpp	/^class P {$/;"	c	file:
 PI	oop_ood/oop/Circle.cpp	/^const double PI = 3.14;$/;"	v
 PIN1	C_grammar/x-macros/diff-with-typedef.c	/^#define PIN1 /;"	d	file:
 PIN2	C_grammar/x-macros/diff-with-typedef.c	/^typedef int* PIN2;$/;"	t	file:
-PLATFORM_ID	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^#  define PLATFORM_ID /;"	d	file:
-PLATFORM_ID	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^#  define PLATFORM_ID$/;"	d	file:
-PLATFORM_ID	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^# define PLATFORM_ID /;"	d	file:
-PLATFORM_ID	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^# define PLATFORM_ID$/;"	d	file:
-PLATFORM_ID	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define PLATFORM_ID /;"	d	file:
-PLATFORM_ID	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define PLATFORM_ID$/;"	d	file:
-PLATFORM_ID	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define PLATFORM_ID /;"	d	file:
-PLATFORM_ID	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define PLATFORM_ID$/;"	d	file:
 PORT	network/Cpp_GPT_Network/GPT_echo_client.cpp	/^const int PORT = 8080;$/;"	v
 PORT	network/Cpp_GPT_Network/GPT_echo_server.cpp	/^const int PORT = 8080;$/;"	v
 PP	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-20-friend-with-template.cpp	/^People<P> PP;   \/\/ 类型P在这里是People类型的友元$/;"	v
@@ -606,6 +621,8 @@ Panda	oop_ood/ood/multi-inheritance-1.cpp	/^class Panda : public Bear, public En
 Password	oop_ood/access_authority.cpp	/^    int Password;$/;"	m	class:Person	file:
 People	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-18-non-static-member-sizeof.cpp	/^struct People {$/;"	s	file:
 People	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-20-friend-with-template.cpp	/^class People {$/;"	c	file:
+PerfectForward	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-24-perfect-forward.cpp	/^void PerfectForward(T &&t) {$/;"	f
+PerfectForward	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-25-less-code-single-arg.cpp	/^void PerfectForward(T&& t, U& Func) {$/;"	f
 Person	C_grammar/ptr/struct-ptr/init-struct.c	/^} Person;$/;"	t	typeref:struct:_person	file:
 Person	c++11-14/decltype_test.cc	/^    Person(const string& s) : lastname(s) {}$/;"	f	class:Person
 Person	c++11-14/decltype_test.cc	/^class Person {$/;"	c	file:
@@ -629,34 +646,34 @@ Primitive	oop_ood/ood/delegation_inheritance-composition.cpp	/^    Primitive(int
 Primitive	oop_ood/ood/delegation_inheritance-composition.cpp	/^class Primitive : public Component {$/;"	c	file:
 PrivateCopy	c++11-14/other-special-keywords-syntax/=default_=delete.cpp	/^class PrivateCopy { \/\/可以通过友元访问, 例如boost::noncopyable, 可被继承,$/;"	c	file:
 Product	C_grammar/ptr/ptr_in_thread/calculate-vector-product.c	/^} Product;$/;"	t	typeref:struct:__anon4	file:
+Ptr	c++11-14/Depth_understanding_of_C++11/chap3/explicit/3-27-do-not-implicit-cast.cpp	/^    Ptr(T* p) : _p(p) {}$/;"	f	class:Ptr
+Ptr	c++11-14/Depth_understanding_of_C++11/chap3/explicit/3-27-do-not-implicit-cast.cpp	/^class Ptr {$/;"	c	file:
 Ptr	c++11-14/other-special-keywords-syntax/addressof_test.cc	/^    Ptr(T* arg) : pad(nullptr), data(arg) {$/;"	f	struct:Ptr
 Ptr	c++11-14/other-special-keywords-syntax/addressof_test.cc	/^struct Ptr {$/;"	s	file:
-Q	advanced-syntax/namespace/real-args-search-overload.cc	/^class Q {};$/;"	c	namespace:NS	file:
+Q	c++11-14/namespace/real-args-search-overload.cc	/^class Q {};$/;"	c	namespace:NS	file:
 Q	cpp_fundamental/operator-overload/output_and_input.cpp	/^struct Q {$/;"	s	file:
 QSort	C_grammar/quick-sort.c	/^void QSort(int a[], int m, int n) {$/;"	f
 REGS_FOREACH	System/nju-os/1-simulate-digital-circuit.c	/^#define REGS_FOREACH(/;"	d	file:
 RES_SIZE	network/TCP_IP_Network/chap05/04-op_client.c	/^const int RES_SIZE = 4;$/;"	v
 RUN_LOGIC	System/nju-os/1-simulate-digital-circuit.c	/^#define RUN_LOGIC /;"	d	file:
+Rational1	c++11-14/Depth_understanding_of_C++11/chap3/explicit/3-26-implicit-cast.cpp	/^    Rational1(int n = 0, int d = 1) : num(n), den(d) {$/;"	f	struct:Rational1
+Rational1	c++11-14/Depth_understanding_of_C++11/chap3/explicit/3-26-implicit-cast.cpp	/^struct Rational1 {$/;"	s	file:
+Rational2	c++11-14/Depth_understanding_of_C++11/chap3/explicit/3-26-implicit-cast.cpp	/^    explicit Rational2(int n = 0, int d = 1) : num(n), den(d) {$/;"	f	struct:Rational2
+Rational2	c++11-14/Depth_understanding_of_C++11/chap3/explicit/3-26-implicit-cast.cpp	/^struct Rational2 {$/;"	s	file:
+ReturnRvalue	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-20-const-ref-reduce-consume.cpp	/^Copyable ReturnRvalue() { return Copyable(); }$/;"	f
+Rule2	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-13-delegate-ctor-and-init.cpp	/^    Rule2() : Rule2(2) {}$/;"	f	struct:Rule2
+Rule2	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-13-delegate-ctor-and-init.cpp	/^    Rule2(char c) : Rule2(2) {}$/;"	f	struct:Rule2
+Rule2	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-13-delegate-ctor-and-init.cpp	/^    Rule2(int i) : Rule2('c') {}$/;"	f	struct:Rule2
+Rule2	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-13-delegate-ctor-and-init.cpp	/^struct Rule2 {$/;"	s	file:
+RunCode	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-24-perfect-forward.cpp	/^void RunCode(const int &&m) { cout << "const rvalue ref" << endl; }$/;"	f
+RunCode	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-24-perfect-forward.cpp	/^void RunCode(const int &m) { cout << "const lvalue ref" << endl; }$/;"	f
+RunCode	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-24-perfect-forward.cpp	/^void RunCode(int &&m) { cout << "rvalue ref" << endl; }$/;"	f
+RunCode	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-24-perfect-forward.cpp	/^void RunCode(int &m) { cout << "lvalue ref" << endl; }$/;"	f
+RunCode	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-25-less-code-single-arg.cpp	/^void RunCode(double&& m) {}$/;"	f
+RunComp	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-25-less-code-single-arg.cpp	/^void RunComp(double&& c) {}$/;"	f
+RunHome	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-25-less-code-single-arg.cpp	/^void RunHome(double&& h) {}$/;"	f
 S	cpp_fundamental/reference-ptr-const/val-ref-ptr.cpp	/^} S;$/;"	t	typeref:struct:Stag	file:
 SEM_INIT	System/thread_with_c/threads.h	/^#define SEM_INIT(/;"	d
-SIMULATE_ID	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_ID /;"	d	file:
-SIMULATE_ID	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^# define SIMULATE_ID /;"	d	file:
-SIMULATE_ID	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_ID /;"	d	file:
-SIMULATE_ID	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define SIMULATE_ID /;"	d	file:
-SIMULATE_VERSION_MAJOR	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_MAJOR /;"	d	file:
-SIMULATE_VERSION_MAJOR	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^# define SIMULATE_VERSION_MAJOR /;"	d	file:
-SIMULATE_VERSION_MAJOR	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_VERSION_MAJOR /;"	d	file:
-SIMULATE_VERSION_MAJOR	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define SIMULATE_VERSION_MAJOR /;"	d	file:
-SIMULATE_VERSION_MINOR	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_MINOR /;"	d	file:
-SIMULATE_VERSION_MINOR	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^# define SIMULATE_VERSION_MINOR /;"	d	file:
-SIMULATE_VERSION_MINOR	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_VERSION_MINOR /;"	d	file:
-SIMULATE_VERSION_MINOR	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define SIMULATE_VERSION_MINOR /;"	d	file:
-SIMULATE_VERSION_PATCH	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^#   define SIMULATE_VERSION_PATCH /;"	d	file:
-SIMULATE_VERSION_PATCH	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_PATCH /;"	d	file:
-SIMULATE_VERSION_PATCH	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^# define SIMULATE_VERSION_PATCH /;"	d	file:
-SIMULATE_VERSION_PATCH	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define SIMULATE_VERSION_PATCH /;"	d	file:
-SIMULATE_VERSION_PATCH	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_VERSION_PATCH /;"	d	file:
-SIMULATE_VERSION_PATCH	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define SIMULATE_VERSION_PATCH /;"	d	file:
 SIZE	c++11-14/lambda-exp/enjoy-lambda-1.cpp	/^const int SIZE = 5;$/;"	v
 SIZE	c++11-14/template-advanced/alias-template.cpp	/^const long SIZE = 200;$/;"	v
 SIZE	c++11-14/template-advanced/template-template-parameter.cpp	/^const long SIZE = 200;$/;"	v
@@ -664,13 +681,11 @@ SIZE	effective/effective_stl/14-reserve.cpp	/^const int SIZE = 100000000;$/;"	v
 SIZE	effective/effective_stl/30-algo-transform.cpp	/^const int SIZE = 100000000;$/;"	v
 SMALL_BUF	network/TCP_IP_Network/chap24/webserv_linux.c	/^#define SMALL_BUF /;"	d	file:
 SPOT	oop_ood/ood/delegation_inheritance-Prototype.cpp	/^enum imageType { LSAT, SPOT };$/;"	e	enum:imageType	file:
-SRCS	fltk_proj/CubeView_fltk/Makefile	/^SRCS =  CubeMain.cxx CubeView.cxx CubeViewUI.cxx$/;"	m
+SRCS	fltk_proj/Chinese/Makefile	/^SRCS =  main.cpp use-chinese.cxx$/;"	m
+SRCS	fltk_proj/CubeView/Makefile	/^SRCS =  CubeMain.cxx CubeView.cxx CubeViewUI.cxx$/;"	m
 SRCS	fltk_proj/hello-world/Makefile	/^SRCS =  test1.cpp$/;"	m
+SRCS	fltk_proj/watch-gif/Makefile	/^SRCS =  main.cpp use-chinese.cxx$/;"	m
 STR	C_grammar/x-macros/pragma_message.c	/^#define STR$/;"	d	file:
-STRINGIFY	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^#define STRINGIFY(/;"	d	file:
-STRINGIFY	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define STRINGIFY(/;"	d	file:
-STRINGIFY_HELPER	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^#define STRINGIFY_HELPER(/;"	d	file:
-STRINGIFY_HELPER	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define STRINGIFY_HELPER(/;"	d	file:
 STRPbegin	c++11-14/rvalue-ref-move/8-StrVec-class.cpp	/^    STRPbegin() const { return elem; }$/;"	f	class:StrVec
 STRPend	c++11-14/rvalue-ref-move/8-StrVec-class.cpp	/^    STRPend() const { return first_free; }$/;"	f	class:StrVec
 Screen	cpp-memory-manager/5-per-class-allocator-1.cpp	/^    Screen(int x) : i(x){};$/;"	f	class:jj04::Screen
@@ -694,9 +709,11 @@ String	oop_ood/oop/string1/string.h	/^inline String::String(const String &str) {
 String	oop_ood/oop/string1/string.h	/^inline String::String(const char *cstr) {$/;"	f	class:String
 Subject	oop_ood/ood/delegation_inheritance-observer.cpp	/^    Subject(int val) : m_val(val) {}$/;"	f	class:Subject
 Subject	oop_ood/ood/delegation_inheritance-observer.cpp	/^class Subject {$/;"	c	file:
-TARGET	fltk_proj/CubeView_fltk/Makefile	/^TARGET = cube$/;"	m
+TARGET	fltk_proj/Chinese/Makefile	/^TARGET = hello$/;"	m
+TARGET	fltk_proj/CubeView/Makefile	/^TARGET = cube$/;"	m
 TARGET	fltk_proj/hello-world/Makefile	/^TARGET = test1$/;"	m
-TDConstructed	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-14-delegate-ctor-and-init-example.cpp	/^    TDConstructed(T first, T last) : l(first, last) {}$/;"	f	class:TDConstructed	file:
+TARGET	fltk_proj/watch-gif/Makefile	/^TARGET = hello$/;"	m
+TDConstructed	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-14-delegate-ctor-and-init-example.cpp	/^    TDConstructed(T first, T last) : l(first, last) {$/;"	f	class:TDConstructed	file:
 TDConstructed	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-14-delegate-ctor-and-init-example.cpp	/^    TDConstructed(deque<int> &d) : TDConstructed(d.begin(), d.end()) {}$/;"	f	class:TDConstructed
 TDConstructed	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-14-delegate-ctor-and-init-example.cpp	/^    TDConstructed(vector<short> &v) : TDConstructed(v.begin(), v.end()) {}$/;"	f	class:TDConstructed
 TDConstructed	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-14-delegate-ctor-and-init-example.cpp	/^class TDConstructed {$/;"	c	file:
@@ -721,7 +738,7 @@ UnNameLocalFunction	c++11-14/lambda-exp/lambda-with-functor.cpp	/^    UnNameLoca
 UnNameLocalFunction	c++11-14/lambda-exp/lambda-with-functor.cpp	/^class UnNameLocalFunction {$/;"	c	file:
 V	System/thread_with_c/threads.h	/^#define V /;"	d
 VAR	C_grammar/x-macros/special_#_##.c	/^#define VAR(/;"	d	file:
-VChange	fltk_proj/CubeView_fltk/CubeViewUI.h	/^  Fl_Group *VChange;$/;"	m	class:CubeViewUI
+VChange	fltk_proj/CubeView/CubeViewUI.h	/^  Fl_Group *VChange;$/;"	m	class:CubeViewUI
 Validate	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-21-danger-define-friend-with-template.cpp	/^    void Validate(int x, int y, Attacker& a) {}$/;"	f	class:Validator
 Validate	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-21-danger-define-friend-with-template.cpp	/^    void Validate(int x, int y, Defender& d) {}$/;"	f	class:Validator
 Validator	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-21-danger-define-friend-with-template.cpp	/^class Validator {$/;"	c	file:
@@ -755,6 +772,7 @@ ZooAnimal	oop_ood/ood/multi-inheritance-1.cpp	/^class ZooAnimal {};$/;"	c	file:
 _OPEN_THREADS	C_grammar/fundamental_syntax/pthread-test-1.c	/^#define _OPEN_THREADS$/;"	d	file:
 __COMPLEX__	oop_ood/oop/complex1/complex.h	/^#define __COMPLEX__$/;"	d
 __COMPLEX__	oop_ood/oop/complex1/complex_by_template.h	/^#define __COMPLEX__$/;"	d
+__GLIBCXX__	cpp_fundamental/preprocess-compile-assembly-link/useful_macro.cpp	/^#define __GLIBCXX__ /;"	d	file:
 __MYCOMPLEX__	oop_ood/oop/complex.h	/^#define __MYCOMPLEX__$/;"	d
 __MYSTRING__	oop_ood/oop/string.h	/^#define __MYSTRING__$/;"	d
 __MYSTRING__	oop_ood/oop/string1/string.h	/^#define __MYSTRING__$/;"	d
@@ -767,8 +785,6 @@ __doapl	cpp_fundamental/template/class_template-2.cpp	/^inline complex1<T> &__do
 __doapl	oop_ood/oop/complex.h	/^inline complex& __doapl(complex* ths, const complex& r) {$/;"	f
 __doapl	oop_ood/oop/complex1/complex.h	/^inline complex &__doapl(complex *ths, const complex &r) {$/;"	f
 __doapl	oop_ood/oop/complex1/complex_by_template.h	/^inline complex<T> &__doapl(complex<T> *ths, const complex<T> &r) {$/;"	f
-__has_include	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^#  define __has_include(/;"	d	file:
-__has_include	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define __has_include(/;"	d	file:
 __iter_less_iter	c++11-14/template-advanced/variadic_templates/3_max.cpp	/^inline Iter __iter_less_iter() { return Iter(); }$/;"	f
 __max_elem	c++11-14/template-advanced/variadic_templates/3_max.cpp	/^ForwardIterator __max_elem(ForwardIterator first, ForwardIterator last,$/;"	f
 _alternatePerson	C_grammar/ptr/struct-ptr/init-struct.c	/^typedef struct _alternatePerson {$/;"	s	file:
@@ -824,6 +840,7 @@ _len	c++11-14/rvalue-ref-move/test-moveable.cpp	/^    size_t _len;$/;"	m	class:M
 _len	c++11-14/rvalue-ref-move/test-moveable.cpp	/^    size_t _len;$/;"	m	class:MyString	file:
 _nextSlot	oop_ood/ood/delegation_inheritance-Prototype.cpp	/^    static int _nextSlot;$/;"	m	class:Image	file:
 _nextSlot	oop_ood/ood/delegation_inheritance-Prototype.cpp	/^int Image::_nextSlot;$/;"	m	class:Image	file:
+_p	c++11-14/Depth_understanding_of_C++11/chap3/explicit/3-27-do-not-implicit-cast.cpp	/^    T* _p;$/;"	m	class:Ptr	file:
 _person	C_grammar/ptr/struct-ptr/init-struct.c	/^typedef struct _person {$/;"	s	file:
 _person1	C_grammar/ptr/struct-ptr/init-struct.c	/^struct _person1 {$/;"	s	file:
 _prototypes	oop_ood/ood/delegation_inheritance-Prototype.cpp	/^    static Image *_prototypes[10];$/;"	m	class:Image	file:
@@ -838,6 +855,7 @@ a	C_grammar/enum_struct_union_bitfield/struct-union-mem-structure.c	/^    char a
 a	C_grammar/enum_struct_union_bitfield/struct-union-mem-structure.c	/^    int a;$/;"	m	struct:str	file:
 a	C_grammar/enum_struct_union_bitfield/struct-with-union.c	/^    char a;$/;"	m	union:uni	file:
 a	C_grammar/enum_struct_union_bitfield/struct-with-union.c	/^    int a;$/;"	m	struct:str	file:
+a	C_grammar/enum_struct_union_bitfield/struct_2.c	/^    int a;$/;"	m	struct:item	file:
 a	C_grammar/quick-sort.c	/^int a[1005] = {0};$/;"	v
 a	STL/Adapter/bind_test_by_clang.cpp	/^    double a, b;$/;"	m	struct:MyPair	file:
 a	STL/Adapter/bind_test_by_g++.cpp	/^    double a, b;$/;"	m	struct:MyPair	file:
@@ -847,6 +865,9 @@ a	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-14-init-memb
 a	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-15-parentheses-init.cpp	/^    int a = 1;$/;"	m	struct:init	file:
 a	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-16-init-list-and-parentheses.cpp	/^    Mem a;$/;"	m	class:Group	file:
 a	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-30-local-and-anonymous-type-as-template-args.cpp	/^        struct A{} a;$/;"	v	typeref:struct:A
+a	cpp-memory-manager/13-operator-new-array-sizeof.cpp	/^    int a; \/\/ 4bytes$/;"	m	class:P	file:
+a	cpp-memory-manager/14-overload-global-placement-new.cpp	/^    int a; \/\/ 4bytes$/;"	m	class:P	file:
+a	cpp-memory-manager/15-base-class-p.cpp	/^    int a; \/\/ 4bytes$/;"	m	class:P	file:
 a	cpp_fundamental/reference-ptr-const/val-ref-ptr.cpp	/^    int a, b, c{}, d;$/;"	m	struct:Stag	file:
 a	oop_ood/this_ptr.cpp	/^    int a;$/;"	m	class:P	file:
 a1	cpp_fundamental/operator-overload/arithmetic-relation-operator.cpp	/^    int a1;$/;"	m	class:P	file:
@@ -875,7 +896,7 @@ age	C_grammar/ptr/struct-ptr/init-struct.c	/^    short age;$/;"	m	struct:_altern
 age	C_grammar/ptr/struct-ptr/init-struct.c	/^    unsigned int age; \/\/ 4$/;"	m	struct:_person	file:
 age	C_grammar/ptr/struct-ptr/init-struct.c	/^    unsigned int age;$/;"	m	struct:_person1	file:
 age	STL/Container/Vector_/vector_push_custom_data_types.cpp	/^    int age;$/;"	m	class:P	file:
-age	advanced-syntax/exception/1-throw-exception.cpp	/^    int age;$/;"	m	class:P	file:
+age	c++11-14/Exception/1-throw-exception.cpp	/^    int age;$/;"	m	class:P	file:
 all	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-18-non-static-member-sizeof.cpp	/^    static People* all;$/;"	m	struct:People	file:
 alloc	c++11-14/rvalue-ref-move/8-StrVec-class.cpp	/^    static allocator<string> alloc;$/;"	m	class:StrVec	file:
 alloc_n_copy	c++11-14/rvalue-ref-move/8-StrVec-class.cpp	/^pair<STRP, STRP> StrVec::alloc_n_copy(const STRP b, const STRP e) {$/;"	f	class:StrVec
@@ -892,6 +913,7 @@ b	C_grammar/enum_struct_union_bitfield/struct-union-mem-structure.c	/^    int b;
 b	C_grammar/enum_struct_union_bitfield/struct-union-mem-structure.c	/^    int b;$/;"	m	union:uni	file:
 b	C_grammar/enum_struct_union_bitfield/struct-with-union.c	/^    int b;$/;"	m	struct:str	file:
 b	C_grammar/enum_struct_union_bitfield/struct-with-union.c	/^    int b;$/;"	m	union:uni	file:
+b	C_grammar/enum_struct_union_bitfield/struct_2.c	/^    double b;$/;"	m	struct:item	file:
 b	STL/Adapter/bind_test_by_clang.cpp	/^    double a, b;$/;"	m	struct:MyPair	file:
 b	STL/Adapter/bind_test_by_g++.cpp	/^    double a, b;$/;"	m	struct:MyPair	file:
 b	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-14-init-member.cpp	/^    const static int b = 0;$/;"	m	class:Init	file:
@@ -912,16 +934,16 @@ begin	c++17-20/coroutine_c++20/3-coroutine-handle-example.cc	/^    Iter begin() 
 beginningIndex	C_grammar/ptr/ptr_in_thread/calculate-vector-product.c	/^    int beginningIndex;$/;"	m	struct:__anon4	file:
 blanks	C_grammar/ptr/string-char/return-char.c	/^char* blanks(int number) {$/;"	f
 blanks1	C_grammar/ptr/string-char/return-char.c	/^char* blanks1(int number) {$/;"	f
-blip	advanced-syntax/namespace/test-1.cpp	/^namespace blip {$/;"	n	file:
+blip	c++11-14/namespace/test-1.cpp	/^namespace blip {$/;"	n	file:
 block	c++11-14/other-special-keywords-syntax/pointer_traits_test.cc	/^    struct block {$/;"	s	struct:BlockList	file:
-boxv0	fltk_proj/CubeView_fltk/CubeView.h	/^    float boxv0[3];$/;"	m	class:CubeView
-boxv1	fltk_proj/CubeView_fltk/CubeView.h	/^    float boxv1[3];$/;"	m	class:CubeView
-boxv2	fltk_proj/CubeView_fltk/CubeView.h	/^    float boxv2[3];$/;"	m	class:CubeView
-boxv3	fltk_proj/CubeView_fltk/CubeView.h	/^    float boxv3[3];$/;"	m	class:CubeView
-boxv4	fltk_proj/CubeView_fltk/CubeView.h	/^    float boxv4[3];$/;"	m	class:CubeView
-boxv5	fltk_proj/CubeView_fltk/CubeView.h	/^    float boxv5[3];$/;"	m	class:CubeView
-boxv6	fltk_proj/CubeView_fltk/CubeView.h	/^    float boxv6[3];$/;"	m	class:CubeView
-boxv7	fltk_proj/CubeView_fltk/CubeView.h	/^    float boxv7[3];$/;"	m	class:CubeView
+boxv0	fltk_proj/CubeView/CubeView.h	/^    float boxv0[3];$/;"	m	class:CubeView
+boxv1	fltk_proj/CubeView/CubeView.h	/^    float boxv1[3];$/;"	m	class:CubeView
+boxv2	fltk_proj/CubeView/CubeView.h	/^    float boxv2[3];$/;"	m	class:CubeView
+boxv3	fltk_proj/CubeView/CubeView.h	/^    float boxv3[3];$/;"	m	class:CubeView
+boxv4	fltk_proj/CubeView/CubeView.h	/^    float boxv4[3];$/;"	m	class:CubeView
+boxv5	fltk_proj/CubeView/CubeView.h	/^    float boxv5[3];$/;"	m	class:CubeView
+boxv6	fltk_proj/CubeView/CubeView.h	/^    float boxv6[3];$/;"	m	class:CubeView
+boxv7	fltk_proj/CubeView/CubeView.h	/^    float boxv7[3];$/;"	m	class:CubeView
 bubble_sort	C_grammar/fundamental_syntax/static_extern_func/file3.cpp	/^void bubble_sort(stu student[], int n) {$/;"	f
 but_cb	fltk_proj/hello-world/test1.cpp	/^void but_cb( Fl_Widget* o, void*  ) {$/;"	f
 c	C_grammar/enum_struct_union_bitfield/enum-2.c	/^    c,$/;"	e	enum:nu1	file:
@@ -931,6 +953,8 @@ c	C_grammar/enum_struct_union_bitfield/struct-with-union.c	/^    int c;$/;"	m	st
 c	C_grammar/enum_struct_union_bitfield/struct-with-union.c	/^    int c;$/;"	m	union:uni	file:
 c	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-14-init-member.cpp	/^    int c = 1;                   \/\/ 成员，无法通过编译$/;"	m	class:Init	file:
 c	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-15-parentheses-init.cpp	/^    int c;$/;"	m	struct:C	file:
+c	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-13-delegate-ctor-and-init.cpp	/^    int i, c;$/;"	m	struct:Rule2	file:
+c	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-22-right-move-rval.cpp	/^    int* c;$/;"	m	class:HugeMem	file:
 c	c++11-14/template-advanced/template-template-parameter.cpp	/^    Container<T> c;$/;"	m	class:XCls	file:
 c	cpp-memory-manager/7-static-allocator.cpp	/^    complex<double> c;$/;"	m	class:jj09::Goo	file:
 c	cpp-memory-manager/8-macro-for-static-allocator.cpp	/^    complex<double> c;$/;"	m	class:jj10::Goo	file:
@@ -938,6 +962,7 @@ c	oop_ood/ood/Composition-1.cpp	/^    Component c;$/;"	m	class:Derived	file:
 c	oop_ood/ood/delegation_inheritance-composition.cpp	/^    std::vector<Component*> c;$/;"	m	class:Composite	file:
 c	oop_ood/ood/inheritance_composition_1.cpp	/^    Component c; \/\/子类有复合关系$/;"	m	class:Derived	file:
 c	oop_ood/ood/inheritance_composition_2.cpp	/^    Component c; \/\/父类具有复合关系$/;"	m	class:Base	file:
+c_func	cpp_fundamental/preprocess-compile-assembly-link/macro-condition-compile.cpp	/^void c_func() {$/;"	f
 calAverage	C_grammar/variable-numbers-of-args.c	/^void calAverage(int arg1, ...) {$/;"	f
 calAverage	cpp_fundamental/c-varadic-args.cpp	/^void calAverage(int arg1, ...) {$/;"	f
 calAverage1	C_grammar/variable-numbers-of-args.c	/^void calAverage1(int num, ...) {$/;"	f
@@ -949,16 +974,16 @@ callBackFunction	C_grammar/ptr/ptr_in_thread/func-ptr-callback.c	/^void callBack
 cap	c++11-14/rvalue-ref-move/8-StrVec-class.cpp	/^        cap; \/\/首元素指针,最后一个实际元素之后的位置指针,分配的内存末尾之后的位置指针$/;"	m	class:StrVec	file:
 cap	c++11-14/rvalue-ref-move/8-StrVec-class.cpp	/^    : elem(s.elem), first_free(s.first_free), cap(s.cap) {$/;"	f
 capacity	c++11-14/rvalue-ref-move/8-StrVec-class.cpp	/^    size_t capacity() const { return cap - elem; }$/;"	f	class:StrVec
-cb_hrot	fltk_proj/CubeView_fltk/CubeViewUI.cxx	/^void CubeViewUI::cb_hrot(Fl_Roller* o, void* v) {$/;"	f	class:CubeViewUI
-cb_hrot_i	fltk_proj/CubeView_fltk/CubeViewUI.cxx	/^void CubeViewUI::cb_hrot_i(Fl_Roller* o, void*) {$/;"	f	class:CubeViewUI
-cb_vrot	fltk_proj/CubeView_fltk/CubeViewUI.cxx	/^void CubeViewUI::cb_vrot(Fl_Roller* o, void* v) {$/;"	f	class:CubeViewUI
-cb_vrot_i	fltk_proj/CubeView_fltk/CubeViewUI.cxx	/^void CubeViewUI::cb_vrot_i(Fl_Roller* o, void*) {$/;"	f	class:CubeViewUI
-cb_xpan	fltk_proj/CubeView_fltk/CubeViewUI.cxx	/^void CubeViewUI::cb_xpan(Fl_Value_Slider* o, void* v) {$/;"	f	class:CubeViewUI
-cb_xpan_i	fltk_proj/CubeView_fltk/CubeViewUI.cxx	/^void CubeViewUI::cb_xpan_i(Fl_Value_Slider* o, void*) {$/;"	f	class:CubeViewUI
-cb_ypan	fltk_proj/CubeView_fltk/CubeViewUI.cxx	/^void CubeViewUI::cb_ypan(Fl_Value_Slider* o, void* v) {$/;"	f	class:CubeViewUI
-cb_ypan_i	fltk_proj/CubeView_fltk/CubeViewUI.cxx	/^void CubeViewUI::cb_ypan_i(Fl_Value_Slider* o, void*) {$/;"	f	class:CubeViewUI
-cb_zoom	fltk_proj/CubeView_fltk/CubeViewUI.cxx	/^void CubeViewUI::cb_zoom(Fl_Value_Slider* o, void* v) {$/;"	f	class:CubeViewUI
-cb_zoom_i	fltk_proj/CubeView_fltk/CubeViewUI.cxx	/^void CubeViewUI::cb_zoom_i(Fl_Value_Slider* o, void*) {$/;"	f	class:CubeViewUI
+cb_hrot	fltk_proj/CubeView/CubeViewUI.cxx	/^void CubeViewUI::cb_hrot(Fl_Roller* o, void* v) {$/;"	f	class:CubeViewUI
+cb_hrot_i	fltk_proj/CubeView/CubeViewUI.cxx	/^void CubeViewUI::cb_hrot_i(Fl_Roller* o, void*) {$/;"	f	class:CubeViewUI
+cb_vrot	fltk_proj/CubeView/CubeViewUI.cxx	/^void CubeViewUI::cb_vrot(Fl_Roller* o, void* v) {$/;"	f	class:CubeViewUI
+cb_vrot_i	fltk_proj/CubeView/CubeViewUI.cxx	/^void CubeViewUI::cb_vrot_i(Fl_Roller* o, void*) {$/;"	f	class:CubeViewUI
+cb_xpan	fltk_proj/CubeView/CubeViewUI.cxx	/^void CubeViewUI::cb_xpan(Fl_Value_Slider* o, void* v) {$/;"	f	class:CubeViewUI
+cb_xpan_i	fltk_proj/CubeView/CubeViewUI.cxx	/^void CubeViewUI::cb_xpan_i(Fl_Value_Slider* o, void*) {$/;"	f	class:CubeViewUI
+cb_ypan	fltk_proj/CubeView/CubeViewUI.cxx	/^void CubeViewUI::cb_ypan(Fl_Value_Slider* o, void* v) {$/;"	f	class:CubeViewUI
+cb_ypan_i	fltk_proj/CubeView/CubeViewUI.cxx	/^void CubeViewUI::cb_ypan_i(Fl_Value_Slider* o, void*) {$/;"	f	class:CubeViewUI
+cb_zoom	fltk_proj/CubeView/CubeViewUI.cxx	/^void CubeViewUI::cb_zoom(Fl_Value_Slider* o, void* v) {$/;"	f	class:CubeViewUI
+cb_zoom_i	fltk_proj/CubeView/CubeViewUI.cxx	/^void CubeViewUI::cb_zoom_i(Fl_Value_Slider* o, void*) {$/;"	f	class:CubeViewUI
 cc	c++17-20/c++20/modules_import/Makefile	/^cc =g++-12 -g -std=c++20 -fmodules-ts$/;"	m
 check	c++11-14/smart-ptr/class-StrBlob.cpp	/^shared_ptr<vector<string>> check(size_t i, const string &msg) const {$/;"	f
 check	c++11-14/smart-ptr/class-StrBlob.cpp	/^void StrBlob::check(size_type i, const string &msg) const {$/;"	f	class:StrBlob
@@ -979,6 +1004,7 @@ cmp	cpp_fundamental/cast/const_cast-1.cpp	/^string& cmp(string& s1, string& s2) 
 cmp1	cpp_fundamental/operator-overload/func-call-operator-1.cpp	/^class cmp1 {$/;"	c	file:
 cmp2	cpp_fundamental/operator-overload/func-call-operator-1.cpp	/^    cmp2(size_t n) : sz(n) {}$/;"	f	class:cmp2
 cmp2	cpp_fundamental/operator-overload/func-call-operator-1.cpp	/^class cmp2 {$/;"	c	file:
+code	c++11-14/Exception/2-three-dots-in-exception.cpp	/^    int code = 0;$/;"	m	class:my_exception	file:
 color	C_grammar/typeof-1.c	/^    int color;$/;"	m	struct:apple	file:
 compareLongs	STL/Container/Array_/test_array.cpp	/^int compareLongs(const void *a, const void *b) {$/;"	f
 compareLongs	STL/STL-sample.cpp	/^int compareLongs(const void* a, const void* b) {$/;"	f
@@ -999,7 +1025,6 @@ connect	c++11-14/smart-ptr/1.1-unique_ptr-cppPrimer.cpp	/^connection connect(des
 connect	c++11-14/smart-ptr/2.1-shared_ptr-with-new.cpp	/^connection connect(destination *d1) {$/;"	f
 connection	c++11-14/smart-ptr/1.1-unique_ptr-cppPrimer.cpp	/^struct connection {};$/;"	s	file:
 connection	c++11-14/smart-ptr/2.1-shared_ptr-with-new.cpp	/^struct connection {};$/;"	s	file:
-const	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^# define const$/;"	d	file:
 const_ref_1	cpp_fundamental/reference-ptr-const/reference-1.cpp	/^void const_ref_1() {$/;"	f
 const_ref_2	cpp_fundamental/reference-ptr-const/reference-1.cpp	/^void const_ref_2() {$/;"	f
 const_ref_3	cpp_fundamental/reference-ptr-const/reference-1.cpp	/^void const_ref_3() {$/;"	f
@@ -1012,14 +1037,17 @@ cppcon	c++17-20/c++20/modules_import/main.cpp	/^import cppcon;$/;"	v
 crawl	network/multi-thread-crawl-1.cpp	/^void crawl(const std::string& url) {$/;"	f
 create	System/thread_with_c/threads.h	/^static inline void create(void *fn) {$/;"	f
 create_A	oop_ood/oop/optim-no-elide-ctors.cpp	/^A create_A(int val) {$/;"	f
-cube	fltk_proj/CubeView_fltk/CubeViewUI.h	/^  CubeView *cube;$/;"	m	class:CubeViewUI
+cube	fltk_proj/CubeView/CubeViewUI.h	/^  CubeView *cube;$/;"	m	class:CubeViewUI
 curr	c++11-14/smart-ptr/class-StrBlob.cpp	/^    size_t curr;$/;"	m	class:StrBlobPtr	file:
 current_value	c++17-20/coroutine_c++20/3-coroutine-handle-example.cc	/^        std::optional<T> current_value;$/;"	m	struct:Generator::promise_type	file:
 customer_hash_func	STL/Functor/general_hash_func.cpp	/^size_t customer_hash_func(const Customer& c) {$/;"	f
 d	C_grammar/enum_struct_union_bitfield/enum-2.c	/^    d,$/;"	e	enum:nu1	file:
 d	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-14-init-member.cpp	/^    static int d = 0;            \/\/ 成员，无法通过编译$/;"	m	class:Init	file:
 d	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-1-ctor_derived.cpp	/^    int d;$/;"	m	struct:B	file:
-d	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-16-copt-ctor-with-mem-leak.cpp	/^    int* d;$/;"	m	class:HasPtrMem	file:
+d	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-16-shallow-copy-with-mem-leak.cpp	/^    int* d;$/;"	m	class:HasPtrMem	file:
+d	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-17-deep-copy.cpp	/^    int* d;$/;"	m	class:HasPtrMem	file:
+d	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-18-record-call-ctor-count.cpp	/^    int* d;$/;"	m	class:HasPtrMem	file:
+d	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-19-move-ctor.cpp	/^    int* d;$/;"	m	class:HasPtrMem	file:
 d	cpp_fundamental/reference-ptr-const/val-ref-ptr.cpp	/^    int a, b, c{}, d;$/;"	m	struct:Stag	file:
 d	oop_ood/oop/optim-no-elide-ctors.cpp	/^    int d;$/;"	m	class:A	file:
 d1	c++11-14/other-special-keywords-syntax/=default_=delete.cpp	/^    int d1, d2;$/;"	m	class:Zoo	file:
@@ -1032,13 +1060,15 @@ data	c++11-14/smart-ptr/1-unique_ptr-cppref-eg.cpp	/^        int data;$/;"	m	str
 data	c++11-14/smart-ptr/class-StrBlob.cpp	/^    shared_ptr<vector<string>> data;$/;"	m	class:StrBlob	file:
 deallocate	cpp-memory-manager/7-static-allocator.cpp	/^void allocator::deallocate(void* p, size_t) {$/;"	f	class:jj09::allocator
 deallocate	cpp-memory-manager/8-macro-for-static-allocator.cpp	/^void allocator::deallocate(void* p, size_t) {$/;"	f	class:jj10::allocator
+den	c++11-14/Depth_understanding_of_C++11/chap3/explicit/3-26-implicit-cast.cpp	/^    int den; \/\/ Denominator（除数）$/;"	m	struct:Rational1	file:
+den	c++11-14/Depth_understanding_of_C++11/chap3/explicit/3-26-implicit-cast.cpp	/^    int den;$/;"	m	struct:Rational2	file:
 deps	c++17-20/c++20/modules_import/Makefile	/^deps = $(shell find .\/ -name "*.h")$/;"	m
 deref	c++11-14/smart-ptr/class-StrBlob.cpp	/^string &StrBlobPtr::deref() const { \/\/解引用$/;"	f	class:StrBlobPtr
 destination	c++11-14/smart-ptr/1.1-unique_ptr-cppPrimer.cpp	/^struct destination {};$/;"	s	file:
 destination	c++11-14/smart-ptr/2.1-shared_ptr-with-new.cpp	/^struct destination {};$/;"	s	file:
 disconnect	c++11-14/smart-ptr/1.1-unique_ptr-cppPrimer.cpp	/^void disconnect(connection *c1) { cout << "deleting..." << endl; }$/;"	f
 disconnect	c++11-14/smart-ptr/2.1-shared_ptr-with-new.cpp	/^void disconnect(connection* c1) { cout<<"deleting..."<<endl;}$/;"	f
-display	advanced-syntax/namespace/real-args-search-overload.cc	/^void display(const Q &) {} \/\/这里声明的函数也将被添加到候选函数集中$/;"	f	namespace:NS
+display	c++11-14/namespace/real-args-search-overload.cc	/^void display(const Q &) {} \/\/这里声明的函数也将被添加到候选函数集中$/;"	f	namespace:NS
 display2DArray	C_grammar/ptr/ptr_array/multi-ptr-array.c	/^void display2DArray(int arr[][5], int rows) {$/;"	f
 display2DArrayUnknownSize	C_grammar/ptr/ptr_array/multi-ptr-array.c	/^void display2DArrayUnknownSize(int *arr, int rows, int cols) {$/;"	f
 display3DArray	C_grammar/ptr/ptr_array/multi-ptr-array.c	/^void display3DArray(int (*arr)[2][4], int rows) {$/;"	f
@@ -1051,9 +1081,10 @@ do_1	System/cpp_cocurrency/2.3-RAII-wait-thread-end.cpp	/^void do_1(int& tmp, un
 do_stuff	c++11-14/rvalue-ref-move/6-class-with-move-ctor.cpp	/^void do_stuff(X&& x_) {$/;"	f
 dont_use_reg	C_grammar/fundamental_syntax/register_test.c	/^void dont_use_reg() {$/;"	f
 dotProduct	C_grammar/ptr/ptr_in_thread/calculate-vector-product.c	/^void *dotProduct(void *prod) {$/;"	f
-draw	fltk_proj/CubeView_fltk/CubeView.cxx	/^void CubeView::draw() {$/;"	f	class:CubeView
+draw	fltk_proj/CubeView/CubeView.cxx	/^void CubeView::draw() {$/;"	f	class:CubeView
 draw	oop_ood/ood/delegation_inheritance-Prototype.cpp	/^    void draw() { cout << "LandSatImage::draw()" << _id << endl; }$/;"	f	class:LandSatImage
-drawCube	fltk_proj/CubeView_fltk/CubeView.cxx	/^void CubeView::drawCube() {$/;"	f	class:CubeView
+drawCube	fltk_proj/CubeView/CubeView.cxx	/^void CubeView::drawCube() {$/;"	f	class:CubeView
+dyna_print	c++11-14/fmt-string/1-format-cppref.cpp	/^std::string dyna_print(std::string_view rt_fmt_str, Args&&... args) {$/;"	f
 dyna_print	c++17-20/c++20/fmt-1.cpp	/^std::string dyna_print(std::string_view rt_fmt_str, Args&&... args) {$/;"	f
 e	C_grammar/enum_struct_union_bitfield/enum-2.c	/^    e = 3,$/;"	e	enum:nu2	file:
 e	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-14-init-member.cpp	/^    static const double e = 1.3; \/\/ 非整型或者枚举，无法通过编译$/;"	m	class:Init	file:
@@ -1068,8 +1099,8 @@ end_t	C_grammar/variable-numbers-of-args.c	/^clock_t start_t, end_t;$/;"	v
 end_t	cpp_fundamental/c-varadic-args.cpp	/^clock_t start_t, end_t;$/;"	v
 entry	System/thread_with_c/threads.h	/^    void (*entry)(int);$/;"	m	struct:thread
 entry_all	System/thread_with_c/threads.h	/^static inline void *entry_all(void *arg) {$/;"	f
-equal	advanced-syntax/RTTI/RTTI-1.cc	/^bool Base::equal(const Base &rhs) const { return 1; }$/;"	f	class:Base
-equal	advanced-syntax/RTTI/RTTI-1.cc	/^bool Derived::equal(const Base &rhs) const {$/;"	f	class:Derived
+equal	c++11-14/RTTI/RTTI-1.cc	/^bool Base::equal(const Base &rhs) const { return 1; }$/;"	f	class:Base
+equal	c++11-14/RTTI/RTTI-1.cc	/^bool Derived::equal(const Base &rhs) const {$/;"	f	class:Derived
 error_handling	network/TCP_IP_Network/chap01/01-hello_server.c	/^void error_handling(char *msg) {$/;"	f
 error_handling	network/TCP_IP_Network/chap01/02-hello-client.c	/^void error_handling(char *msg) {$/;"	f
 error_handling	network/TCP_IP_Network/chap01/03-low_open.c	/^void error_handling(char* msg) {$/;"	f
@@ -1126,11 +1157,11 @@ f	C_grammar/fundamental_syntax/c-time-test.c	/^void* f(void* thr_data) { \/\/ re
 f	System/cpp_cocurrency/2.2-double_thread_with_try_catch.cc	/^void f() {$/;"	f
 f	System/cpp_cocurrency/2.3-RAII-wait-thread-end.cpp	/^void f() {$/;"	f
 f	System/thread_with_c/hello-mt.c	/^void f() {$/;"	f
-f	advanced-syntax/namespace/friend-declare-real-args-search.cc	/^    friend void f(const C &) {}$/;"	f	class:A::C	file:
 f	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-14-init-member.cpp	/^    static const char* const f = "e"; \/\/ 非整型或者枚举，无法通过编译$/;"	m	class:Init	file:
 f	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-3-using-derived-base.cpp	/^    void f(double i) { cout << "Base:" << i << endl; }$/;"	f	struct:Base
 f	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-3-using-derived-base.cpp	/^    void f(int i) { cout << "Derived:" << i << endl; }$/;"	f	struct:Derived
 f	c++11-14/decltype_test.cc	/^int f() { return 1; }$/;"	f
+f	c++11-14/namespace/friend-declare-real-args-search.cc	/^    friend void f(const C &) {}$/;"	f	class:A::C	file:
 f	c++11-14/nullptr-test.cpp	/^void f(int a) { cout << a << endl; }$/;"	f
 f	c++11-14/nullptr-test.cpp	/^void f(void *) { \/\/任意类型的指针$/;"	f
 f	c++11-14/other-special-keywords-syntax/addressof_test.cc	/^void f(Ptr<T>* p) {$/;"	f
@@ -1148,7 +1179,7 @@ f1	c++11-14/rvalue-ref-move/15-impilcit-move.cpp	/^X f1(X x) { return x; }$/;"	f
 f1	oop_ood/ood/virtual_func_test.cc	/^    void f1() { cout << "B call f1" << endl; }$/;"	f	class:B
 f1	oop_ood/ood/virtual_func_test.cc	/^void A::f1() { cout << "A call f1" << endl; }$/;"	f	class:A
 f2	System/test_computer_speed.cpp	/^void f2(long long n){$/;"	f
-f2	advanced-syntax/namespace/friend-declare-real-args-search.cc	/^    friend void f2() {}$/;"	f	class:A::C	file:
+f2	c++11-14/namespace/friend-declare-real-args-search.cc	/^    friend void f2() {}$/;"	f	class:A::C	file:
 f2	c++11-14/rvalue-ref-move/15-impilcit-move.cpp	/^X f2() {$/;"	f
 f3	System/test_computer_speed.cpp	/^void f3(long long n){$/;"	f
 f3	c++11-14/rvalue-ref-move/15-impilcit-move.cpp	/^X f3(X &&x) { return x; }$/;"	f
@@ -1183,6 +1214,7 @@ fptrToSingleInt	C_grammar/ptr/func-ptr/6-cast-exchange-func-ptr.c	/^typedef int 
 fptrToSingleInt	C_grammar/ptr/func-ptr/7-void-func-ptr.c	/^typedef int (*fptrToSingleInt)(int);$/;"	t	file:
 fptrToTwoInts	C_grammar/ptr/func-ptr/6-cast-exchange-func-ptr.c	/^typedef int (*fptrToTwoInts)(int, int);$/;"	t	file:
 fptrToTwoInts	C_grammar/ptr/func-ptr/7-void-func-ptr.c	/^typedef int (*fptrToTwoInts)(int, int);$/;"	t	file:
+frame	fltk_proj/watch-gif/show_gif.h	/^  Fl_Box *frame;$/;"	m	class:Hello
 freeStore	cpp-memory-manager/5-per-class-allocator-1.cpp	/^    static Screen* freeStore; \/\/指向链表头部$/;"	m	class:jj04::Screen	file:
 freeStore	cpp-memory-manager/5-per-class-allocator-1.cpp	/^Screen* Screen::freeStore = nullptr; \/\/空指针$/;"	m	class:jj04::Screen	file:
 freeStore	cpp-memory-manager/7-static-allocator.cpp	/^    obj* freeStore = nullptr;$/;"	m	class:jj09::allocator	file:
@@ -1255,10 +1287,11 @@ getnu	oop_ood/oop/customer_1.cpp	/^    long getnu() const { return nu; }$/;"	f	c
 gval	network/TCP_IP_Network/chap10/fork.c	/^int gval = 10;$/;"	v
 gw	c++11-14/smart-ptr/3-weak_ptr.cpp	/^std::weak_ptr<int> gw;$/;"	v
 h	C_grammar/enum_struct_union_bitfield/enum-2.c	/^    h,$/;"	e	enum:nu2	file:
-hAng	fltk_proj/CubeView_fltk/CubeView.h	/^    float vAng, hAng;$/;"	m	class:CubeView
-h_angle	fltk_proj/CubeView_fltk/CubeView.h	/^    float h_angle() { return hAng; };$/;"	f	class:CubeView
-h_angle	fltk_proj/CubeView_fltk/CubeView.h	/^    void h_angle(float angle) { hAng = angle; };$/;"	f	class:CubeView
-h_val	fltk_proj/CubeView_fltk/CubeViewUI.h	/^  Fl_Value_Output *h_val;$/;"	m	class:CubeViewUI
+h	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-22-right-move-rval.cpp	/^    HugeMem h;$/;"	m	class:Moveable	file:
+hAng	fltk_proj/CubeView/CubeView.h	/^    float vAng, hAng;$/;"	m	class:CubeView
+h_angle	fltk_proj/CubeView/CubeView.h	/^    float h_angle() { return hAng; };$/;"	f	class:CubeView
+h_angle	fltk_proj/CubeView/CubeView.h	/^    void h_angle(float angle) { hAng = angle; };$/;"	f	class:CubeView
+h_val	fltk_proj/CubeView/CubeViewUI.h	/^  Fl_Value_Output *h_val;$/;"	m	class:CubeViewUI
 hand	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-18-non-static-member-sizeof.cpp	/^    int hand;$/;"	m	struct:People	file:
 handle_	c++17-20/coroutine_c++20/00-the-first-example.cc	/^    coro_handle handle_;$/;"	m	class:resumable	file:
 handle_clnt	network/TCP_IP_Network/chap18/chat_server.c	/^void* handle_clnt(void* arg)$/;"	f
@@ -1286,13 +1319,16 @@ hello	cpp_fundamental/cast/static_cast_1.cpp	/^    const char* hello() const { r
 hello	cpp_fundamental/cast/static_cast_1.cpp	/^    const char* hello() const { return "Hello world, this is D!\\n"; }$/;"	f	struct:D
 helloworld	c++17-20/c++20/helloworld.cpp	/^export module helloworld;$/;"	v
 helloworld	c++17-20/c++20/import_modules.cpp	/^import helloworld;$/;"	v
-hrot	fltk_proj/CubeView_fltk/CubeViewUI.h	/^  Fl_Roller *hrot;$/;"	m	class:CubeViewUI
+hrot	fltk_proj/CubeView/CubeViewUI.h	/^  Fl_Roller *hrot;$/;"	m	class:CubeViewUI
 i	System/cpp_cocurrency/2.1-double-thread-with-ref-or-ptr.cpp	/^    int& i;$/;"	m	struct:func	file:
 i	System/cpp_cocurrency/2.2-double_thread_with_try_catch.cc	/^    int& i;$/;"	m	struct:func	file:
 i	System/cpp_cocurrency/2.3-RAII-wait-thread-end.cpp	/^    int& i;$/;"	m	struct:func	file:
-i	advanced-syntax/namespace/test-1.cpp	/^int i = 16, j = 15, k = 23;$/;"	m	namespace:blip	file:
 i	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-30-local-and-anonymous-type-as-template-args.cpp	/^        struct {int i;}b;             \/\/ b是匿名类型变量$/;"	m	struct:__anon1	file:
 i	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-30-local-and-anonymous-type-as-template-args.cpp	/^        typedef struct {int i;}B;    \/\/ B是匿名类型$/;"	m	struct:__anon2	file:
+i	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-13-delegate-ctor-and-init.cpp	/^    int i, c;$/;"	m	struct:Rule2	file:
+i	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-21-error-compulsory-move-rval.cpp	/^    int* i;$/;"	m	class:Moveable	file:
+i	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-22-right-move-rval.cpp	/^    int* i;$/;"	m	class:Moveable	file:
+i	c++11-14/namespace/test-1.cpp	/^int i = 16, j = 15, k = 23;$/;"	m	namespace:blip	file:
 i	cpp-memory-manager/5-per-class-allocator-1.cpp	/^    int i;$/;"	m	class:jj04::Screen	file:
 i	oop_ood/ood/name-hided.cpp	/^bool i = false;$/;"	m	namespace:XY	file:
 i	oop_ood/ood/name-hided.cpp	/^double i = 3.1415;$/;"	v
@@ -1317,32 +1353,10 @@ imag	oop_ood/oop/complex1/complex_by_template.h	/^inline T imag(const complex<T>
 imageType	oop_ood/ood/delegation_inheritance-Prototype.cpp	/^enum imageType { LSAT, SPOT };$/;"	g	file:
 incr	c++11-14/smart-ptr/class-StrBlob.cpp	/^StrBlobPtr &StrBlobPtr::incr() { \/\/前置自增$/;"	f	class:StrBlobPtr
 info	C_grammar/ptr/ptr_in_thread/calculate-vector-product.c	/^    VectorInfo *info;$/;"	m	struct:__anon4	file:
-info_arch	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
-info_arch	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
-info_compiler	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
-info_compiler	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
-info_cray	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v
-info_cray	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v
-info_language_extensions_default	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^const char* info_language_extensions_default = "INFO" ":" "extensions_default["$/;"	v
-info_language_extensions_default	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^const char* info_language_extensions_default = "INFO" ":" "extensions_default["$/;"	v
-info_language_standard_default	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^const char* info_language_standard_default =$/;"	v
-info_language_standard_default	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^const char* info_language_standard_default = "INFO" ":" "standard_default["$/;"	v
-info_platform	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
-info_platform	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
-info_plist	fltk_proj/CubeView_fltk/Makefile	/^define info_plist$/;"	m
+info_plist	fltk_proj/Chinese/Makefile	/^define info_plist$/;"	m
+info_plist	fltk_proj/CubeView/Makefile	/^define info_plist$/;"	m
 info_plist	fltk_proj/hello-world/Makefile	/^define info_plist$/;"	m
-info_simulate	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v
-info_simulate	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v
-info_simulate_version	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^char const info_simulate_version[] = {$/;"	v
-info_simulate_version	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_simulate_version[] = {$/;"	v
-info_version	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^char const info_version[] = {$/;"	v
-info_version	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_version = "INFO" ":" "compiler_version[" COMPILER_VERSION "]";$/;"	v
-info_version	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version[] = {$/;"	v
-info_version	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_version = "INFO" ":" "compiler_version[" COMPILER_VERSION "]";$/;"	v
-info_version_internal	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^char const info_version_internal[] = {$/;"	v
-info_version_internal	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_version_internal = "INFO" ":" "compiler_version_internal[" COMPILER_VERSION_INTERNAL_STR "]";$/;"	v
-info_version_internal	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version_internal[] = {$/;"	v
-info_version_internal	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_version_internal = "INFO" ":" "compiler_version_internal[" COMPILER_VERSION_INTERNAL_STR "]";$/;"	v
+info_plist	fltk_proj/watch-gif/Makefile	/^define info_plist$/;"	m
 inherited	c++11-14/template-advanced/variadic_templates/6_recur_inheritance.cpp	/^    typedef tuple<Tail...> inherited; \/\/ 并不是类的重命名,代表递归继承父类$/;"	t	class:tuple	file:
 init	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-15-parentheses-init.cpp	/^struct init {$/;"	s	file:
 initial_suspend	c++17-20/coroutine_c++20/0-coroutine-test.cc	/^        std::suspend_never initial_suspend() { return {}; }$/;"	f	struct:task::promise_type
@@ -1350,8 +1364,9 @@ initial_suspend	c++17-20/coroutine_c++20/00-the-first-example.cc	/^    auto init
 initial_suspend	c++17-20/coroutine_c++20/2-coroutine-without-any-task.cc	/^        std::suspend_never initial_suspend() { return {}; }$/;"	f	struct:Task::promise_type
 input	C_grammar/fundamental_syntax/static_extern_func/file1.cpp	/^static void input(stu student[], int n) {$/;"	f	file:
 input	C_grammar/ptr/func-ptr/8-ptr-func-and-func-ptr.c	/^void input(char *str, char *substr) {$/;"	f
-j	advanced-syntax/namespace/test-1.cpp	/^int i = 16, j = 15, k = 23;$/;"	m	namespace:blip	file:
-j	advanced-syntax/namespace/test-1.cpp	/^int j = 0;$/;"	v
+item	C_grammar/enum_struct_union_bitfield/struct_2.c	/^struct item {$/;"	s	file:
+j	c++11-14/namespace/test-1.cpp	/^int i = 16, j = 15, k = 23;$/;"	m	namespace:blip	file:
+j	c++11-14/namespace/test-1.cpp	/^int j = 0;$/;"	v
 jj00	STL/STL-sample.cpp	/^namespace jj00 {$/;"	n	file:
 jj01	STL/Container/Array_/test_array.cpp	/^namespace jj01 {$/;"	n	file:
 jj01	STL/STL-sample.cpp	/^namespace jj01 {$/;"	n	file:
@@ -1396,7 +1411,7 @@ jjxx	STL/STL-sample.cpp	/^namespace jjxx {$/;"	n	file:
 join	System/thread_with_c/threads.h	/^static inline void join(void (*fn)()) { join_fn = fn; }$/;"	f
 join_all	System/thread_with_c/threads.h	/^__attribute__((destructor)) static void join_all() {$/;"	f
 join_fn	System/thread_with_c/threads.h	/^void (*join_fn)();$/;"	v
-k	advanced-syntax/namespace/test-1.cpp	/^int i = 16, j = 15, k = 23;$/;"	m	namespace:blip	file:
+k	c++11-14/namespace/test-1.cpp	/^int i = 16, j = 15, k = 23;$/;"	m	namespace:blip	file:
 keyControl	network/TCP_IP_Network/chap10/sigaction.c	/^void keyControl(int sig) {$/;"	f
 keyControl	network/TCP_IP_Network/chap10/signal.c	/^void keyControl(int sig) {$/;"	f
 l	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-14-delegate-ctor-and-init-example.cpp	/^    list<int> l;$/;"	m	class:TDConstructed	file:
@@ -1418,8 +1433,10 @@ log_progress	cpp_fundamental/flush_1.cpp	/^void log_progress(Diff d) {$/;"	f
 m	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-17-init-non-static-member.cpp	/^    int m;$/;"	m	class:Mem	file:
 m	cpp_fundamental/cast/static_cast_1.cpp	/^    int m = 42;$/;"	m	struct:B	file:
 m	network/multi-thread-crawl-1.cpp	/^std::mutex m;$/;"	v
+m_a	cpp-memory-manager/12-use-ctor-in-class.cpp	/^    int m_a;$/;"	m	class:P	file:
 m_a	oop_ood/ood/virtual_func_test.cc	/^    int m_a;$/;"	m	class:A	file:
 m_age	cpp_fundamental/template/class_template_friend.cpp	/^    T2 m_age;$/;"	m	class:Person	file:
+m_b	cpp-memory-manager/12-use-ctor-in-class.cpp	/^    double m_b;$/;"	m	class:P	file:
 m_b	oop_ood/ood/virtual_func_test.cc	/^    int m_b;$/;"	m	class:B	file:
 m_coroutine	c++17-20/coroutine_c++20/3-coroutine-handle-example.cc	/^        Handle m_coroutine;$/;"	m	class:Generator::Iter	file:
 m_coroutine	c++17-20/coroutine_c++20/3-coroutine-handle-example.cc	/^    Handle m_coroutine;$/;"	m	class:Generator	file:
@@ -1434,7 +1451,6 @@ m_den	oop_ood/conversion_function.cpp	/^    int m_num, m_den;$/;"	m	class:Fracti
 m_h	cpp_fundamental/template/function_template_test1.cpp	/^    int m_w, m_h, m_we;$/;"	m	class:stone	file:
 m_head	c++11-14/template-advanced/variadic_templates/6_recur_inheritance.cpp	/^    Head m_head;$/;"	m	class:tuple	file:
 m_head	c++11-14/template-advanced/variadic_templates/7_recue_composition.cpp	/^    Head m_head;$/;"	m	class:tup	file:
-m_i	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-5-init-inherit-ctor-with-member-var-init.cpp	/^    int m_i;$/;"	m	struct:A	file:
 m_i	cpp-memory-manager/4-overload-placement-new.cpp	/^    int m_i;$/;"	m	class:Foo	file:
 m_i	cpp_fundamental/operator-overload/ppmm-overload.cc	/^    int m_i;$/;"	m	class:A	file:
 m_i	oop_ood/new_del/overload-new_delete-with-bracket.cpp	/^    int m_i;$/;"	m	class:Foo	file:
@@ -1487,6 +1503,7 @@ main	C_grammar/char-string/snprintf_test.c	/^int main(int argc, char const* argv
 main	C_grammar/char-string/strcat-1.c	/^int main(int argc, char* argv[]) {$/;"	f
 main	C_grammar/char-string/strcpy-1.c	/^int main(int argc, char* argv[]) {$/;"	f
 main	C_grammar/char-string/strftime-1.c	/^int main() {$/;"	f
+main	C_grammar/double_div_zero.c	/^int main(int argc, char const *argv[]) {$/;"	f
 main	C_grammar/enum_struct_union_bitfield/bit-field-mem-structure.c	/^int main(int argc, char const *argv[]) {$/;"	f
 main	C_grammar/enum_struct_union_bitfield/bit-field.c	/^int main() {$/;"	f
 main	C_grammar/enum_struct_union_bitfield/enum-1.c	/^int main(int argc, char const *argv[]) {$/;"	f
@@ -1497,6 +1514,7 @@ main	C_grammar/enum_struct_union_bitfield/enum_test.cc	/^int main() {$/;"	f
 main	C_grammar/enum_struct_union_bitfield/struct-union-mem-structure.c	/^int main() {$/;"	f
 main	C_grammar/enum_struct_union_bitfield/struct-with-union.c	/^int main() {$/;"	f
 main	C_grammar/enum_struct_union_bitfield/struct_1.c	/^int main(int argc, char const *argv[]) {$/;"	f
+main	C_grammar/enum_struct_union_bitfield/struct_2.c	/^int main(int argc, char const *argv[]) {$/;"	f
 main	C_grammar/enum_struct_union_bitfield/test1.c	/^int main(int argc, char const *argv[]) {$/;"	f
 main	C_grammar/enum_struct_union_bitfield/test2.c	/^int main(int argc, char const* argv[]) {$/;"	f
 main	C_grammar/for_i.c	/^int main(int argc, char const *argv[]) {$/;"	f
@@ -1505,6 +1523,7 @@ main	C_grammar/fundamental_syntax/extern_const_val/main.c	/^int main(int argc, c
 main	C_grammar/fundamental_syntax/get_time.c	/^int main(int argc, char const *argv[]) {$/;"	f
 main	C_grammar/fundamental_syntax/if-assignment-1.c	/^int main (int argc, char *argv[])$/;"	f
 main	C_grammar/fundamental_syntax/live-period.c	/^int main(int argc, char const *argv[]) {$/;"	f
+main	C_grammar/fundamental_syntax/operatoe-priority.c	/^int main(int argc, char const *argv[]) {$/;"	f
 main	C_grammar/fundamental_syntax/ppmm.c	/^int main (int argc, char *argv[])$/;"	f
 main	C_grammar/fundamental_syntax/pthread-test-1.c	/^int main() {$/;"	f
 main	C_grammar/fundamental_syntax/register_test.c	/^int main(int argc, char* argv[]) {$/;"	f
@@ -1598,10 +1617,22 @@ main	STL/Container/Deque_/test-deque.cpp	/^int main(int argc, char const* argv[]
 main	STL/Container/List_/0-test-list.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
 main	STL/Container/List_/1-itertor-list.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
 main	STL/Container/Map_/map_test_1.cc	/^int main(int argc, char const *argv[]) {$/;"	f
+main	STL/Container/Map_/test-bool-default.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
+main	STL/Container/Queue_/priority_queue-1.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
+main	STL/Container/Queue_/test-cppreference-1.cpp	/^int main() {$/;"	f
 main	STL/Container/Queue_/test_queue.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
 main	STL/Container/Set_/set_test.cc	/^int main() {$/;"	f
 main	STL/Container/Stack_/stack_fundamental_methods.cpp	/^int main(int argc, char const* argv[]) {$/;"	f
+main	STL/Container/String_/check-char.cpp	/^int main(int argc, char *argv[]) {$/;"	f
+main	STL/Container/String_/concat-string.cpp	/^int main(int argc, char *argv[]) {$/;"	f
 main	STL/Container/String_/create_1.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
+main	STL/Container/String_/data-func-1.cpp	/^int main() {$/;"	f
+main	STL/Container/String_/default-char-asterisk.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
+main	STL/Container/String_/format-output-string.cpp	/^int main(int argc, char *argv[]) {$/;"	f
+main	STL/Container/String_/process.cpp	/^int main(int argc, char *argv[]) {$/;"	f
+main	STL/Container/String_/raw_string.cpp	/^int main(int argc, char *argv[]) {$/;"	f
+main	STL/Container/String_/regex-1.cpp	/^int main(int argc, char* argv[]) {$/;"	f
+main	STL/Container/String_/str_number_convert.cpp	/^int main(int argc, char *argv[]) {$/;"	f
 main	STL/Container/String_/string-quote-s.cpp	/^int main() {$/;"	f
 main	STL/Container/String_/string-with-array.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
 main	STL/Container/String_/string_fundamental.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
@@ -1610,6 +1641,8 @@ main	STL/Container/Unordered_map_/create_map_1.cpp	/^int main(int argc, char con
 main	STL/Container/Unordered_map_/test-map.cpp	/^int main(int argc, char const* argv[]) {$/;"	f
 main	STL/Container/Vector_/1-test-vector-size.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
 main	STL/Container/Vector_/2-vector-iterator-traits.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
+main	STL/Container/Vector_/advanced-insert-vector.cpp	/^int main(int argc, char const* argv[]) {$/;"	f
+main	STL/Container/Vector_/equal-vector.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
 main	STL/Container/Vector_/vector-traverse.cpp	/^int main(int argc, char const* argv[]) {$/;"	f
 main	STL/Container/Vector_/vector_1d_2d.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
 main	STL/Container/Vector_/vector_assign_val.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
@@ -1629,6 +1662,7 @@ main	STL/Functor/general_hash_func.cpp	/^int main(int argc, char const* argv[]) 
 main	STL/Iterator/iterator_category_test.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
 main	STL/STL-sample.cpp	/^int main(int argc, char** argv) {$/;"	f
 main	STL/complex_test.cc	/^int main(int argc, char const *argv[]) {$/;"	f
+main	STL/output_all_Container.cpp	/^int main(int argc, char *argv[]) {$/;"	f
 main	STL/stl-code-1.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
 main	STL/stl-not1.cpp	/^int main() {$/;"	f
 main	System/cpp_cocurrency/1.1-hello-concurrent-world.cc	/^int main(int argc, char const *argv[]) {$/;"	f
@@ -1636,6 +1670,7 @@ main	System/cpp_cocurrency/2.1-double-thread-with-ref-or-ptr.cpp	/^int main(int 
 main	System/cpp_cocurrency/2.2-double_thread_with_try_catch.cc	/^int main(int argc, char const* argv[]) {$/;"	f
 main	System/cpp_cocurrency/2.3-RAII-wait-thread-end.cpp	/^int main(int argc, char const* argv[]) {$/;"	f
 main	System/cpp_cocurrency/2.4-run-thread-on-background.cpp	/^int main(int argc, char const* argv[]) {$/;"	f
+main	System/hit-OS/print-AB-alternate.c	/^int main(int argc, char const *argv[]) {$/;"	f
 main	System/nju-os/1-simulate-digital-circuit.c	/^int main(int argc, char const *argv[]) {$/;"	f
 main	System/syscall/brk_sbrk-1.c	/^int main(int argc, char const *argv[]) {$/;"	f
 main	System/syscall/errno-1.c	/^int main(int argc, char const *argv[]) {$/;"	f
@@ -1643,16 +1678,6 @@ main	System/test_computer_speed.cpp	/^int main (int argc, char *argv[])$/;"	f
 main	System/thread_with_c/hello-mt.c	/^int main() {$/;"	f
 main	System/thread_with_c/test_thread.c	/^int main(void) {$/;"	f
 main	System/thread_with_c/thread-1.c	/^int main(int argc, char const* argv[]) {$/;"	f
-main	advanced-syntax/RTTI/RTTI-1.cc	/^int main(int argc, char const *argv[]) {$/;"	f
-main	advanced-syntax/RTTI/dynamic_cast-1.cc	/^int main() {$/;"	f
-main	advanced-syntax/RTTI/dynamic_cast-2.cc	/^int main() {$/;"	f
-main	advanced-syntax/RTTI/dynamic_cast-3.cc	/^int main() {$/;"	f
-main	advanced-syntax/RTTI/dynamic_cast-4.cc	/^int main() {$/;"	f
-main	advanced-syntax/exception/1-throw-exception.cpp	/^int main(int argc, char const* argv[]) {$/;"	f
-main	advanced-syntax/namespace/friend-declare-real-args-search.cc	/^int main(int argc, char const *argv[]) {$/;"	f
-main	advanced-syntax/namespace/real-args-search-overload.cc	/^int main(int argc, char const *argv[]) {$/;"	f
-main	advanced-syntax/namespace/test-1.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
-main	advanced-syntax/tuple/tuple-test-1.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
 main	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-1-micros-c11.cpp	/^int main() {$/;"	f
 main	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-14-init-member.cpp	/^int main(int argc, char* argv[]) { return 0; }$/;"	f
 main	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-16-init-list-and-parentheses.cpp	/^int main() {$/;"	f
@@ -1663,23 +1688,46 @@ main	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-26-templa
 main	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-3-__func__in_cpp11.cpp	/^int main() {$/;"	f
 main	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-4-__VA_ARGS.cpp	/^int main() {$/;"	f
 main	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-5-long-long.cpp	/^int main() {$/;"	f
+main	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-09-verbose-delegate-ctor.cpp	/^int main(int argc, char *argv[]) {$/;"	f
 main	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-10-refact-verbose-delegate-ctor.cpp	/^int main(int argc, char *argv[]) {$/;"	f
+main	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-11-delegate-ctor-init-list.cpp	/^int main(int argc, char *argv[]) {$/;"	f
 main	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-12-delegate-ctor-with-init-value.cpp	/^int main(int argc, char *argv[]) {$/;"	f
 main	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-13-delegate-ctor-and-init.cpp	/^int main(int argc, char *argv[]) {$/;"	f
 main	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-14-delegate-ctor-and-init-example.cpp	/^int main(int argc, char *argv[]) {$/;"	f
 main	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-15-delegate-ctor-and-init-example-with-try.cpp	/^int main() { DCExcept a(1.2); }$/;"	f
-main	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-9-verbose-delegate-ctor.cpp	/^int main(int argc, char *argv[]) {$/;"	f
+main	c++11-14/Depth_understanding_of_C++11/chap3/explicit/3-26-implicit-cast.cpp	/^int main() {$/;"	f
+main	c++11-14/Depth_understanding_of_C++11/chap3/explicit/3-27-do-not-implicit-cast.cpp	/^int main() {$/;"	f
+main	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-1-ctor_derived.cpp	/^int main(int argc, char *argv[]) {$/;"	f
+main	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-2-unvarnished-transmission.cpp	/^int main(int argc, char *argv[]) {$/;"	f
 main	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-3-using-derived-base.cpp	/^int main() {$/;"	f
 main	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-4-inherit-ctor-using.cpp	/^int main(int argc, char* argv[]) {$/;"	f
 main	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-5-init-inherit-ctor-with-member-var-init.cpp	/^int main() {$/;"	f
 main	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-6-inherit-ctor-with-default-args.cpp	/^int main(int argc, char *argv[]) {$/;"	f
 main	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-7-duplicate-same-type-ctor.cpp	/^int main(int argc, char *argv[]) {$/;"	f
-main	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-16-copt-ctor-with-mem-leak.cpp	/^int main() {$/;"	f
+main	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-8-no-default-ctor.cpp	/^int main(int argc, char *argv[]) {$/;"	f
+main	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-16-shallow-copy-with-mem-leak.cpp	/^int main() {$/;"	f
+main	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-17-deep-copy.cpp	/^int main() {$/;"	f
+main	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-18-record-call-ctor-count.cpp	/^int main() { HasPtrMem a = GetTemp(); }$/;"	f
+main	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-19-move-ctor.cpp	/^int main() {$/;"	f
+main	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-20-const-ref-reduce-consume.cpp	/^int main() {$/;"	f
+main	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-21-error-compulsory-move-rval.cpp	/^int main() {$/;"	f
+main	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-22-right-move-rval.cpp	/^int main() {$/;"	f
+main	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-23-noescept-rval.cpp	/^int main() {$/;"	f
+main	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-24-perfect-forward.cpp	/^int main() {$/;"	f
+main	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-25-less-code-single-arg.cpp	/^int main() {$/;"	f
+main	c++11-14/Exception/1-throw-exception.cpp	/^int main(int argc, char const* argv[]) {$/;"	f
+main	c++11-14/Exception/2-three-dots-in-exception.cpp	/^int main(int argc, char const* argv[]) {$/;"	f
+main	c++11-14/RTTI/RTTI-1.cc	/^int main(int argc, char const *argv[]) {$/;"	f
+main	c++11-14/RTTI/dynamic_cast-1.cc	/^int main() {$/;"	f
+main	c++11-14/RTTI/dynamic_cast-2.cc	/^int main() {$/;"	f
+main	c++11-14/RTTI/dynamic_cast-3.cc	/^int main() {$/;"	f
+main	c++11-14/RTTI/dynamic_cast-4.cc	/^int main() {$/;"	f
 main	c++11-14/constexprTest/constexpr-int.cpp	/^int main() {$/;"	f
 main	c++11-14/constexprTest/constexpr_test.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
 main	c++11-14/constexprTest/constexpr_test2.cpp	/^int main() {$/;"	f
 main	c++11-14/decltype_test.cc	/^int main(int argc, char const* argv[]) {$/;"	f
 main	c++11-14/explicit-keyword.cpp	/^int main(int argc, char const* argv[]) {$/;"	f
+main	c++11-14/fmt-string/1-format-cppref.cpp	/^int main() {$/;"	f
 main	c++11-14/initialize/0-uniform-initialization.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
 main	c++11-14/initialize/1-init-lists.cc	/^int main(int argc, char const* argv[]) {$/;"	f
 main	c++11-14/initialize/2-init-lists.cc	/^int main(int argc, char const *argv[]) {$/;"	f
@@ -1692,6 +1740,9 @@ main	c++11-14/lambda-exp/lambda-test-2.cpp	/^int main(int argc, char const *argv
 main	c++11-14/lambda-exp/lambda-test-3.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
 main	c++11-14/lambda-exp/lambda-with-functor.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
 main	c++11-14/lambda-exp/lambda-with-recur-1.cpp	/^int main() {$/;"	f
+main	c++11-14/namespace/friend-declare-real-args-search.cc	/^int main(int argc, char const *argv[]) {$/;"	f
+main	c++11-14/namespace/real-args-search-overload.cc	/^int main(int argc, char const *argv[]) {$/;"	f
+main	c++11-14/namespace/test-1.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
 main	c++11-14/nullptr-test.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
 main	c++11-14/other-special-keywords-syntax/=default_=delete.cpp	/^int main(int argc, char const* argv[]) {$/;"	f
 main	c++11-14/other-special-keywords-syntax/addressof_test.cc	/^int main() {$/;"	f
@@ -1703,6 +1754,7 @@ main	c++11-14/other-special-keywords-syntax/range-for-loop-multi-item.cpp	/^int 
 main	c++11-14/other-special-keywords-syntax/range-for-loop-with-char-array.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
 main	c++11-14/other-special-keywords-syntax/range-for-loop.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
 main	c++11-14/other-special-keywords-syntax/type-alias.cpp	/^int main(int argc, char const* argv[]) {$/;"	f
+main	c++11-14/random-value.cpp	/^int main() {$/;"	f
 main	c++11-14/rvalue-ref-move/0-test-rval-refer.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
 main	c++11-14/rvalue-ref-move/1-test-rval-ref.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
 main	c++11-14/rvalue-ref-move/10-rval-performance.cc	/^int main() {$/;"	f
@@ -1744,6 +1796,7 @@ main	c++11-14/template-advanced/variadic_templates/5_make_tuple.cpp	/^int main(i
 main	c++11-14/template-advanced/variadic_templates/6_recur_inheritance.cpp	/^int main(int argc, char const* argv[]) {$/;"	f
 main	c++11-14/template-advanced/variadic_templates/7_recue_composition.cpp	/^int main(int argc, char const* argv[]) {$/;"	f
 main	c++11-14/template-advanced/variadic_templates/special-common.cc	/^int main(int argc, char const* argv[]) {$/;"	f
+main	c++11-14/tuple/tuple-test-1.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
 main	c++17-20/c++20/fmt-1.cpp	/^int main() {$/;"	f
 main	c++17-20/c++20/import_modules.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
 main	c++17-20/c++20/modules_import/main.cpp	/^int main() { std::cout << CppCon::GetWelcome(); }/;"	f
@@ -1760,6 +1813,10 @@ main	cpp-memory-manager/00-test-ctor-dtor-call-directly.cpp	/^int main(int argc,
 main	cpp-memory-manager/1-array-new-array-delete.cpp	/^int main(int argc, char const* argv[]) {$/;"	f
 main	cpp-memory-manager/10-operator-new-delete.cpp	/^int main(int argc, char const* argv[]) {$/;"	f
 main	cpp-memory-manager/11-dynamic_array.cpp	/^int main(int argc, char const* argv[]) {$/;"	f
+main	cpp-memory-manager/12-use-ctor-in-class.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
+main	cpp-memory-manager/13-operator-new-array-sizeof.cpp	/^int main(int argc, char const* argv[]) {$/;"	f
+main	cpp-memory-manager/14-overload-global-placement-new.cpp	/^int main(int argc, char const* argv[]) {$/;"	f
+main	cpp-memory-manager/15-base-class-p.cpp	/^int main(int argc, char *argv[]) {$/;"	f
 main	cpp-memory-manager/2-placement-new.cpp	/^int main(int argc, char const* argv[]) {$/;"	f
 main	cpp-memory-manager/3-overload-new-delete-example.cpp	/^int main(int argc, char const* argv[]) {$/;"	f
 main	cpp-memory-manager/4-overload-placement-new.cpp	/^int main(int argc, char const* argv[]) {$/;"	f
@@ -1768,6 +1825,7 @@ main	cpp-memory-manager/6-per-class-allocator-2.cpp	/^int main(int argc, char co
 main	cpp-memory-manager/7-static-allocator.cpp	/^int main(int argc, char const* argv[]) {$/;"	f
 main	cpp-memory-manager/8-macro-for-static-allocator.cpp	/^int main(int argc, char const* argv[]) {$/;"	f
 main	cpp-memory-manager/9-new-handler.cpp	/^int main(int argc, char const* argv[]) {$/;"	f
+main	cpp_fundamental/INT_MAX-test.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
 main	cpp_fundamental/assert_test.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
 main	cpp_fundamental/c-varadic-args.cpp	/^int main() {$/;"	f
 main	cpp_fundamental/cast/const_cast-1.cpp	/^int main(int argc, char const* argv[]) {$/;"	f
@@ -1781,12 +1839,16 @@ main	cpp_fundamental/flush_1.cpp	/^int main(int argc, char const *argv[]) {$/;"	
 main	cpp_fundamental/function_overload.cpp	/^int main() {$/;"	f
 main	cpp_fundamental/goto_example.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
 main	cpp_fundamental/little-large-end.cc	/^int main() {$/;"	f
+main	cpp_fundamental/multiple-equal.cpp	/^int main(int argc, char *argv[]) {$/;"	f
 main	cpp_fundamental/operator-overload/arithmetic-relation-operator.cpp	/^int main(int argc, char const* argv[]) {$/;"	f
 main	cpp_fundamental/operator-overload/func-call-operator-1.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
 main	cpp_fundamental/operator-overload/function-type.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
 main	cpp_fundamental/operator-overload/output_and_input.cpp	/^int main(int argc, char const* argv[]) {$/;"	f
 main	cpp_fundamental/operator-overload/ppmm-overload.cc	/^int main(int argc, char *argv[]) {$/;"	f
 main	cpp_fundamental/operator-overload/ppmm_test_1.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
+main	cpp_fundamental/preprocess-compile-assembly-link/attribute_1.cpp	/^int main(int argc, char const* argv[]) {$/;"	f
+main	cpp_fundamental/preprocess-compile-assembly-link/macro-condition-compile.cpp	/^int main(int argc, char const* argv[]) {$/;"	f
+main	cpp_fundamental/preprocess-compile-assembly-link/useful_macro.cpp	/^int main() {$/;"	f
 main	cpp_fundamental/reference-ptr-const/const-reference.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
 main	cpp_fundamental/reference-ptr-const/reference-1.cpp	/^int main(int argc, char const* argv[]) {$/;"	f
 main	cpp_fundamental/reference-ptr-const/top-level-const-ptr.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
@@ -1815,7 +1877,7 @@ main	cpp_fundamental/variable_base_datatype/sizeof_pointer.cpp	/^int main(int ar
 main	cpp_fundamental/variable_base_datatype/test_ptr.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
 main	cpp_fundamental/variable_base_datatype/void*ptr.cpp	/^int main(int argc, char const* argv[]) {$/;"	f
 main	cpp_fundamental/variable_const.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
-main	effective/effective_cpp/chap1/item2_c_define.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
+main	effective/effective_cpp/chap1/item2_c_define.cpp	/^int main(int argc, char const* argv[]) {$/;"	f
 main	effective/effective_cpp/chap1/item3_use_const.cpp	/^int main(int argc, char const* argv[]) {$/;"	f
 main	effective/effective_cpp/chap2/item5_default_const_and_reference_in_class.cpp	/^int main(int argc, char* argv[]) {$/;"	f
 main	effective/effective_cpp/chap2/item6_private_copy_ctor.cpp	/^int main(int argc, char* argv[]) {$/;"	f
@@ -1823,11 +1885,10 @@ main	effective/effective_cpp/chap2/item7_inherit_non_virtual_dtor.cpp	/^int main
 main	effective/effective_stl/14-reserve.cpp	/^int main(int argc, char* argv[]) {$/;"	f
 main	effective/effective_stl/24-map_insert.cpp	/^int main(int argc, char* argv[]) {$/;"	f
 main	effective/effective_stl/30-algo-transform.cpp	/^int main(int argc, char *argv[]) {$/;"	f
-main	fltk_proj/CubeView_fltk/CubeMain.cxx	/^int main(int argc, char **argv) {$/;"	f
-main	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^int main(argc, argv) int argc; char *argv[];$/;"	f
-main	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f
-main	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	fltk_proj/Chinese/main.cpp	/^int main(int argc, char* argv[]) {$/;"	f
+main	fltk_proj/CubeView/CubeMain.cxx	/^int main(int argc, char **argv) {$/;"	f
 main	fltk_proj/hello-world/test1.cpp	/^int main() {$/;"	f
+main	fltk_proj/watch-gif/main.cpp	/^int main (int argc, char *argv[])$/;"	f
 main	network/Cpp_GPT_Network/GPT_echo_client.cpp	/^int main() {$/;"	f
 main	network/Cpp_GPT_Network/GPT_echo_server.cpp	/^int main() {$/;"	f
 main	network/TCP_IP_Network/chap01/01-hello_server.c	/^int main(int argc, char *argv[]) {$/;"	f
@@ -1908,6 +1969,7 @@ main	network/TCP_IP_Network/chap18/thread2.c	/^int main(int argc, char* argv[])$
 main	network/TCP_IP_Network/chap18/thread3.c	/^int main(int argc, char* argv[])$/;"	f
 main	network/TCP_IP_Network/chap18/thread4.c	/^int main(int argc, char* argv[])$/;"	f
 main	network/TCP_IP_Network/chap24/webserv_linux.c	/^int main(int argc, char* argv[])$/;"	f
+main	network/libcurl-example/get_html_1/get-1.cpp	/^int main() {$/;"	f
 main	network/multi-thread-crawl-1.cpp	/^int main() {$/;"	f
 main	network/multi-thread-crawl.cpp	/^int main() {$/;"	f
 main	oop_ood/access_authority.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
@@ -1941,12 +2003,13 @@ main	oop_ood/static_test/static_member_func.cpp	/^int main(int argc, char const 
 main	oop_ood/static_test/static_member_var.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
 main	oop_ood/static_test/static_test.cc	/^int main(int argc, char const *argv[]) {$/;"	f
 main	oop_ood/this_ptr.cpp	/^int main(int argc, char const *argv[]) {$/;"	f
-mainWindow	fltk_proj/CubeView_fltk/CubeViewUI.h	/^  Fl_Window *mainWindow;$/;"	m	class:CubeViewUI
+mainWindow	fltk_proj/CubeView/CubeViewUI.h	/^  Fl_Window *mainWindow;$/;"	m	class:CubeViewUI
+make_match	STL/Container/String_/regex-1.cpp	/^auto make_match = []() { return smatch(); };$/;"	v
 make_pool	c++11-14/rvalue-ref-move/10-rval-performance.cc	/^BigMemoryPool make_pool() {$/;"	f
 make_pool	c++11-14/rvalue-ref-move/11-rval-with-move.cc	/^BigMemoryPool make_pool() {$/;"	f
 make_x	c++11-14/rvalue-ref-move/9-lval-ref-vs-rval-ref.cpp	/^X make_x() { return X(); }$/;"	f	namespace:t1
 make_x	c++11-14/rvalue-ref-move/9-lval-ref-vs-rval-ref.cpp	/^X make_x() {$/;"	f	namespace:t2
-manip	advanced-syntax/namespace/test-1.cpp	/^void manip() {$/;"	f
+manip	c++11-14/namespace/test-1.cpp	/^void manip() {$/;"	f
 mark	cpp_fundamental/union-enum-struct/union-test-1.cpp	/^    char mark;$/;"	m	union:test	file:
 max	C_grammar/ptr/func-ptr/0-func_ptr-test.c	/^int max(int x, int y) { return x > y ? x : y; }$/;"	f
 max1	c++11-14/template-advanced/variadic_templates/3_max.cpp	/^inline T max1(initializer_list<T> l) {$/;"	f
@@ -1981,7 +2044,9 @@ myFree	oop_ood/new_del/overload-::operate_new_delete.cc	/^void myFree(void* ptr)
 myName	oop_ood/access_authority.cpp	/^    string myName;$/;"	m	class:Person	file:
 my_div	STL/Adapter/bind_test_by_clang.cpp	/^double my_div(double x, double y) { return x \/ y; }$/;"	f
 my_div	STL/Adapter/bind_test_by_g++.cpp	/^double my_div(double x, double y) { return x \/ y; }$/;"	f
-my_handler	fltk_proj/CubeView_fltk/CubeMain.cxx	/^static int my_handler(int event) {$/;"	f	file:
+my_exception	c++11-14/Exception/2-three-dots-in-exception.cpp	/^    my_exception(const char* msg) : super_type(msg) {}$/;"	f	class:my_exception
+my_exception	c++11-14/Exception/2-three-dots-in-exception.cpp	/^class my_exception : public std::runtime_error {$/;"	c	file:
+my_handler	fltk_proj/CubeView/CubeMain.cxx	/^static int my_handler(int event) {$/;"	f	file:
 myclass	STL/Algorithm/accumulate_1.cpp	/^struct myclass {$/;"	s	namespace:jj34	file:
 myclass	STL/STL-sample.cpp	/^struct myclass {$/;"	s	namespace:jj34	file:
 myclass	STL/STL-sample.cpp	/^struct myclass {$/;"	s	namespace:jj35	file:
@@ -1999,14 +2064,27 @@ myprint	STL/Container/Vector_/vector_push_Build_in_data_types.cpp	/^void myprint
 myprint	STL/Container/Vector_/vector_push_custom_data_types.cpp	/^void myprint(P &val) {$/;"	f
 myprint1	STL/Container/Vector_/vector_push_custom_data_types.cpp	/^void myprint1(P *&val) {$/;"	f
 n1	C_grammar/x-macros/macro-expand.c	/^#define n1 /;"	d	file:
+n_cptr	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-18-record-call-ctor-count.cpp	/^    static int n_cptr;$/;"	m	class:HasPtrMem	file:
+n_cptr	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-18-record-call-ctor-count.cpp	/^int HasPtrMem::n_cptr = 0;$/;"	m	class:HasPtrMem	file:
+n_cptr	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-19-move-ctor.cpp	/^    static int n_cptr;$/;"	m	class:HasPtrMem	file:
+n_cptr	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-19-move-ctor.cpp	/^int HasPtrMem::n_cptr = 0;$/;"	m	class:HasPtrMem	file:
+n_cstr	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-18-record-call-ctor-count.cpp	/^    static int n_cstr;$/;"	m	class:HasPtrMem	file:
+n_cstr	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-18-record-call-ctor-count.cpp	/^int HasPtrMem::n_cstr = 0;$/;"	m	class:HasPtrMem	file:
+n_cstr	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-19-move-ctor.cpp	/^    static int n_cstr;$/;"	m	class:HasPtrMem	file:
+n_cstr	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-19-move-ctor.cpp	/^int HasPtrMem::n_cstr = 0;$/;"	m	class:HasPtrMem	file:
+n_dstr	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-18-record-call-ctor-count.cpp	/^    static int n_dstr;$/;"	m	class:HasPtrMem	file:
+n_dstr	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-18-record-call-ctor-count.cpp	/^int HasPtrMem::n_dstr = 0;$/;"	m	class:HasPtrMem	file:
+n_dstr	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-19-move-ctor.cpp	/^    static int n_dstr;$/;"	m	class:HasPtrMem	file:
+n_dstr	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-19-move-ctor.cpp	/^int HasPtrMem::n_dstr = 0;$/;"	m	class:HasPtrMem	file:
+n_mvtr	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-19-move-ctor.cpp	/^    static int n_mvtr;$/;"	m	class:HasPtrMem	file:
+n_mvtr	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-19-move-ctor.cpp	/^int HasPtrMem::n_mvtr = 0;$/;"	m	class:HasPtrMem	file:
 name	C_grammar/enum_struct_union_bitfield/test2.c	/^    char* name;$/;"	m	struct:classP	file:
 name	C_grammar/fundamental_syntax/static_extern_func/file.h	/^    char name[10];$/;"	m	struct:_stu
 name	STL/Container/Vector_/vector_push_custom_data_types.cpp	/^    string name;$/;"	m	class:P	file:
 name	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-3-__func__in_cpp11.cpp	/^    const char *name;$/;"	m	struct:TestStruct	file:
-name	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-10-refact-verbose-delegate-ctor.cpp	/^    char name;$/;"	m	class:Info	file:
+name	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-09-verbose-delegate-ctor.cpp	/^    char name;$/;"	m	class:Info	file:
 name	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-12-delegate-ctor-with-init-value.cpp	/^    char name;$/;"	m	class:Info	file:
 name	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-13-delegate-ctor-and-init.cpp	/^    char name;$/;"	m	class:Info	file:
-name	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-9-verbose-delegate-ctor.cpp	/^    char name;$/;"	m	class:Info	file:
 name	network/TCP_IP_Network/chap18/chat_client.c	/^char name[NAME_SIZE] = "[DEFAULT]";$/;"	v
 nameVal	effective/effective_cpp/chap2/item5_default_const_and_reference_in_class.cpp	/^    string& nameVal;$/;"	m	class:NamedObj	file:
 new_sz	c++11-14/constexprTest/constexpr_test.cpp	/^constexpr int new_sz() { return 42; }$/;"	f
@@ -2028,6 +2106,8 @@ nu	oop_ood/oop/customer_1.cpp	/^    long nu;$/;"	m	class:Customer	file:
 nu1	C_grammar/enum_struct_union_bitfield/enum-2.c	/^enum nu1 {$/;"	g	file:
 nu2	C_grammar/enum_struct_union_bitfield/enum-2.c	/^enum nu2 {$/;"	g	file:
 num	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-16-init-list-and-parentheses.cpp	/^    int num = 2; \/\/ 使用=初始化非静态成员$/;"	m	struct:Mem	file:
+num	c++11-14/Depth_understanding_of_C++11/chap3/explicit/3-26-implicit-cast.cpp	/^    int num; \/\/ Numerator（被除数）$/;"	m	struct:Rational1	file:
+num	c++11-14/Depth_understanding_of_C++11/chap3/explicit/3-26-implicit-cast.cpp	/^    int num;$/;"	m	struct:Rational2	file:
 num	cpp_fundamental/union-enum-struct/union-test-1.cpp	/^    long num;$/;"	m	union:test	file:
 num	network/TCP_IP_Network/chap18/mutex.c	/^long long num = 0;$/;"	v
 num	network/TCP_IP_Network/chap18/semaphore.c	/^static int num;$/;"	v	file:
@@ -2120,8 +2200,14 @@ operator <	c++11-14/rvalue-ref-move/test-moveable.cpp	/^    bool operator<(const
 operator <	cpp_fundamental/template/function_template_test1.cpp	/^    bool operator<(const stone& rhs) const { return m_we < rhs.m_we; }$/;"	f	class:stone
 operator <<	STL/Container/Deque_/test-deque.cpp	/^ostream& operator<<(ostream& os, deque<T> dq) {$/;"	f
 operator <<	STL/Container/Map_/map_test_1.cc	/^ostream &operator<<(ostream &os, const map<int, int> &mp) {$/;"	f
+operator <<	STL/Container/Map_/test-bool-default.cpp	/^ostream &operator<<(ostream &os, const map<string, bool> &mp) {$/;"	f
+operator <<	STL/Container/Queue_/priority_queue-1.cpp	/^ostream &operator<<(ostream &os, const vector<int> &c) {$/;"	f
+operator <<	STL/Container/Queue_/priority_queue-1.cpp	/^ostream &operator<<(ostream &os, priority_queue<Comp<Q>, vector<Q>> q) {$/;"	f
+operator <<	STL/Container/Queue_/priority_queue-1.cpp	/^ostream &operator<<(ostream &os, priority_queue<Q, vector<Q>, Comp<Q>> q) {$/;"	f
 operator <<	STL/Container/Unordered_map_/test-map.cpp	/^ostream& operator<<(ostream& os, const vector<T> v) {$/;"	f
+operator <<	STL/Container/Vector_/advanced-insert-vector.cpp	/^ostream& operator<<(ostream& os, const vector<int>& v) {$/;"	f
 operator <<	STL/Container/Vector_/vector-traverse.cpp	/^ostream& operator<<(ostream& os, const vector<T> v) {$/;"	f
+operator <<	STL/output_all_Container.cpp	/^ostream &operator<<(ostream &os, const Container<T> v) {$/;"	f
 operator <<	c++11-14/explicit-keyword.cpp	/^ostream& operator<<(ostream& os, Complex c) {$/;"	f
 operator <<	c++11-14/lambda-exp/lambda-bug-1.cpp	/^ostream& operator<<(ostream& os, const vector<bool>& v) {$/;"	f
 operator <<	c++11-14/other-special-keywords-syntax/range-for-loop.cpp	/^ostream &operator<<(ostream &os, C c) {$/;"	f
@@ -2160,7 +2246,7 @@ operator ==	STL/Container/Vector_/vector_test_.cpp	/^    bool operator==(const M
 operator ==	STL/Functor/general_hash_func.cpp	/^bool operator==(const Customer& c1, const Customer& c2) {$/;"	f
 operator ==	STL/STL-sample.cpp	/^    bool operator==(const MyStrNoMove& rhs) const { \/\/為了讓 set 判斷相等.$/;"	f	class:MyStrNoMove
 operator ==	STL/STL-sample.cpp	/^    bool operator==(const MyString& rhs) const { \/\/為了讓 set 判斷相等.$/;"	f	class:MyString
-operator ==	advanced-syntax/RTTI/RTTI-1.cc	/^bool operator==(const Base &lhs, const Base &rhs) {$/;"	f
+operator ==	c++11-14/RTTI/RTTI-1.cc	/^bool operator==(const Base &lhs, const Base &rhs) {$/;"	f
 operator ==	c++11-14/rvalue-ref-move/2-test-stl-moveable.cpp	/^    bool operator==(const MyString& rhs) const { \/\/ set$/;"	f	class:MyString
 operator ==	c++11-14/rvalue-ref-move/4-design-move-aware-class.cpp	/^    bool operator==(const MyString& rhs) const { \/\/ set$/;"	f	class:MyString
 operator ==	c++11-14/rvalue-ref-move/test-moveable.cpp	/^    bool operator==(const MyStrNoMove& rhs) const { \/\/ set$/;"	f	class:MyStrNoMove
@@ -2171,8 +2257,10 @@ operator ==	oop_ood/oop/complex.h	/^inline bool operator==(const complex& x, dou
 operator ==	oop_ood/oop/complex.h	/^inline bool operator==(double x, const complex& y) {$/;"	f
 operator ==	oop_ood/oop/customer_1.cpp	/^bool operator==(const Customer& c1, const Customer& c2) {$/;"	f
 operator >>	cpp_fundamental/operator-overload/output_and_input.cpp	/^istream& operator>>(istream& is, Q& q) { \/\/第二参数为非常量$/;"	f
+operator ConvertTo	c++11-14/Depth_understanding_of_C++11/chap3/explicit/3-28-explicit.cpp	/^    explicit operator ConvertTo() const { return ConvertTo(); }$/;"	f	class:Convertable
 operator []	effective/effective_cpp/chap1/item3_use_const.cpp	/^    char& operator[](size_t pos) { return text[pos]; }$/;"	f	class:TextBlock
 operator []	effective/effective_cpp/chap1/item3_use_const.cpp	/^    const char& operator[](size_t pos) const { return text[pos]; }$/;"	f	class:TextBlock
+operator bool	c++11-14/Depth_understanding_of_C++11/chap3/explicit/3-27-do-not-implicit-cast.cpp	/^    operator bool() const {$/;"	f	class:Ptr
 operator delete	STL/Allocator/3-pool-allocator.cpp	/^inline void operator delete(void* ptr) { myFree(ptr); }$/;"	f
 operator delete	STL/Allocator/3-pool-allocator.cpp	/^inline void operator delete(void* ptr, size_t size) { myFree(ptr); }$/;"	f
 operator delete	cpp-memory-manager/3-overload-new-delete-example.cpp	/^void Foo::operator delete(void* pdead, size_t size) {$/;"	f	class:Foo
@@ -2198,6 +2286,8 @@ operator delete[]	oop_ood/new_del/overload-::operate_new_delete.cc	/^inline void
 operator delete[]	oop_ood/new_del/overload-new_delete.cpp	/^void Foo::operator delete[](void* pdead, size_t size) {$/;"	f	class:Foo
 operator double	oop_ood/conversion_function.cpp	/^    operator double() const { return (double)m_num \/ m_den; }$/;"	f	class:Fraction
 operator new	STL/Allocator/3-pool-allocator.cpp	/^inline void* operator new(size_t size) {$/;"	f
+operator new	cpp-memory-manager/13-operator-new-array-sizeof.cpp	/^    void* operator new(size_t size) {$/;"	f	class:P
+operator new	cpp-memory-manager/14-overload-global-placement-new.cpp	/^void* operator new(size_t size, void* start, int flag) {$/;"	f
 operator new	cpp-memory-manager/3-overload-new-delete-example.cpp	/^void* Foo::operator new(size_t size) {$/;"	f	class:Foo
 operator new	cpp-memory-manager/4-overload-placement-new.cpp	/^void* Foo::operator new(size_t size) {$/;"	f	class:Foo
 operator new	cpp-memory-manager/4-overload-placement-new.cpp	/^void* Foo::operator new(size_t size, long extra) {$/;"	f	class:Foo
@@ -2214,6 +2304,7 @@ operator new	oop_ood/new_del/overload-new_delete-with-bracket.cpp	/^void* Foo::o
 operator new	oop_ood/new_del/overload-new_delete-with-bracket.cpp	/^void* Foo::operator new(size_t size, void* start) {$/;"	f	class:Foo
 operator new	oop_ood/new_del/overload-new_delete.cpp	/^void* Foo::operator new(size_t size) {$/;"	f	class:Foo
 operator new[]	STL/Allocator/3-pool-allocator.cpp	/^inline void* operator new[](size_t size) {$/;"	f
+operator new[]	cpp-memory-manager/13-operator-new-array-sizeof.cpp	/^    void* operator new[](size_t size) {$/;"	f	class:P
 operator new[]	cpp-memory-manager/3-overload-new-delete-example.cpp	/^void* Foo::operator new[](size_t size) {$/;"	f	class:Foo
 operator new[]	oop_ood/new_del/overload-::operate_new_delete.cc	/^inline void* operator new[](size_t size) {$/;"	f
 operator new[]	oop_ood/new_del/overload-new_delete.cpp	/^void* Foo::operator new[](size_t size) {$/;"	f	class:Foo
@@ -2232,8 +2323,8 @@ override	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-25-ov
 p	c++11-14/constexprTest/constexpr_test.cpp	/^const int *p = nullptr;     \/\/ p是一个指向整型常量的指针$/;"	v
 p2	C_grammar/ptr/struct-ptr/init-struct.c	/^} p2;$/;"	v	typeref:struct:_person1
 pad	c++11-14/other-special-keywords-syntax/addressof_test.cc	/^    T* pad; \/\/ add pad to show difference between 'this' and 'data'$/;"	m	struct:Ptr	file:
-panx	fltk_proj/CubeView_fltk/CubeView.h	/^    void panx(float x) { xshift = x; };$/;"	f	class:CubeView
-pany	fltk_proj/CubeView_fltk/CubeView.h	/^    void pany(float y) { yshift = y; };$/;"	f	class:CubeView
+panx	fltk_proj/CubeView/CubeView.h	/^    void panx(float x) { xshift = x; };$/;"	f	class:CubeView
+pany	fltk_proj/CubeView/CubeView.h	/^    void pany(float y) { yshift = y; };$/;"	f	class:CubeView
 pass_through	c++11-14/smart-ptr/1-unique_ptr-cppref-eg.cpp	/^std::unique_ptr<D> pass_through(std::unique_ptr<D> p) {$/;"	f
 perfect_forwarding	c++11-14/rvalue-ref-move/14-perfrect-forwarding.cpp	/^void perfect_forwarding(T &&t) {$/;"	f
 pi	C_grammar/fundamental_syntax/extern_const_val/pi.c	/^const double pi = 3.14;/;"	v
@@ -2256,20 +2347,22 @@ print	C_grammar/fundamental_syntax/static_test1.c	/^void print(void) {$/;"	f
 print	C_grammar/ptr/alias-restrict/restrict-keyword.c	/^void print(double *vec, int size) {$/;"	f
 print	C_grammar/ptr/func-ptr/10-funcptr-param.c	/^int print() { return 1; }$/;"	f
 print	C_grammar/ptr/func-ptr/8-ptr-func-and-func-ptr.c	/^void print(char *ret_str) {$/;"	f
-print	advanced-syntax/RTTI/dynamic_cast-1.cc	/^    void print() { cout << "Base" << endl; }$/;"	f	class:Base	file:
-print	advanced-syntax/RTTI/dynamic_cast-1.cc	/^    void print() { cout << "Derived1" << endl; }$/;"	f	class:Derived1	file:
-print	advanced-syntax/RTTI/dynamic_cast-1.cc	/^    void print() { cout << "Derived2" << endl; }$/;"	f	class:Derived2	file:
-print	advanced-syntax/RTTI/dynamic_cast-2.cc	/^    virtual void print() { cout << "Base" << endl; }$/;"	f	class:Base	file:
-print	advanced-syntax/RTTI/dynamic_cast-2.cc	/^    void print() { cout << "Derived1" << endl; }$/;"	f	class:Derived1	file:
-print	advanced-syntax/RTTI/dynamic_cast-2.cc	/^    void print() { cout << "Derived2" << endl; }$/;"	f	class:Derived2	file:
-print	advanced-syntax/RTTI/dynamic_cast-3.cc	/^    virtual void print() { cout << "Base" << endl; }$/;"	f	class:Base	file:
-print	advanced-syntax/RTTI/dynamic_cast-3.cc	/^    void print() { cout << "Derived1" << endl; }$/;"	f	class:Derived1	file:
-print	advanced-syntax/RTTI/dynamic_cast-3.cc	/^    void print() { cout << "Derived2" << endl; }$/;"	f	class:Derived2	file:
-print	advanced-syntax/RTTI/dynamic_cast-4.cc	/^    virtual void print() { cout << "Base" << endl; }$/;"	f	class:Base	file:
-print	advanced-syntax/RTTI/dynamic_cast-4.cc	/^    void print() { cout << "Derived1" << endl; }$/;"	f	class:Derived1	file:
-print	advanced-syntax/RTTI/dynamic_cast-4.cc	/^    void print() { cout << "Derived2" << endl; }$/;"	f	class:Derived2	file:
+print	STL/Container/Queue_/test-cppreference-1.cpp	/^void print(std::string_view name, T const& q) {$/;"	f
+print	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-11-delegate-ctor-init-list.cpp	/^    void print() { cout << type << " " << name << endl; }$/;"	f	class:Info
 print	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-12-delegate-ctor-with-init-value.cpp	/^    void print() { cout << type << " " << name << endl; }$/;"	f	class:Info
 print	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-13-delegate-ctor-and-init.cpp	/^    void print() { cout << type << " " << name << endl; }$/;"	f	class:Info
+print	c++11-14/RTTI/dynamic_cast-1.cc	/^    void print() { cout << "Base" << endl; }$/;"	f	class:Base	file:
+print	c++11-14/RTTI/dynamic_cast-1.cc	/^    void print() { cout << "Derived1" << endl; }$/;"	f	class:Derived1	file:
+print	c++11-14/RTTI/dynamic_cast-1.cc	/^    void print() { cout << "Derived2" << endl; }$/;"	f	class:Derived2	file:
+print	c++11-14/RTTI/dynamic_cast-2.cc	/^    virtual void print() { cout << "Base" << endl; }$/;"	f	class:Base	file:
+print	c++11-14/RTTI/dynamic_cast-2.cc	/^    void print() { cout << "Derived1" << endl; }$/;"	f	class:Derived1	file:
+print	c++11-14/RTTI/dynamic_cast-2.cc	/^    void print() { cout << "Derived2" << endl; }$/;"	f	class:Derived2	file:
+print	c++11-14/RTTI/dynamic_cast-3.cc	/^    virtual void print() { cout << "Base" << endl; }$/;"	f	class:Base	file:
+print	c++11-14/RTTI/dynamic_cast-3.cc	/^    void print() { cout << "Derived1" << endl; }$/;"	f	class:Derived1	file:
+print	c++11-14/RTTI/dynamic_cast-3.cc	/^    void print() { cout << "Derived2" << endl; }$/;"	f	class:Derived2	file:
+print	c++11-14/RTTI/dynamic_cast-4.cc	/^    virtual void print() { cout << "Base" << endl; }$/;"	f	class:Base	file:
+print	c++11-14/RTTI/dynamic_cast-4.cc	/^    void print() { cout << "Derived1" << endl; }$/;"	f	class:Derived1	file:
+print	c++11-14/RTTI/dynamic_cast-4.cc	/^    void print() { cout << "Derived2" << endl; }$/;"	f	class:Derived2	file:
 print	c++11-14/initialize/2-init-lists.cc	/^void print(initializer_list<int> vals) {$/;"	f
 print	c++11-14/template-advanced/variadic_templates/5_make_tuple.cpp	/^    static void print(ostream& os, const tuple<Args...>& t) {$/;"	f	struct:PRINT_TUPLE
 print	c++11-14/template-advanced/variadic_templates/5_make_tuple.cpp	/^    static void print(ostream& os, const tuple<Args...>& t) {}$/;"	f	struct:PRINT_TUPLE
@@ -2297,6 +2390,7 @@ printV	STL/Container/Vector_/vector_constructor.cpp	/^void printV(vector<int> &v
 printV	STL/Container/Vector_/vector_insert_erase.cpp	/^void printV(vector<int> &v) {$/;"	f
 printX	c++11-14/template-advanced/variadic_templates/1_printX.cpp	/^void printX() {}$/;"	f
 printX	c++11-14/template-advanced/variadic_templates/1_printX.cpp	/^void printX(const T& firstArg, const Types&... args) {$/;"	f
+print_queue	STL/Container/Queue_/test-cppreference-1.cpp	/^void print_queue(std::string_view name, Q q) {$/;"	f
 print_with_zeros	STL/Container/String_/string-quote-s.cpp	/^void print_with_zeros(const std::string note, std::string const& s) {$/;"	f
 printc	STL/Adapter/inserter.cpp	/^void printc(C &v) {$/;"	f
 printc	STL/Adapter/istream_iterator_2.cpp	/^void printc(list<T> &v) {$/;"	f
@@ -2322,9 +2416,8 @@ push	c++11-14/smart-ptr/1-unique_ptr-cppref-eg.cpp	/^    void push(int data) {$/
 push_back	c++11-14/rvalue-ref-move/8-StrVec-class.cpp	/^void StrVec::push_back(const string &s) {$/;"	f	class:StrVec
 push_back	c++11-14/smart-ptr/class-StrBlob.cpp	/^    void push_back(const string &t) { data->push_back(t); }$/;"	f	class:StrBlob
 q	c++11-14/constexprTest/constexpr_test.cpp	/^constexpr int *q = nullptr; \/\/ q是一个指向整数的指针常量,top-const$/;"	v
-qnxnto	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v
-qnxnto	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v
 radius	oop_ood/oop/Circle.cpp	/^    int radius;$/;"	m	class:Circle	file:
+raise	c++11-14/Exception/2-three-dots-in-exception.cpp	/^[[noreturn]] void raise(const char* msg) { throw my_exception(msg); }$/;"	f
 range	c++17-20/coroutine_c++20/3-coroutine-handle-example.cc	/^Generator<T> range(T first, const T last) {$/;"	f
 re	cpp_fundamental/template/class_template-2.cpp	/^    T re, im;$/;"	m	class:complex1	file:
 re	oop_ood/oop/complex.h	/^    double re, im;$/;"	m	class:complex
@@ -2380,14 +2473,17 @@ set_rate	oop_ood/static_test/static_test.cc	/^    static void set_rate(const dou
 set_val	oop_ood/ood/delegation_inheritance-observer.cpp	/^    void set_val(int val) { \/\/设置$/;"	f	class:Subject
 setnonblockingmode	network/TCP_IP_Network/chap17/echo_EPETserv.c	/^void setnonblockingmode(int fd)$/;"	f
 show	c++11-14/rvalue-ref-move/9-lval-ref-vs-rval-ref.cpp	/^    void show() { std::cout << "show X" << std::endl; }$/;"	f	class:t2::X
-show	fltk_proj/CubeView_fltk/CubeViewUI.cxx	/^void CubeViewUI::show(int argc, char** argv) {$/;"	f	class:CubeViewUI
+show	fltk_proj/Chinese/use-chinese.cxx	/^void Hello::show(int argc, char**argv) {$/;"	f	class:Hello
+show	fltk_proj/CubeView/CubeViewUI.cxx	/^void CubeViewUI::show(int argc, char** argv) {$/;"	f	class:CubeViewUI
+show	fltk_proj/watch-gif/show_gif.cxx	/^void Hello::show(int argc, char**argv) {$/;"	f	class:Hello
 showPerson	cpp_fundamental/template/class_template-1.cpp	/^void Person<T1, T2>::showPerson() {$/;"	f	class:Person
+show_gif_h	fltk_proj/watch-gif/show_gif.h	/^#define show_gif_h$/;"	d
 show_type	c++11-14/rvalue-ref-move/14-perfrect-forwarding.cpp	/^void show_type(T t) {$/;"	f
 size	c++11-14/rvalue-ref-move/8-StrVec-class.cpp	/^    size_t size() const { return first_free - elem; }$/;"	f	class:StrVec
 size	c++11-14/smart-ptr/class-StrBlob.cpp	/^    size_type size() const { return data->size(); }$/;"	f	class:StrBlob
 size	cpp-memory-manager/10-operator-new-delete.cpp	/^    static void* operator new(size_t size)                = delete;$/;"	m	class:jj12::Goo	file:
 size	cpp-memory-manager/10-operator-new-delete.cpp	/^    static void* operator new[](size_t size)                = delete;$/;"	m	class:jj12::Foo	file:
-size	fltk_proj/CubeView_fltk/CubeView.h	/^    double size;$/;"	m	class:CubeView
+size	fltk_proj/CubeView/CubeView.h	/^    double size;$/;"	m	class:CubeView
 size_type	c++11-14/smart-ptr/class-StrBlob.cpp	/^    typedef vector<string>::size_type size_type;$/;"	t	class:StrBlob	file:
 sort	C_grammar/fundamental_syntax/static_extern_func/file2.cpp	/^extern void sort(stu student[], int n) {$/;"	f
 speed	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-21-danger-define-friend-with-template.cpp	/^    int speed = 2;$/;"	m	class:Defender	file:
@@ -2422,6 +2518,7 @@ swap_ads	cpp_fundamental/variable_base_datatype/ref_val_address.cc	/^void swap_a
 swap_ref	cpp_fundamental/variable_base_datatype/ref_val_address.cc	/^void swap_ref(int &a, int &b) {$/;"	f
 swap_val	cpp_fundamental/variable_base_datatype/ref_val_address.cc	/^void swap_val(int a, int b) {$/;"	f
 switch_to_new_thread	c++17-20/coroutine_c++20/0-coroutine-test.cc	/^auto switch_to_new_thread(std::jthread& out) {$/;"	f
+sz	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-22-right-move-rval.cpp	/^    int sz;$/;"	m	class:HugeMem	file:
 sz	cpp_fundamental/operator-overload/func-call-operator-1.cpp	/^    size_t sz;$/;"	m	class:cmp2	file:
 t	System/cpp_cocurrency/2.3-RAII-wait-thread-end.cpp	/^    std::thread& t;$/;"	m	class:thread_guard	file:
 t	c++11-14/rvalue-ref-move/9-lval-ref-vs-rval-ref.cpp	/^void t() {$/;"	f	namespace:t1
@@ -2471,27 +2568,41 @@ t1	STL/Allocator/2-pool_allocator_test_1.cpp	/^void t1() { \/\/使用额外提�
 t1	STL/Allocator/3-pool-allocator.cpp	/^void t1() {$/;"	f
 t1	STL/Container/Deque_/test-deque.cpp	/^void t1() {$/;"	f
 t1	STL/Container/Map_/map_test_1.cc	/^void t1() {$/;"	f
+t1	STL/Container/Queue_/priority_queue-1.cpp	/^void t1() {$/;"	f
+t1	STL/Container/String_/check-char.cpp	/^void t1() {$/;"	f
+t1	STL/Container/String_/concat-string.cpp	/^void t1() {$/;"	f
 t1	STL/Container/String_/create_1.cpp	/^void t1() {$/;"	f
+t1	STL/Container/String_/default-char-asterisk.cpp	/^void t1() {$/;"	f
+t1	STL/Container/String_/fixed-precision.cpp	/^void t1(){$/;"	f
+t1	STL/Container/String_/format-output-string.cpp	/^void t1() {$/;"	f
+t1	STL/Container/String_/raw_string.cpp	/^void t1() {$/;"	f
+t1	STL/Container/String_/regex-1.cpp	/^void t1() {$/;"	f
+t1	STL/Container/String_/str_number_convert.cpp	/^void t1() {$/;"	f
 t1	STL/Container/String_/string-quote-s.cpp	/^void t1() {$/;"	f
 t1	STL/Container/String_/string-with-array.cpp	/^void t1() {$/;"	f
 t1	STL/Container/String_/string_fundamental.cpp	/^void t1() {$/;"	f
 t1	STL/Container/Unordered_map_/create_map_1.cpp	/^void t1() {$/;"	f
 t1	STL/Container/Unordered_map_/test-map.cpp	/^void t1() {$/;"	f
 t1	STL/Container/Vector_/2-vector-iterator-traits.cpp	/^void t1() {$/;"	f
+t1	STL/Container/Vector_/advanced-insert-vector.cpp	/^void t1() {$/;"	f
+t1	STL/Container/Vector_/equal-vector.cpp	/^void t1() {$/;"	f
 t1	STL/Container/Vector_/vector_swap_capacity.cpp	/^void t1() {$/;"	f
 t1	STL/Functor/general_hash_func.cpp	/^void t1() {$/;"	f
+t1	STL/output_all_Container.cpp	/^void t1() {$/;"	f
 t1	System/cpp_cocurrency/2.4-run-thread-on-background.cpp	/^void t1() {}$/;"	f
-t1	advanced-syntax/RTTI/RTTI-1.cc	/^void t1() {}$/;"	f
-t1	advanced-syntax/exception/1-throw-exception.cpp	/^void t1() {$/;"	f
-t1	advanced-syntax/tuple/tuple-test-1.cpp	/^void t1() {$/;"	f
+t1	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-09-verbose-delegate-ctor.cpp	/^void t1() { Info i1; }$/;"	f
 t1	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-10-refact-verbose-delegate-ctor.cpp	/^void t1() { Info i1; }$/;"	f
 t1	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-12-delegate-ctor-with-init-value.cpp	/^void t1() {$/;"	f
 t1	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-13-delegate-ctor-and-init.cpp	/^void t1() {$/;"	f
 t1	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-14-delegate-ctor-and-init-example.cpp	/^void t1() {$/;"	f
-t1	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-9-verbose-delegate-ctor.cpp	/^void t1() { Info i1; }$/;"	f
+t1	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-1-ctor_derived.cpp	/^void t1() {$/;"	f
+t1	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-2-unvarnished-transmission.cpp	/^void t1() {$/;"	f
 t1	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-4-inherit-ctor-using.cpp	/^void t1() {$/;"	f
 t1	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-6-inherit-ctor-with-default-args.cpp	/^void t1() {$/;"	f
-t1	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-7-duplicate-same-type-ctor.cpp	/^void t1() {}$/;"	f
+t1	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-7-duplicate-same-type-ctor.cpp	/^void t1() {$/;"	f
+t1	c++11-14/Exception/1-throw-exception.cpp	/^void t1() {$/;"	f
+t1	c++11-14/Exception/2-three-dots-in-exception.cpp	/^void t1() {$/;"	f
+t1	c++11-14/RTTI/RTTI-1.cc	/^void t1() {}$/;"	f
 t1	c++11-14/decltype_test.cc	/^void t1() {$/;"	f
 t1	c++11-14/explicit-keyword.cpp	/^void t1() {$/;"	f
 t1	c++11-14/initialize/0-uniform-initialization.cpp	/^void t1() {$/;"	f
@@ -2537,11 +2648,16 @@ t1	c++11-14/smart-ptr/class-StrBlob.cpp	/^void t1() {$/;"	f
 t1	c++11-14/special-libraries/chrono-test-1.cpp	/^void t1() {$/;"	f
 t1	c++11-14/template-advanced/alias-template.cpp	/^void t1() { Vec<int> V1; }$/;"	f
 t1	c++11-14/template-advanced/template-template-parameter.cpp	/^void t1() { XCls<MyStr, Vec> c1; }$/;"	f
+t1	c++11-14/tuple/tuple-test-1.cpp	/^void t1() {$/;"	f
 t1	c++17-20/c++20/import_modules.cpp	/^void t1() { hello(); }$/;"	f
 t1	c++17-20/c++20/test-3-way-op.cc	/^void t1() {$/;"	f
 t1	cpp-memory-manager/0-four-level-about-c++-memory.cpp	/^void t1() {$/;"	f
 t1	cpp-memory-manager/00-test-ctor-dtor-call-directly.cpp	/^void t1() {$/;"	f
 t1	cpp-memory-manager/1-array-new-array-delete.cpp	/^void t1() {$/;"	f
+t1	cpp-memory-manager/11-dynamic_array.cpp	/^void t1() {$/;"	f
+t1	cpp-memory-manager/12-use-ctor-in-class.cpp	/^void t1() {$/;"	f
+t1	cpp-memory-manager/13-operator-new-array-sizeof.cpp	/^void t1() {$/;"	f
+t1	cpp-memory-manager/14-overload-global-placement-new.cpp	/^void t1() {$/;"	f
 t1	cpp-memory-manager/2-placement-new.cpp	/^void t1() {$/;"	f
 t1	cpp-memory-manager/3-overload-new-delete-example.cpp	/^void t1() {$/;"	f
 t1	cpp-memory-manager/4-overload-placement-new.cpp	/^void t1() {$/;"	f
@@ -2556,6 +2672,7 @@ t1	cpp_fundamental/operator-overload/function-type.cpp	/^void t1() {$/;"	f
 t1	cpp_fundamental/operator-overload/output_and_input.cpp	/^void t1() {$/;"	f
 t1	cpp_fundamental/operator-overload/ppmm-overload.cc	/^void t1() {$/;"	f
 t1	cpp_fundamental/operator-overload/ppmm_test_1.cpp	/^void t1() {$/;"	f
+t1	cpp_fundamental/preprocess-compile-assembly-link/attribute_1.cpp	/^int t1() {$/;"	f
 t1	cpp_fundamental/reference-ptr-const/const-reference.cpp	/^void t1() {$/;"	f
 t1	cpp_fundamental/reference-ptr-const/val-ref-ptr.cpp	/^void t1() {$/;"	f
 t1	cpp_fundamental/template/class_template-2.cpp	/^void t1() {$/;"	f
@@ -2579,7 +2696,13 @@ t1	oop_ood/oop/customer_1.cpp	/^void t1() {}$/;"	f
 t1	oop_ood/oop/string_test.cpp	/^void t1() {$/;"	f
 t1	oop_ood/static_test/static_member_func.cpp	/^void t1() {$/;"	f
 t1	oop_ood/static_test/static_member_var.cpp	/^void t1() {$/;"	f
+t11	STL/Container/String_/format-output-string.cpp	/^void t11() {$/;"	f
+t11	c++11-14/smart-ptr/1.1-unique_ptr-cppPrimer.cpp	/^void t11() {$/;"	f
+t11	c++11-14/smart-ptr/2-shared_ptr.cpp	/^void t11() {$/;"	f
 t11	cpp_fundamental/reference-ptr-const/const-reference.cpp	/^void t11() {$/;"	f
+t12	STL/Container/String_/format-output-string.cpp	/^void t12() {$/;"	f
+t12	c++11-14/smart-ptr/1.1-unique_ptr-cppPrimer.cpp	/^void t12() {$/;"	f
+t13	STL/Container/String_/format-output-string.cpp	/^void t13() {$/;"	f
 t1_reference	cpp_fundamental/reference-ptr-const/reference-1.cpp	/^void t1_reference() {$/;"	f
 t2	C_grammar/array/sizeof_array.c	/^void t2(int arr[]) {$/;"	f
 t2	C_grammar/assign_compare.c	/^void t2() {$/;"	f
@@ -2614,14 +2737,23 @@ t2	STL/Adapter/inserter.cpp	/^void t2() {$/;"	f
 t2	STL/Allocator/2-pool_allocator_test_1.cpp	/^void t2() { \/\/使用标准库提供的分配器$/;"	f
 t2	STL/Allocator/3-pool-allocator.cpp	/^void t2() {$/;"	f
 t2	STL/Container/Deque_/test-deque.cpp	/^void t2() {$/;"	f
+t2	STL/Container/Queue_/priority_queue-1.cpp	/^void t2() {$/;"	f
+t2	STL/Container/String_/check-char.cpp	/^void t2() {$/;"	f
+t2	STL/Container/String_/default-char-asterisk.cpp	/^void t2() {$/;"	f
+t2	STL/Container/String_/format-output-string.cpp	/^void t2() {$/;"	f
+t2	STL/Container/String_/raw_string.cpp	/^void t2() {$/;"	f
+t2	STL/Container/String_/regex-1.cpp	/^void t2() {$/;"	f
 t2	STL/Container/String_/string-quote-s.cpp	/^void t2() {$/;"	f
+t2	STL/Container/String_/string-with-array.cpp	/^void t2() {$/;"	f
 t2	STL/Container/String_/string_fundamental.cpp	/^void t2() {$/;"	f
 t2	STL/Container/Unordered_map_/test-map.cpp	/^void t2() {$/;"	f
 t2	STL/Container/Vector_/vector_constructor.cpp	/^void t2() {$/;"	f
 t2	STL/Functor/general_hash_func.cpp	/^void t2() {$/;"	f
-t2	advanced-syntax/exception/1-throw-exception.cpp	/^void t2() {$/;"	f
-t2	advanced-syntax/tuple/tuple-test-1.cpp	/^void t2() {$/;"	f
+t2	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-1-ctor_derived.cpp	/^void t2() {$/;"	f
 t2	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-6-inherit-ctor-with-default-args.cpp	/^void t2() {$/;"	f
+t2	c++11-14/Depth_understanding_of_C++11/chap3/inherit_ctor/3-7-duplicate-same-type-ctor.cpp	/^void t2() {$/;"	f
+t2	c++11-14/Exception/1-throw-exception.cpp	/^void t2() {$/;"	f
+t2	c++11-14/Exception/2-three-dots-in-exception.cpp	/^void t2() try { raise("error occuerd"); } catch (const exception& e) {$/;"	f
 t2	c++11-14/decltype_test.cc	/^void t2() {$/;"	f
 t2	c++11-14/explicit-keyword.cpp	/^void t2() {$/;"	f
 t2	c++11-14/initialize/0-uniform-initialization.cpp	/^void t2() {$/;"	f
@@ -2651,10 +2783,14 @@ t2	c++11-14/smart-ptr/2.2-test-shared_ptr.cc	/^void t2() {$/;"	f
 t2	c++11-14/smart-ptr/class-StrBlob.cpp	/^void t2() {}$/;"	f
 t2	c++11-14/special-libraries/chrono-test-1.cpp	/^void t2() {$/;"	f
 t2	c++11-14/template-advanced/alias-template.cpp	/^void t2() {$/;"	f
+t2	c++11-14/tuple/tuple-test-1.cpp	/^void t2() {$/;"	f
 t2	c++17-20/c++20/test-3-way-op.cc	/^void t2() {$/;"	f
 t2	cpp-memory-manager/0-four-level-about-c++-memory.cpp	/^void t2() {$/;"	f
 t2	cpp-memory-manager/00-test-ctor-dtor-call-directly.cpp	/^void t2() {$/;"	f
 t2	cpp-memory-manager/1-array-new-array-delete.cpp	/^void t2() {$/;"	f
+t2	cpp-memory-manager/11-dynamic_array.cpp	/^void t2() {$/;"	f
+t2	cpp-memory-manager/12-use-ctor-in-class.cpp	/^void t2() {$/;"	f
+t2	cpp-memory-manager/13-operator-new-array-sizeof.cpp	/^void t2() {$/;"	f
 t2	cpp-memory-manager/3-overload-new-delete-example.cpp	/^void t2() {$/;"	f
 t2	cpp-memory-manager/4-overload-placement-new.cpp	/^void t2() {$/;"	f
 t2	cpp_fundamental/cast/const_cast-1.cpp	/^void t2() {$/;"	f
@@ -2665,6 +2801,7 @@ t2	cpp_fundamental/operator-overload/func-call-operator-1.cpp	/^void t2() {$/;"	
 t2	cpp_fundamental/operator-overload/output_and_input.cpp	/^void t2() {$/;"	f
 t2	cpp_fundamental/operator-overload/ppmm-overload.cc	/^void t2() {$/;"	f
 t2	cpp_fundamental/operator-overload/ppmm_test_1.cpp	/^void t2() {$/;"	f
+t2	cpp_fundamental/preprocess-compile-assembly-link/attribute_1.cpp	/^void t2() {$/;"	f
 t2	cpp_fundamental/reference-ptr-const/const-reference.cpp	/^void t2() {$/;"	f
 t2	cpp_fundamental/reference-ptr-const/val-ref-ptr.cpp	/^void t2() {$/;"	f
 t2	effective/effective_cpp/chap1/item3_use_const.cpp	/^void t2() {$/;"	f
@@ -2690,9 +2827,13 @@ t3	C_grammar/ptr/struct-ptr/init-struct.c	/^void t3() {$/;"	f
 t3	STL/Adapter/bind_test_by_clang.cpp	/^void t3() {$/;"	f
 t3	STL/Adapter/bind_test_by_g++.cpp	/^void t3() {$/;"	f
 t3	STL/Container/Deque_/test-deque.cpp	/^void t3() {$/;"	f
+t3	STL/Container/Queue_/priority_queue-1.cpp	/^void t3() {$/;"	f
+t3	STL/Container/String_/format-output-string.cpp	/^void t3() {$/;"	f
+t3	STL/Container/String_/raw_string.cpp	/^void t3() {$/;"	f
+t3	STL/Container/String_/regex-1.cpp	/^void t3() {$/;"	f
+t3	STL/Container/String_/string_fundamental.cpp	/^void t3() {$/;"	f
 t3	STL/Functor/general_hash_func.cpp	/^void t3() {$/;"	f
-t3	advanced-syntax/exception/1-throw-exception.cpp	/^void t3() {$/;"	f
-t3	advanced-syntax/tuple/tuple-test-1.cpp	/^void t3() {$/;"	f
+t3	c++11-14/Exception/1-throw-exception.cpp	/^void t3() {$/;"	f
 t3	c++11-14/decltype_test.cc	/^void t3() {$/;"	f
 t3	c++11-14/explicit-keyword.cpp	/^void t3() {$/;"	f
 t3	c++11-14/lambda-exp/lambda-test-1.cc	/^void t3() {$/;"	f
@@ -2708,8 +2849,10 @@ t3	c++11-14/smart-ptr/1.1-unique_ptr-cppPrimer.cpp	/^void t3() { \/*pass value a
 t3	c++11-14/smart-ptr/2-shared_ptr.cpp	/^void t3() {$/;"	f
 t3	c++11-14/smart-ptr/2.1-shared_ptr-with-new.cpp	/^void t3() {$/;"	f
 t3	c++11-14/special-libraries/chrono-test-1.cpp	/^void t3() {$/;"	f
+t3	c++11-14/tuple/tuple-test-1.cpp	/^void t3() {$/;"	f
 t3	cpp-memory-manager/00-test-ctor-dtor-call-directly.cpp	/^void t3() {$/;"	f
 t3	cpp-memory-manager/1-array-new-array-delete.cpp	/^void t3() {$/;"	f
+t3	cpp-memory-manager/13-operator-new-array-sizeof.cpp	/^void t3() {$/;"	f
 t3	cpp-memory-manager/3-overload-new-delete-example.cpp	/^void t3() {$/;"	f
 t3	cpp-memory-manager/4-overload-placement-new.cpp	/^void t3() {$/;"	f
 t3	cpp_fundamental/cast/const_cast-1.cpp	/^void t3() {$/;"	f
@@ -2730,7 +2873,10 @@ t4	C_grammar/ptr/const_ptr_and_ptr_const.c	/^void t4() {$/;"	f
 t4	C_grammar/ptr/ptr_array/multi-ptr-array.c	/^void t4() {$/;"	f
 t4	C_grammar/ptr/string-char/return-char.c	/^void t4() {}$/;"	f
 t4	STL/Container/Deque_/test-deque.cpp	/^void t4() {$/;"	f
-t4	advanced-syntax/exception/1-throw-exception.cpp	/^void t4() { \/\/ rethrow by using `throw;` in `catch`.$/;"	f
+t4	STL/Container/Queue_/priority_queue-1.cpp	/^void t4() {$/;"	f
+t4	STL/Container/String_/format-output-string.cpp	/^void t4() {$/;"	f
+t4	STL/Container/String_/string_fundamental.cpp	/^void t4() {$/;"	f
+t4	c++11-14/Exception/1-throw-exception.cpp	/^void t4() { \/\/ rethrow by using `throw;` in `catch`.$/;"	f
 t4	c++11-14/decltype_test.cc	/^void t4() {$/;"	f
 t4	c++11-14/lambda-exp/lambda-test-1.cc	/^void t4() {$/;"	f
 t4	c++11-14/other-special-keywords-syntax/=default_=delete.cpp	/^void t4() {$/;"	f
@@ -2745,7 +2891,9 @@ t4_deleter	c++11-14/smart-ptr/1.1-unique_ptr-cppPrimer.cpp	/^void t4_deleter(des
 t5	C_grammar/enum_struct_union_bitfield/bit-field-mem-structure.c	/^void t5() {$/;"	f
 t5	C_grammar/memory_manager/0-malloc-free-test.c	/^void t5() {$/;"	f
 t5	C_grammar/ptr/const_ptr_and_ptr_const.c	/^void t5(){$/;"	f
-t5	advanced-syntax/exception/1-throw-exception.cpp	/^void t5() { P p(1); }$/;"	f
+t5	STL/Container/String_/format-output-string.cpp	/^void t5() {$/;"	f
+t5	STL/Container/String_/string_fundamental.cpp	/^void t5() {$/;"	f
+t5	c++11-14/Exception/1-throw-exception.cpp	/^void t5() { P p(1); }$/;"	f
 t5	c++11-14/decltype_test.cc	/^void t5() {$/;"	f
 t5	c++11-14/smart-ptr/2.1-shared_ptr-with-new.cpp	/^void t5() {$/;"	f
 t5	cpp-memory-manager/1-array-new-array-delete.cpp	/^void t5() {$/;"	f
@@ -2754,12 +2902,15 @@ t6	C_grammar/enum_struct_union_bitfield/bit-field-mem-structure.c	/^void t6() {$
 t6	c++11-14/decltype_test.cc	/^void t6() {$/;"	f
 t6	c++11-14/smart-ptr/2.1-shared_ptr-with-new.cpp	/^void t6() {$/;"	f
 t6_memory_over	c++11-14/smart-ptr/2-shared_ptr.cpp	/^void t6_memory_over() {$/;"	f
+t7	STL/Container/String_/string_fundamental.cpp	/^void t7() {$/;"	f
 t7	c++11-14/smart-ptr/2.1-shared_ptr-with-new.cpp	/^void t7(destination &d) {$/;"	f
+t8	STL/Container/String_/string_fundamental.cpp	/^void t8() {$/;"	f
 t_somefunc	C_grammar/ptr/func-ptr/2-typedef-func-ptr.c	/^typedef int (*t_somefunc)(int, int); \/\/ function ptr$/;"	t	file:
 tail	c++11-14/template-advanced/variadic_templates/6_recur_inheritance.cpp	/^    inherited& tail() { return *this; } \/\/ 返回自身$/;"	f	class:tuple
 tail	c++11-14/template-advanced/variadic_templates/7_recue_composition.cpp	/^    composited& tail() { return m_tail; } \/\/&ref: can change val$/;"	f	class:tup
 task	c++17-20/coroutine_c++20/0-coroutine-test.cc	/^struct task {$/;"	s	file:
 test	C_grammar/ptr/func-ptr/0-func_ptr-test.c	/^void test(char* ss) { printf("nihao,%s\\n", ss); }$/;"	f
+test	c++11-14/Depth_understanding_of_C++11/chap3/explicit/3-28-explicit.cpp	/^void test() {$/;"	f
 test	c++11-14/other-special-keywords-syntax/noexcept-test.cc	/^void test() {$/;"	f
 test	cpp_fundamental/extern-c-test.cc	/^void test() { printf("test\\n"); }$/;"	f
 test	cpp_fundamental/operator-overload/ppmm_test_1.cpp	/^void test() {$/;"	f
@@ -2865,6 +3016,7 @@ test_unordered_set	STL/STL-sample.cpp	/^void test_unordered_set(long& value) {$/
 test_vector	STL/Container/Vector_/vector_test_.cpp	/^void test_vector(long& value) {$/;"	f	namespace:jj02
 test_vector	STL/STL-sample.cpp	/^void test_vector(long& value) {$/;"	f	namespace:jj02
 text	effective/effective_cpp/chap1/item3_use_const.cpp	/^    string text;$/;"	m	class:TextBlock	file:
+text	fltk_proj/Chinese/use-chinese.h	/^  Fl_Text_Display *text;$/;"	m	class:Hello
 thread	C_grammar/fundamental_syntax/pthread-test-1.c	/^void *thread(void *arg) {$/;"	f
 thread	System/thread_with_c/threads.h	/^    pthread_t thread;$/;"	m	struct:thread
 thread	System/thread_with_c/threads.h	/^struct thread {$/;"	s
@@ -2902,11 +3054,10 @@ tuple	c++11-14/template-advanced/variadic_templates/6_recur_inheritance.cpp	/^  
 tuple	c++11-14/template-advanced/variadic_templates/6_recur_inheritance.cpp	/^    tuple(Head v, Tail... vtail) : m_head(v), inherited(vtail...) {}$/;"	f	class:tuple
 tuple	c++11-14/template-advanced/variadic_templates/6_recur_inheritance.cpp	/^class tuple<Head, Tail...> : private tuple<Tail...> {$/;"	c	file:
 turn	System/thread_with_c/test_thread.c	/^int turn;$/;"	v
-type	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-10-refact-verbose-delegate-ctor.cpp	/^    int type;$/;"	m	class:Info	file:
+type	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-09-verbose-delegate-ctor.cpp	/^    int type;$/;"	m	class:Info	file:
 type	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-12-delegate-ctor-with-init-value.cpp	/^    int type;$/;"	m	class:Info	file:
 type	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-13-delegate-ctor-and-init.cpp	/^    int type;$/;"	m	class:Info	file:
 type	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-15-delegate-ctor-and-init-example-with-try.cpp	/^    int type;$/;"	m	class:DCExcept	file:
-type	c++11-14/Depth_understanding_of_C++11/chap3/delegate_ctor/3-9-verbose-delegate-ctor.cpp	/^    int type;$/;"	m	class:Info	file:
 type	cpp-memory-manager/6-per-class-allocator-2.cpp	/^        char type;$/;"	m	struct:jj05::Airplane::AirplaneRep	file:
 unhandled_exception	c++17-20/coroutine_c++20/0-coroutine-test.cc	/^        void unhandled_exception() {}$/;"	f	struct:task::promise_type
 unhandled_exception	c++17-20/coroutine_c++20/00-the-first-example.cc	/^    void unhandled_exception() { std::terminate(); }$/;"	f	struct:resumable::promise_type
@@ -2920,14 +3071,15 @@ update	oop_ood/ood/delegation_inheritance-observer.cpp	/^    void update(Subject
 urg_handler	network/TCP_IP_Network/chap13/oob_recv.c	/^void urg_handler(int signo) {$/;"	f
 url	network/multi-thread-crawl.cpp	/^    string url;$/;"	m	struct:ThreadArgs	file:
 urls	network/multi-thread-crawl-1.cpp	/^std::vector<std::string> urls;$/;"	v
+use_chinese_h	fltk_proj/Chinese/use-chinese.h	/^#define use_chinese_h$/;"	d
 use_factory	c++11-14/smart-ptr/2-shared_ptr.cpp	/^void use_factory(T arg) {$/;"	f
 use_reg	C_grammar/fundamental_syntax/register_test.c	/^void use_reg() {$/;"	f
 v1	C_grammar/x-macros/special_#_##.c	/^int v1(int a, int b) { return a + b; }$/;"	f
 v2	C_grammar/x-macros/special_#_##.c	/^int v2(int a, int b) { return a - b; }$/;"	f
-vAng	fltk_proj/CubeView_fltk/CubeView.h	/^    float vAng, hAng;$/;"	m	class:CubeView
-v_angle	fltk_proj/CubeView_fltk/CubeView.h	/^    float v_angle() { return vAng; };$/;"	f	class:CubeView
-v_angle	fltk_proj/CubeView_fltk/CubeView.h	/^    void v_angle(float angle) { vAng = angle; };$/;"	f	class:CubeView
-v_val	fltk_proj/CubeView_fltk/CubeViewUI.h	/^  Fl_Value_Output *v_val;$/;"	m	class:CubeViewUI
+vAng	fltk_proj/CubeView/CubeView.h	/^    float vAng, hAng;$/;"	m	class:CubeView
+v_angle	fltk_proj/CubeView/CubeView.h	/^    float v_angle() { return vAng; };$/;"	f	class:CubeView
+v_angle	fltk_proj/CubeView/CubeView.h	/^    void v_angle(float angle) { vAng = angle; };$/;"	f	class:CubeView
+v_val	fltk_proj/CubeView/CubeViewUI.h	/^  Fl_Value_Output *v_val;$/;"	m	class:CubeViewUI
 vectorA	C_grammar/ptr/ptr_in_thread/calculate-vector-product.c	/^    double *vectorA;$/;"	m	struct:__anon3	file:
 vectorB	C_grammar/ptr/ptr_in_thread/calculate-vector-product.c	/^    double *vectorB;$/;"	m	struct:__anon3	file:
 vector_1d	STL/Container/Vector_/vector_1d_2d.cpp	/^void vector_1d() {$/;"	f
@@ -2941,22 +3093,23 @@ vfunc1	oop_ood/ood/vptr_vtb_test.cpp	/^void A::vfunc1() { cout << "A::vfunc1()" 
 vfunc1	oop_ood/ood/vptr_vtb_test.cpp	/^void B::vfunc1() { cout << "B::vfunc1()" << endl; }$/;"	f	class:B
 vfunc1	oop_ood/ood/vptr_vtb_test.cpp	/^void C::vfunc1() { cout << "C::vfunc1()" << endl; }$/;"	f	class:C
 vfunc2	oop_ood/ood/vptr_vtb_test.cpp	/^void A::vfunc2() { cout << "A::vfunc2()" << endl; }$/;"	f	class:A
-volatile	fltk_proj/CubeView_fltk/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c	/^# define volatile$/;"	d	file:
-vrot	fltk_proj/CubeView_fltk/CubeViewUI.h	/^  Fl_Roller *vrot;$/;"	m	class:CubeViewUI
+vrot	fltk_proj/CubeView/CubeViewUI.h	/^  Fl_Roller *vrot;$/;"	m	class:CubeViewUI
 weight	C_grammar/typeof-1.c	/^    int weight;$/;"	m	struct:apple	file:
 weight	effective/effective_stl/24-map_insert.cpp	/^    double weight;$/;"	m	class:Widget	file:
+win	fltk_proj/Chinese/use-chinese.h	/^  Fl_Double_Window *win;$/;"	m	class:Hello
+win	fltk_proj/watch-gif/show_gif.h	/^  Fl_Double_Window *win;$/;"	m	class:Hello
 work	network/multi-thread-crawl.cpp	/^void *work(void *args) {$/;"	f
 world	c++11-14/Depth_understanding_of_C++11/chap1-c_cpp_compatibility/2-2-__func__.cpp	/^const char* world() { return __func__; }$/;"	f
 wptr	c++11-14/smart-ptr/class-StrBlob.cpp	/^    weak_ptr<vector<sting>> wptr;$/;"	m	class:StrBlobPtr	file:
 write_routine	network/TCP_IP_Network/chap10/echo_mpclient.c	/^void write_routine(int sock, char *buf) {$/;"	f
 x	System/thread_with_c/hello-mt.c	/^int x = 0;$/;"	v
 x	c++11-14/rvalue-ref-move/13-almighty-ref.cpp	/^int &&x = get_val();  \/\/ x为右值引用$/;"	v
-xpan	fltk_proj/CubeView_fltk/CubeViewUI.h	/^  Fl_Value_Slider *xpan;$/;"	m	class:CubeViewUI
-xshift	fltk_proj/CubeView_fltk/CubeView.h	/^    float xshift, yshift;$/;"	m	class:CubeView
+xpan	fltk_proj/CubeView/CubeViewUI.h	/^  Fl_Value_Slider *xpan;$/;"	m	class:CubeViewUI
+xshift	fltk_proj/CubeView/CubeView.h	/^    float xshift, yshift;$/;"	m	class:CubeView
 y	c++11-14/rvalue-ref-move/13-almighty-ref.cpp	/^auto &&y = get_val(); \/\/ y为万能引用$/;"	v
-ypan	fltk_proj/CubeView_fltk/CubeViewUI.h	/^  Fl_Value_Slider *ypan;$/;"	m	class:CubeViewUI
-yshift	fltk_proj/CubeView_fltk/CubeView.h	/^    float xshift, yshift;$/;"	m	class:CubeView
-zoom	fltk_proj/CubeView_fltk/CubeViewUI.h	/^  Fl_Value_Slider *zoom;$/;"	m	class:CubeViewUI
+ypan	fltk_proj/CubeView/CubeViewUI.h	/^  Fl_Value_Slider *ypan;$/;"	m	class:CubeViewUI
+yshift	fltk_proj/CubeView/CubeView.h	/^    float xshift, yshift;$/;"	m	class:CubeView
+zoom	fltk_proj/CubeView/CubeViewUI.h	/^  Fl_Value_Slider *zoom;$/;"	m	class:CubeViewUI
 ~A	cpp-memory-manager/00-test-ctor-dtor-call-directly.cpp	/^    ~A() { cout << "dtor. this=" << this << endl; }$/;"	f	class:A
 ~A	cpp-memory-manager/1-array-new-array-delete.cpp	/^    ~A() { cout << "dtor. this=" << this << ", id=" << id << endl; }$/;"	f	class:A
 ~A	cpp_fundamental/operator-overload/ppmm-overload.cc	/^    ~A() {}$/;"	f	class:A
@@ -2977,11 +3130,16 @@ zoom	fltk_proj/CubeView_fltk/CubeViewUI.h	/^  Fl_Value_Slider *zoom;$/;"	m	class
 ~Derived	oop_ood/ood/inheritance-1.cpp	/^Derived::~Derived() {$/;"	f	class:Derived
 ~Derived	oop_ood/ood/inheritance_composition_1.cpp	/^    ~Derived() { cout << "dctor, Derived." << endl; }$/;"	f	class:Derived
 ~Derived	oop_ood/ood/inheritance_composition_2.cpp	/^    ~Derived() { cout << "dctor, Derived." << endl; }$/;"	f	class:Derived
-~Foo	cpp-memory-manager/3-overload-new-delete-example.cpp	/^    ~Foo() { cout << "dtor.this=" << this << " id=" << _id << endl; }$/;"	f	class:Foo
 ~Foo	oop_ood/new_del/overload-new_delete.cpp	/^    ~Foo() { cout << "dtor.this=" << this << " id=" << _id << endl; }$/;"	f	class:Foo
 ~Generator	c++17-20/coroutine_c++20/3-coroutine-handle-example.cc	/^    ~Generator() {$/;"	f	class:Generator
-~HasPtrMem	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-16-copt-ctor-with-mem-leak.cpp	/^    ~HasPtrMem() { delete d; }$/;"	f	class:HasPtrMem
+~HasPtrMem	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-16-shallow-copy-with-mem-leak.cpp	/^    ~HasPtrMem() { delete d; }$/;"	f	class:HasPtrMem
+~HasPtrMem	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-17-deep-copy.cpp	/^    ~HasPtrMem() { delete d; }$/;"	f	class:HasPtrMem
+~HasPtrMem	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-18-record-call-ctor-count.cpp	/^    ~HasPtrMem() { cout << "Destruct: " << ++n_dstr << endl; }$/;"	f	class:HasPtrMem
+~HasPtrMem	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-19-move-ctor.cpp	/^    ~HasPtrMem() {$/;"	f	class:HasPtrMem
+~HugeMem	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-22-right-move-rval.cpp	/^    ~HugeMem() { delete[] c; }$/;"	f	class:HugeMem
 ~List	c++11-14/smart-ptr/1-unique_ptr-cppref-eg.cpp	/^    ~List() {$/;"	f	struct:List
+~Moveable	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-21-error-compulsory-move-rval.cpp	/^    ~Moveable() { delete i; }$/;"	f	class:Moveable
+~Moveable	c++11-14/Depth_understanding_of_C++11/chap3/move-semantic-perfect-forward/3-22-right-move-rval.cpp	/^    ~Moveable() { delete i; }$/;"	f	class:Moveable
 ~MyStrNoMove	STL/Container/Vector_/vector_test_.cpp	/^    virtual ~MyStrNoMove() {$/;"	f	class:MyStrNoMove
 ~MyStrNoMove	STL/STL-sample.cpp	/^    virtual ~MyStrNoMove() {$/;"	f	class:MyStrNoMove
 ~MyStrNoMove	c++11-14/rvalue-ref-move/test-moveable.cpp	/^    virtual ~MyStrNoMove() {$/;"	f	class:MyStrNoMove
@@ -2991,6 +3149,8 @@ zoom	fltk_proj/CubeView_fltk/CubeViewUI.h	/^  Fl_Value_Slider *zoom;$/;"	m	class
 ~MyString	c++11-14/rvalue-ref-move/4-design-move-aware-class.cpp	/^    virtual ~MyString() {$/;"	f	class:MyString
 ~MyString	c++11-14/rvalue-ref-move/test-moveable.cpp	/^    virtual ~MyString() {$/;"	f	class:MyString
 ~P	c++11-14/initialize/2-init-lists.cc	/^    ~P(){};$/;"	f	class:P
+~P	cpp-memory-manager/13-operator-new-array-sizeof.cpp	/^    virtual ~P() {}$/;"	f	class:P
+~P	cpp-memory-manager/15-base-class-p.cpp	/^    virtual ~P() {}$/;"	f	class:P
 ~P	oop_ood/static_test/static_member_func.cpp	/^    ~P(){};$/;"	f	class:P
 ~Person	oop_ood/oop/constructor.cpp	/^    ~Person() { cout << "析构函数调用_" << endl; }$/;"	f	class:Person
 ~Person	oop_ood/oop/copy-assign.cpp	/^    ~Person() { cout << "析构函数调用" << endl; }$/;"	f	class:Person

@@ -23,7 +23,14 @@ void t1() {
     */
 }
 
+void t2() {
+    string as[9] = {"123", "acs", "222"};
+    cout << typeid(as).name() << endl;
+    cout << *(as + 2) << endl;
+}
+
 int main(int argc, char const *argv[]) {
-    t1();
+    // t1();
+    t2();
     return 0;
 }

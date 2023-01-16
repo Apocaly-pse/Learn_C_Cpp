@@ -1,6 +1,8 @@
 // C++ program to illustrate the
 // above concepts
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+
 // #include <compare>//3ways op
 using namespace std;
 
@@ -35,6 +37,5 @@ void t2() {
 // Driver Code
 int main() {
     t1();
-
     t2();
 }

@@ -3,7 +3,9 @@
 // must with stdc++14
 void print_with_zeros(const std::string note, std::string const& s) {
     std::cout << note;
-    for (const char c : s) { (c ? std::cout << c : std::cout << "₀"); }
+    for (const char c : s) {
+        (c ? std::cout << c : std::cout << "₀");
+    }
     std::cout << " (size = " << s.size() << ")\n";
 }
 void t1() {
@@ -24,9 +26,10 @@ void t1() {
 
 void t2() {
     // 使用字符串字面量
-    using namespace std::string_literals;
+    using namespace std;
+    /* using namespace std::string_literals; */
     std::cout << std::max(1, 2) << std::endl;
-    std::cout << std::max({1, 2, 34}) << std::endl;
+    /* std::cout << std::max({1, 2, 34}) << std::endl; // only clang++ */
     std::cout << std::max({"abc"s, "cde"s, "acc"s}) << std::endl;
     /*
     2

@@ -5,7 +5,7 @@ using namespace std;
 
 namespace jj13 {
 void noMoreMemory() {
-    cerr << "out of memory";
+    cerr << "out of memory\n";
     abort();
 }
 
@@ -23,7 +23,6 @@ void test_set_new_handler() {
     /*
     test_set_new_handler()..........
     out of memory[1]    16835 abort
-    /Users/hep/code/C-Cpp_Proj/C-Cpp-grammar/memory-manager/9-new-handler.out
     */
 
     // if not set_new_handler:
@@ -32,7 +31,6 @@ void test_set_new_handler() {
     terminate called after throwing an instance of 'std::bad_alloc'
     what():  std::bad_alloc
     [1]    17936 abort
-    /Users/hep/code/C-Cpp_Proj/C-Cpp-grammar/memory-manager/9-new-handler.out
 
     */
 }

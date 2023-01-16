@@ -21,14 +21,28 @@ void t1() {
     cout << "p11=" << p11 << endl;
     cout << "*p11=" << *p11 << endl;
     /*
+    p1 is nullptr
     p11 is not nullptr
-  p11=0x600001824280
-  *p11=hi*/
+    p11=0x600003b64010
+    *p11=hi
+    */
     cout << "p12=" << p12 << endl;
     cout << "*p12=" << *p12 << endl;
-    /*p1 is nullptr
-  p12=0x60000207c010
-  *p12=Hello!*/
+    /*p12=0x600003b68010
+     *p12=Hello!*/
+}
+void t11() {
+    shared_ptr<int> sp = make_shared<int>(1);
+    int *p1 = sp.get();
+    cout << sp << endl;
+    cout << p1 << endl;
+    delete p1;
+    cout << sp << endl; // error, 内存泄漏
+    // cout << p1 << endl;
+    // auto q(sp);
+    // auto p2 = sp.get();
+    // cout << sp << endl;
+    // cout << p2 << endl;
 }
 
 void t2() {
@@ -37,7 +51,7 @@ void t2() {
     cout << *p3 << endl;
     cout << *p4 << endl;
     /*42
-  2222222222*/
+    2222222222*/
     auto p5 = make_shared<vector<int>>();
     p5->push_back(10);
     cout << p5->at(0) << endl; // 10
@@ -97,11 +111,12 @@ void t6_memory_over() {
 }
 
 int main(int argc, char const *argv[]) {
-  // t1();
-  // t2();
-  // t3();
-  // t4();
-  // t5_new_const();
-  t6_memory_over();
+    // t1();
+    t11();
+    // t2();
+    // t3();
+    // t4();
+    // t5_new_const();
+    // t6_memory_over();
   return 0;
 }

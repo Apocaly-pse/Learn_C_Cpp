@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include <iostream>
+// #include <new>
 using namespace std;
 /*placement-new*/
 class Bad {};
@@ -7,17 +8,17 @@ public:
     Foo() { cout << "Foo::Foo()" << endl; }
     Foo(int) {
         cout << "Foo::Foo(int)" << endl;
-        throw Bad(); //这里给出一个异常的例子
+        throw Bad(); // 这里给出一个异常的例子
     }
     // new
-    static void* operator new(size_t size); //一般的重载
+    static void* operator new(size_t size); // 一般的重载
     static void* operator new(size_t size,
-                              void* start); //标准库提供的placement new()重载
-    static void* operator new(size_t size, long extra); //新的placement new()
+                              void* start); // 标准库提供的placement new()重载
+    static void* operator new(size_t size, long extra); // 新的placement new()
     static void* operator new(size_t size, long extra,
-                              char init); //另一个新的placement new()
-    // static void* operator new(long extra, char init); //error,
-    // 第一参数必须是size_t类型
+                              char init); // 另一个新的placement new()
+    // static void* operator new(long extra, char init);
+    // error, 第一参数必须是size_t类型
 
     /*可以重载对应版本的delete(), 但是不会被调用,
     只有当new()调用的ctor抛出异常时候, 才会调用这些重载版本的delete(),
@@ -115,9 +116,8 @@ void t2() {
 
 void t3() {
     Foo start;
-
     Foo* p5 = new (100) Foo(1);
-    delete p5;
+    // delete p5;
     /*
     Foo::Foo()
     operator new(size_t size, long extra), size=4, extra=100

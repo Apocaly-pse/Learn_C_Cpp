@@ -2,6 +2,7 @@
 using namespace std;
 class DCExcept {
 public:
+    // 委派构造函数中使用try, 可以捕获到目标构造中抛出的异常
     DCExcept(double d) try : DCExcept(1, d) {
         // 此处并没有执行
         cout << "Run the body." << endl;
@@ -20,7 +21,6 @@ private:
     double data;
 };
 int main() { DCExcept a(1.2); }
-// 编译选项:g++ -std=c++11 3-2-7.cpp
 /* going to throw! */
 /* caught exception. */
-/* terminate called after throwing an instance of 'int' */
+/* libc++abi: terminating with uncaught exception of type int */

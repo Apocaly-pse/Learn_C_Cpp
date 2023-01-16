@@ -47,4 +47,14 @@ int main(int argc, char* argv[]) {
 /* 100000000 */
 /* 花费了1.19844秒 */
 /* ./14-reserve.out  2.20s user 0.32s system 99% cpu 2.544 total */
+
+/* 134217728 */
+/* 100000000 */
+/* 花费了14.843秒 */
+/* --- */
+/* 100000000 */
+/* 100000000 */
+/* 花费了12.7968秒 */
+/* ./14-reserve.out  27.34s user 0.58s system 98% cpu 28.300 total */
 /*  */
+/* [Process exited 0] */

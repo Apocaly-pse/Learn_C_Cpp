@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <complex>
 
 #include <ext/pool_allocator.h>
 using namespace std;
@@ -38,7 +39,7 @@ void t2() {
 }
 
 int main(int argc, char const* argv[]) {
-    // t1();
-    t2();
+    t1();
+    // t2();
     return 0;
 }

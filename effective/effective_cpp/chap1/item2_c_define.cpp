@@ -3,7 +3,7 @@
 using namespace std;
 
 
-int main(int argc, char const *argv[]) {
+int main(int argc, char const* argv[]) {
     int a = 5, b = 0;
     cout << f(++a, b) << endl;
     cout << f(++a, b + 10) << endl;

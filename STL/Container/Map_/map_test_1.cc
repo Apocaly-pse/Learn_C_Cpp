@@ -5,18 +5,14 @@ using namespace std;
 
 ostream &operator<<(ostream &os, const map<int, int> &mp) {
     os << "{";
-    for (auto &p : mp) {
-        os << "<" << p.first << ": " << p.second << ">";
-        os << ", ";
-    }
-    os << "}" << endl;
-    return os;
+    for (auto &[k, v] : mp) os << "<" << k << ": " << v << ">, ";
+    return os << "}" << endl;
 }
 
 void t1() {
     map<int, int> m1;
     auto m2 = new map<int, int>();
-    m1[12]  = 123;
+    m1[12] = 123;
     m2->insert(pair<int, int>(1, 2));
     cout << "m1: " << m1;
     cout << "m2: " << *m2;

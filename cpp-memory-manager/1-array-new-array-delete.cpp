@@ -1,4 +1,6 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <string>
+#include <complex>
 using namespace std;
 
 void t1() {
@@ -7,7 +9,7 @@ void t1() {
 }
 void t2() {
     string* psa = new string[3];
-    delete psa; //必须加上[]
+    delete psa; // 必须加上[]
     /*
     1-array-new-array-delete.out(65368,0x104584580) malloc: *** error for object
     0x600002334008: pointer being freed was not allocated
@@ -28,8 +30,8 @@ public:
 
 void t3() {
     const int size = 3;
-    A* buf         = new A[size]; //这一步中A必须有默认构造函数, 否则不会创建成功
-    A* tmp         = buf;
+    A* buf = new A[size]; // 这一步中A必须有默认构造函数, 否则不会创建成功
+    A* tmp = buf;
     cout << "buf=" << buf << ", tmp=" << tmp << endl;
 
     for (int i = 0; i < size; i++) new (tmp++) A(i); // ctor 3次, placement new

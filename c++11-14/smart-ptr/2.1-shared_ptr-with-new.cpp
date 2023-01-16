@@ -54,29 +54,28 @@ void t4() {
 
 void t5() {
     // do not use `.get()` init another shared_ptr
-    shared_ptr<int> p(new int(100)); // refcnt=1
-    // p.get()用于返回p中保存的指针, 小心使用,若智能指针释放了其对象,
+    shared_ptr<int> p(new int(42)); // refcnt=1
+    // p.get()用于返回p中保存的指针, 小心使用, 若智能指针释放了其对象,
     // 返回的指针所指向的对象也消失了
     int *q = p.get();
-    { //两个独立的shared_ptr指向相同的内存
-        // shared_ptr<int>(q);//return 100
-        shared_ptr<int> r(q);
-    } //作用域结束,q和q指向的内存都被销毁,导致p指向的内存已经被释放了,p成为悬空指针
-    //并且p被销毁时, 同一块内存会被二次delete
+    {                         // 两个独立的shared_ptr指向相同的内存
+        shared_ptr<int> r(q); // 这块书上错了,少了r
+    } // 作用域结束,q和q指向的内存都被销毁,导致p指向的内存已经被释放了,p成为悬空指针
+    // 并且p被销毁时, 同一块内存会被二次delete
     int foo = *p;
-    cout << foo << endl;
+    cout << foo << " " << p << endl;
 }
 
 void t6() {
     // use reset()
     shared_ptr<int> p;
     cout << typeid(p).name() << endl; // St10shared_ptrIiE
-    // p=new int(102);//不能将指针赋予shared_ptr
-    p.reset(new int(102));            //智能指针p指向新的对象
+    // p=new int(102); // 不能将指针赋予shared_ptr
+    p.reset(new int(102));            // 智能指针p指向新的对象
     cout << typeid(p).name() << endl; // St10shared_ptrIiE
 
     // reset还会更新引用计数.
-    if (!p.unique()) { //不是唯一的用户, 就分配一份新的拷贝
+    if (!p.unique()) { // 不是唯一的用户, 就分配一份新的拷贝
         p.reset(new int(*p));
     }
     *p += 10;
@@ -97,7 +96,8 @@ void disconnect(connection* c1) { cout<<"deleting..."<<endl;}
 void t7(destination &d) {
     connection c = connect(&d);
     shared_ptr<connection> p(&c,
-                              [](connection*p){disconnect(p);}); //通过传入自定义的`析构函数`释放内存
+                              [](connection*p){disconnect(p);}); 
+                              //通过传入自定义的`析构函数`释放内存
 }
 
 int main(int argc, char const *argv[]) {
@@ -105,9 +105,9 @@ int main(int argc, char const *argv[]) {
   // t2();
   // t3();
   // t4();
-  // t5();
+  t5();
   // t6();
-  destination d;
-  t7(d);
+  // destination d;
+  // t7(d);
   return 0;
 }

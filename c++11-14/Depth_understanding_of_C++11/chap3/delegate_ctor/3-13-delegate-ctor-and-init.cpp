@@ -4,18 +4,15 @@ class Info {
 public:
     Info() : Info(1) {}           // 委派构造函数
     Info(int i) : Info(i, 'a') {} // 既是目标构造函数，也是委派构造函数
-    Info(char e) : Info(1, e) {}
+    Info(char e) : Info(1, e) {} // 委派构造函数
     void print() { cout << type << " " << name << endl; }
 
 private:
-    Info(int i, char e) : type(i), name(e) { /* 其他初始化 */
-        type += 1;
-    } // 目标构造函数
+    Info(int i, char e) : type(i), name(e) { type += 1; } // 目标构造函数
     int type;
     char name;
     // ...
 };
-// 编译选项:g++ -c -std=c++11 3-2-5.cpp
 void t1() {
     Info i1;
     i1.print();
@@ -27,6 +24,15 @@ void t1() {
     /* 2 a */
     /* 1 x */
 }
+
+struct Rule2 {
+    int i, c;
+    Rule2() : Rule2(2) {}
+    Rule2(int i) : Rule2('c') {}
+    Rule2(char c) : Rule2(2) {}
+    /* error: constructor for 'Rule2' creates a delegation cycle
+     * [-Wdelegating-ctor-cycles] */
+};
 
 int main(int argc, char *argv[]) {
     t1();

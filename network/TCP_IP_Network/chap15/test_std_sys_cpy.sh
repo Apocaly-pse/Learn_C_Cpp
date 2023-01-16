@@ -8,14 +8,14 @@ echo "begin to prepare '$FILE'."
 if [[ -r $FILE ]]; then
 	echo "$FILE exists."
 else
-	for _ in {0..10000}; do
+	for i in {0..20000}; do
 		cat syscpy.c >>$FILE
+		if [ $(expr $i % 200) == "0" ]; then
+			echo -en "\r sizeof $FILE is: $(du -h $FILE)"
+		fi
 	done
 	echo "$FILE is ready."
 fi
-
-echo -n "sizeof $FILE is: "
-du -h $FILE
 
 echo "use syscpy:"
 time ./syscpy.out
