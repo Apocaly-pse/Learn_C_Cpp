@@ -16,11 +16,11 @@ void t1() {
 class P {
 public:
     P(int a, int b) { cout << "P(int, int), a=" << a << " b=" << b << endl; }
-    P(initializer_list<int> initlist) {
-        cout << "P (initializer_list<int>), vals= ";
-        for (auto i : initlist) { cout << i << " "; }
-        cout << endl;
-    }
+    // P(initializer_list<int> initlist) {
+    //     cout << "P (initializer_list<int>), vals= ";
+    //     for (auto i : initlist) { cout << i << " "; }
+    //     cout << endl;
+    // }
 
     ~P(){};
 };

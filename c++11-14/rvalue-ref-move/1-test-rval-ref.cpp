@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <complex>
 using namespace std;
 /*
 右值引用, 用于解决不必要的拷贝和赋值操作
@@ -20,7 +21,7 @@ void t2() {
     s1 + s2 = s2;
     cout << "s1: " << s1 << endl;
     cout << "s2: " << s2 << endl;
-    string() = "peter"; //可以对临时对象赋值
+    string() = "peter"; // 可以对临时对象赋值
 }
 
 void t3() {
@@ -28,7 +29,7 @@ void t3() {
     c1 + c2 = c2;
     cout << "c1: " << c1 << endl;
     cout << "c2: " << c2 << endl;
-    complex<int>() = c1; //可以对临时对象赋值
+    complex<int>() = c1; // 可以对临时对象赋值
 }
 
 

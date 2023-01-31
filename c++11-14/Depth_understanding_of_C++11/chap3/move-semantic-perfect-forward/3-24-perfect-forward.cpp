@@ -6,7 +6,8 @@ void RunCode(const int &&m) { cout << "const rvalue ref" << endl; }
 void RunCode(const int &m) { cout << "const lvalue ref" << endl; }
 template <typename T>
 void PerfectForward(T &&t) {
-    RunCode(std::forward<T>(t));
+    // RunCode(std::forward<T>(t));
+    RunCode(static_cast<T &&>(t));
 }
 int main() {
     int a{};

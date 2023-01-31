@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+
 class HasPtrMem {
 public:
     HasPtrMem() : d(new int(0)) {}

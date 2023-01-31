@@ -2,6 +2,6 @@
 #include <stdio.h>
 
 int main(int argc, char const *argv[]) {
-    if (EIO ==) printf("EIO=%d\n", EIO);
+    if (EIO == 0) printf("EIO=%d\n", EIO);
     return 0;
 }

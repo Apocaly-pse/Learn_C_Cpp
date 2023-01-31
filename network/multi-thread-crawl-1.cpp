@@ -41,10 +41,7 @@ int main() {
     urls.emplace_back("https://www.example.io/");
 
     // 等待所有线程完成工作。
-    for (auto& thread : thread_pool)
-    {
-        thread.join();
-    }
+    for (auto& thread : thread_pool) { thread.join(); }
 
     return 0;
 }

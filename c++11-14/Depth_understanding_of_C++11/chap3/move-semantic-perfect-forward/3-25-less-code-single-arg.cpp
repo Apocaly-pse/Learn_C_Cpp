@@ -3,7 +3,8 @@ using namespace std;
 template <typename T, typename U>
 void PerfectForward(T&& t, U& Func) {
     cout << t << "\tforwarded..." << endl;
-    Func(std::forward<T>(t));
+    // Func(std::forward<T>(t));
+    Func(static_cast<T&&>(t));
 }
 void RunCode(double&& m) {}
 void RunHome(double&& h) {}

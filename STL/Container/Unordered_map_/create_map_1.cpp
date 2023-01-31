@@ -10,7 +10,6 @@ void t1() {
     for (auto &[k, v] : m1) cout << k << " : " << v << endl;
 }
 
-
 int main(int argc, char const *argv[]) {
     t1();
     return 0;

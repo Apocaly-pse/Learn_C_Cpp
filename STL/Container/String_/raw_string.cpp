@@ -22,9 +22,15 @@ void t3() {
     auto s2 = R"&(R"()")&"s; // R"()"
     cout << s2 << endl;
 }
-int main(int argc, char *argv[]) {
+
+void t4() {
+    auto s = R"(\)"s;
+    cout << s << endl;
+}
+int main(int argc, char* argv[]) {
     /* t1(); */
     /* t2(); */
-    t3();
+    // t3();
+    t4();
     return 0;
 }
