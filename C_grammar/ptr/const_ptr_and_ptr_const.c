@@ -36,6 +36,7 @@ void t2() {
     // 指针常量, 指针类型的常量, 可以指向非常量,
     // 可以通过解引用方式改变指向的(非常量)值,
     // 但是不能改变指针的指向(指向已经确定) const pointer: a constant pointer
+    // 相当于C++的引用
     int a = 10;
     int* const p1 = &a;
     printf("p1=%p\n", p1);
@@ -50,7 +51,7 @@ void t2() {
     int b = 30;
     // p1 = &b; //error
 }
-void t3() { //指向常量的常量指针, 用处较少, 若对常量进行指向, 会报warning
+void t3() { // 指向常量的常量指针, 用处较少, 若对常量进行指向, 会报warning
     const int a = 10;
     // int* const p = &a;
     /*warning: initialization discards 'const' qualifier from pointer target

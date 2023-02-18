@@ -3,6 +3,7 @@
 using namespace std;
 
 int main(int argc, char const *argv[]) {
-    assert(10 == 110);
+    assert(10 == 10);
+    int a[10]{};
     return 0;
 }
