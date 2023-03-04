@@ -21,7 +21,9 @@ void edit_document(std::string const& filename) {
         }
     }
 }
-void t1() {}
+void t1() {
+    for (auto s : {"bashrc", "zshrc"}) edit_document(s);
+}
 
 
 int main(int argc, char const* argv[]) {

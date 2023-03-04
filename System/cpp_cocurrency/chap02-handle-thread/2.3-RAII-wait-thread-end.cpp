@@ -1,10 +1,9 @@
 #include <unistd.h>
-
 #include <iostream>
 #include <thread>
 using namespace std;
 
-//通过在析构函数中添加join, 使得子线程不会停止执行
+// 通过在析构函数中添加join, 使得子线程不会停止执行
 // 标准的RAII手法，在其析构函数中调用join()
 class thread_guard {
     std::thread& t;
@@ -12,9 +11,11 @@ class thread_guard {
 public:
     explicit thread_guard(std::thread& t_) : t(t_) {}
     ~thread_guard() {
-        if (t.joinable()) { t.join(); }
+        // 判断是否可汇合, 因为每一个线程只能调用`join()`一次
+        if (t.joinable()) t.join();
     }
-    /* 限令编译器不得自动生成相关代码。复制这类对象或向其赋值均有可能带来问题，因为所产生的新对象的生存期也许更长，甚至超过了与之关联的线程。*/
+    /* 限令编译器不得自动生成相关代码。复制这类对象或向其赋值均有可能带来问题，
+    因为所产生的新对象的生存期也许更长，甚至超过了与之关联的线程。*/
     thread_guard(thread_guard const&) = delete;
     thread_guard& operator=(thread_guard const&) = delete;
 };

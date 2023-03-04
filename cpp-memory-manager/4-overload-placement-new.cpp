@@ -20,9 +20,10 @@ public:
     // static void* operator new(long extra, char init);
     // error, 第一参数必须是size_t类型
 
-    /*可以重载对应版本的delete(), 但是不会被调用,
-    只有当new()调用的ctor抛出异常时候, 才会调用这些重载版本的delete(),
-    也只可能被这样调用, 用途是归还未能完全创建成功的object占用的内存memory*/
+    /*可以重载对应版本的operator delete(), 但是不会被调用,
+    只有当operator new()调用的ctor抛出异常时候, 才会调用这些重载版本的delete(),
+    也只可能被这样调用, 用途是归还未能完全创建成功的object占用的内存memory
+    */
     static void operator delete(void*, size_t);
     static void operator delete(void*, void*);
     static void operator delete(void*, long);

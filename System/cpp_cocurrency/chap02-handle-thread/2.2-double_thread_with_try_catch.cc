@@ -1,10 +1,7 @@
-#include <string.h>
 #include <unistd.h>
-
-#include <cassert>
 #include <iostream>
 #include <thread>
-
+#include <cassert>
 
 using namespace std;
 
@@ -14,8 +11,8 @@ struct func {
     int& i;
     func(int& i_) : i(i_) {}
     void operator()() {
-        for (unsigned j = 0; j < 1000000; ++j) {
-            do_1(i, j); //可能访问了悬空引用
+        for (unsigned j = 0; j < 10; ++j) {
+            do_1(i, j); // 可能访问了悬空引用
             sleep(1);
         }
     }
@@ -29,16 +26,17 @@ void f() {
     int error = 0;
     int some_local_state = 0;
     func my_func(some_local_state);
-    std::thread t(my_func); //创建线程
+    std::thread t(my_func); // 创建线程
     try {
         // assert(error == 10); // error
-        throw 100; //抛出异常
+        throw 100; // 抛出异常
         cout << "current thread" << endl;
-    } catch (...) {
+    } catch (int tt) {
         cout << "error message" << endl;
         t.join();
+        cout << tt << endl;
         // cerr << e.what() << endl;
-        throw;
+        throw 1;
     }
     t.join();
 }

@@ -12,8 +12,10 @@ placement-new:等同于调用构造函数.
 */
 
 void t1() {
-    char* buf = new char[sizeof(complex<int>) * 3];
-    complex<int>* pc = new (buf) complex<int>(1, 2);
+    void* buf = new char[sizeof(complex<int>) * 3];
+    complex<int>* pc = static_cast<complex<int>*>(buf);
+    new (&pc[0]) complex<int>(1, 2);
+    new (&pc[1]) complex<int>(2, 3);
     // 这里其实调用了下面的:
     // static void* operator new(size_t size, void* start);
     printf("buf=%p\n", buf);
@@ -21,9 +23,14 @@ void t1() {
     /* buf=0x600001bc1100 */
     /* pc=0x600001bc1100 */
 
-    cout << pc->real() << " " << pc->imag() << endl; // 1,2
+    cout << pc->real() << " " << pc->imag() << endl;     // 1,2
+    cout << pc[1].real() << " " << pc[1].imag() << endl; // 2,3
     // 标准库提供的placement new()重载
-    delete[] pc;
+
+    // delete[] pc;  // ok
+    // delete[] buf; //ok
+    // operator delete[](buf); // ok
+    delete pc; // ok
 }
 int main(int argc, char const* argv[]) {
     t1();

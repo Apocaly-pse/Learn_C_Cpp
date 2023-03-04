@@ -22,13 +22,13 @@ void t1() {
 }
 
 void t2() {
-    C c(1); //
+    /* C c(1); // */
     /* A::A() */
     /* B::B() */
     /* C::C(int) */
 }
 int main(int argc, char *argv[]) {
-    /* t1(); */
-    t2();
+    t1();
+    /* t2(); */
     return 0;
 }
