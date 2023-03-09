@@ -5,6 +5,7 @@
 #include <iterator> // std::iterator_traits
 #include <list>
 #include <map>
+#include <cxxabi.h>
 #include <set>
 #include <typeinfo> // typeid
 #include <unordered_map>
@@ -13,7 +14,11 @@
 
 using namespace std;
 
-namespace jj33 {
+const char* TypeToName(const char* name) {
+    const char* __name = abi::__cxa_demangle(name, nullptr, nullptr, nullptr);
+    return __name;
+}
+
 void _display_category(random_access_iterator_tag) {
     cout << "random_access_iterator" << endl;
 }
@@ -33,7 +38,9 @@ void display_category(I itr) {
     typename iterator_traits<I>::iterator_category cagy;
     _display_category(cagy);
 
-    cout << "typeid(itr).name()= " << typeid(itr).name() << endl << endl;
+    cout << "typeid(itr).name()= " << typeid(itr).name() << " "
+         << TypeToName(typeid(itr).name()) << endl
+         << endl;
     // The output depends on library implementation.
     // The particular representation pointed by the
     // returned valueis implementation-defined,
@@ -61,7 +68,7 @@ void test_iterator_category() {
     display_category(istream_iterator<int>());
     display_category(ostream_iterator<int>(cout, ""));
 }
-} // namespace jj33
+
 /*
 test_iterator_category()..........
 random_access_iterator
@@ -110,7 +117,60 @@ output_iterator
 typeid(itr).name()= St16ostream_iteratorIicSt11char_traitsIcEE
 */
 
-int main(int argc, char const *argv[]) {
-    jj33::test_iterator_category();
+// with cxxabi:
+/*
+test_iterator_category()..........
+random_access_iterator
+typeid(itr).name()= int*
+
+random_access_iterator
+typeid(itr).name()= __gnu_cxx::__normal_iterator<int*, std::vector<int,
+std::allocator<int> > >
+
+bidirectional_iterator
+typeid(itr).name()= std::_List_iterator<int>
+
+forward_iterator
+typeid(itr).name()= std::_Fwd_list_iterator<int>
+
+random_access_iterator
+typeid(itr).name()= std::_Deque_iterator<int, int&, int*>
+
+bidirectional_iterator
+typeid(itr).name()= std::_Rb_tree_const_iterator<int>
+
+bidirectional_iterator
+typeid(itr).name()= std::_Rb_tree_iterator<std::pair<int const, int> >
+
+bidirectional_iterator
+typeid(itr).name()= std::_Rb_tree_const_iterator<int>
+
+bidirectional_iterator
+typeid(itr).name()= std::_Rb_tree_iterator<std::pair<int const, int> >
+
+forward_iterator
+typeid(itr).name()= std::__detail::_Node_iterator<int, true, false>
+
+forward_iterator
+typeid(itr).name()= std::__detail::_Node_iterator<std::pair<int const, int>,
+false, false>
+
+forward_iterator
+typeid(itr).name()= std::__detail::_Node_iterator<int, true, false>
+
+forward_iterator
+typeid(itr).name()= std::__detail::_Node_iterator<std::pair<int const, int>,
+false, false>
+
+input_iterator
+typeid(itr).name()= std::istream_iterator<int, char, std::char_traits<char>,
+long>
+
+output_iterator
+typeid(itr).name()= std::ostream_iterator<int, char, std::char_traits<char> >
+*/
+
+int main(int argc, char const* argv[]) {
+    test_iterator_category();
     return 0;
 }

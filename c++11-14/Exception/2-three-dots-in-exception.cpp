@@ -26,9 +26,7 @@ void t1() {
         if (!p) throw(1);
         cout << p << endl;
 
-    } catch (...) {
-        cout << "error\n";
-    }
+    } catch (...) { cout << "error\n"; }
     cout << "other code ...\n";
 }
 

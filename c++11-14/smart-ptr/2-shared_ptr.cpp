@@ -88,6 +88,7 @@ void t4() {
         v1 = v2;
     }                          // v2:destoryed,但是数据还在.
     cout << v1.size() << endl; // 2
+    // cout << v2.size() << endl; // error: use of undeclared identifier 'v2'
 }
 
 void t5_new_const() {
@@ -112,10 +113,10 @@ void t6_memory_over() {
 
 int main(int argc, char const *argv[]) {
     // t1();
-    t11();
+    // t11();
     // t2();
     // t3();
-    // t4();
+    t4();
     // t5_new_const();
     // t6_memory_over();
   return 0;

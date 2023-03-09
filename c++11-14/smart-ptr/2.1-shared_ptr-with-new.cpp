@@ -55,15 +55,25 @@ void t4() {
 void t5() {
     // do not use `.get()` init another shared_ptr
     shared_ptr<int> p(new int(42)); // refcnt=1
+    cout << hex << p << endl;       // 0x600000e08040
+
     // p.get()用于返回p中保存的指针, 小心使用, 若智能指针释放了其对象,
     // 返回的指针所指向的对象也消失了
-    int *q = p.get();
+    int *q = p.get();                   // 裸指针
+    cout << "*q=" << dec << *q << endl; // 42
     {                         // 两个独立的shared_ptr指向相同的内存
-        shared_ptr<int> r(q); // 这块书上错了,少了r
-    } // 作用域结束,q和q指向的内存都被销毁,导致p指向的内存已经被释放了,p成为悬空指针
-    // 并且p被销毁时, 同一块内存会被二次delete
+        shared_ptr<int> r(q); // 这块书上错了, 少了r
+    } // 作用域结束, q和q指向的内存都被销毁,导致p指向的内存已经被释放了,
+      // p成为悬空指针
+    // 并且p被销毁时, 同一块内存会被二次delete(由于智能指针的引用计数=0)
     int foo = *p;
-    cout << foo << " " << p << endl;
+    cout << hex << foo << endl; // c9498040, 随机值(dangling ptr)
+    cout << hex << p << endl;   // 0x600000e08040
+    // -371670976 0x60000299c040
+    // 2.1-shared_ptr-with-new.out(68203,0x1032b4580) malloc: *** error for
+    // object 0x60000299c040: pointer being freed was not allocated
+    // 2.1-shared_ptr-with-new.out(68203,0x1032b4580) malloc: *** set a
+    // breakpoint in malloc_error_break to debug zsh: abort
 }
 
 void t6() {

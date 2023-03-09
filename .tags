@@ -1,5 +1,6 @@
-ALA	effective/more-effective-c++/item9-dtor-exception.cpp	/^class ALA {$/;"	c	file:
-Puppy	effective/more-effective-c++/item9-dtor-exception.cpp	/^class Puppy {$/;"	c	file:
-main	effective/more-effective-c++/item9-dtor-exception.cpp	/^int main(int argc, char const* argv[]) {$/;"	f
-process	effective/more-effective-c++/item9-dtor-exception.cpp	/^void Puppy::process() {$/;"	f	class:Puppy
-t1	effective/more-effective-c++/item9-dtor-exception.cpp	/^void t1() {$/;"	f
+Factorial	effective/effective_c++/chap7-templates-generic-programming/item48_TMP.cpp	/^struct Factorial {$/;"	s	file:
+Factorial	effective/effective_c++/chap7-templates-generic-programming/item48_TMP.cpp	/^struct Factorial<0> {$/;"	s	file:
+main	effective/effective_c++/chap7-templates-generic-programming/item48_TMP.cpp	/^int main(int argc, char *argv[]) {$/;"	f
+t1	effective/effective_c++/chap7-templates-generic-programming/item48_TMP.cpp	/^void t1() {$/;"	f
+value	effective/effective_c++/chap7-templates-generic-programming/item48_TMP.cpp	/^    enum { value = 1 };$/;"	e	enum:Factorial::__anon2	file:
+value	effective/effective_c++/chap7-templates-generic-programming/item48_TMP.cpp	/^    enum { value = n * Factorial<n - 1>::value };$/;"	e	enum:Factorial::__anon1	file:

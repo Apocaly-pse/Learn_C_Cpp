@@ -2,20 +2,45 @@
 #include <vector>
 #include <algorithm>
 #include <list>
+#include <deque>
+
 #include <string>
 using namespace std;
 using ll = long long;
 
 // just for gcc
-template <typename T, template <typename> class Container>
-ostream &operator<<(ostream &os, const Container<T> v) {
+// template <typename T, template <typename> class Container>
+// ostream &operator<<(ostream &os, const Container<T> v) {
+//     for (auto i : v) os << i << " ";
+//     return os;
+// }
+
+template <typename T>
+ostream &operator<<(ostream &os, const list<T> v) {
     for (auto i : v) os << i << " ";
     return os;
 }
 
+template <typename T>
+ostream &operator<<(ostream &os, const deque<T> v) {
+    for (auto it = v.begin(); it != v.end(); ++it) os << *it << " ";
+    return os;
+}
+
+template <typename T>
+ostream &operator<<(ostream &os, const vector<T> v) {
+    for (auto i : v) os << i << " ";
+    return os;
+}
+
+template <typename T>
+ostream &operator<<(ostream &os, const vector<vector<T>> v) {
+    for (auto i : v) os << i;
+    return os;
+}
 
 void t1() {
-    list<int> a{1, 2, 3};
+    deque<int> a{1, 2, 3};
     cout << a;
 }
 void t2() {
