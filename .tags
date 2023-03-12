@@ -1,6 +1,10 @@
-Factorial	effective/effective_c++/chap7-templates-generic-programming/item48_TMP.cpp	/^struct Factorial {$/;"	s	file:
-Factorial	effective/effective_c++/chap7-templates-generic-programming/item48_TMP.cpp	/^struct Factorial<0> {$/;"	s	file:
-main	effective/effective_c++/chap7-templates-generic-programming/item48_TMP.cpp	/^int main(int argc, char *argv[]) {$/;"	f
-t1	effective/effective_c++/chap7-templates-generic-programming/item48_TMP.cpp	/^void t1() {$/;"	f
-value	effective/effective_c++/chap7-templates-generic-programming/item48_TMP.cpp	/^    enum { value = 1 };$/;"	e	enum:Factorial::__anon2	file:
-value	effective/effective_c++/chap7-templates-generic-programming/item48_TMP.cpp	/^    enum { value = n * Factorial<n - 1>::value };$/;"	e	enum:Factorial::__anon1	file:
+Array1D	effective/more-effective-c++/Techniques_Idioms_Patterns/item30_proxy_classes.cpp	/^    class Array1D {$/;"	c	class:Array2D	file:
+Array2D	effective/more-effective-c++/Techniques_Idioms_Patterns/item30_proxy_classes.cpp	/^    Array2D(int d1, int d2) {}$/;"	f	class:Array2D
+Array2D	effective/more-effective-c++/Techniques_Idioms_Patterns/item30_proxy_classes.cpp	/^class Array2D {$/;"	c	file:
+Array_2Dim	effective/more-effective-c++/Techniques_Idioms_Patterns/item30_proxy_classes.cpp	/^class Array_2Dim {$/;"	c	file:
+create_2darray	effective/more-effective-c++/Techniques_Idioms_Patterns/item30_proxy_classes.cpp	/^void create_2darray(int d1, int d2) {$/;"	f
+create_by_template	effective/more-effective-c++/Techniques_Idioms_Patterns/item30_proxy_classes.cpp	/^void create_by_template(int d1, int d2) {$/;"	f
+main	effective/more-effective-c++/Techniques_Idioms_Patterns/item30_proxy_classes.cpp	/^int main(int argc, char *argv[]) {$/;"	f
+t1	effective/more-effective-c++/Techniques_Idioms_Patterns/item30_proxy_classes.cpp	/^void t1() {$/;"	f
+t2	effective/more-effective-c++/Techniques_Idioms_Patterns/item30_proxy_classes.cpp	/^void t2() {$/;"	f
+t3	effective/more-effective-c++/Techniques_Idioms_Patterns/item30_proxy_classes.cpp	/^void t3() {$/;"	f

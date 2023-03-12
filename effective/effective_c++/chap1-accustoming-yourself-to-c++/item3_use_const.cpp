@@ -65,9 +65,43 @@ void t3() {
     // 0x16ee96de8
 }
 
+class Rational {
+public:
+    Rational(int numerator = 0, int denominator = 1)
+        : n(numerator), d(denominator) {}
+    int numerator() const { return n; }
+    int denominator() const { return d; }
+
+private:
+    int n, d;
+};
+
+ostream& operator<<(ostream& os, const Rational& r) {
+    return os << r.numerator() << " / " << r.denominator() << endl;
+}
+
+
+// 若所有参数都是都需隐式类型转换, 为此采用non-member-func
+// const Rational operator*(const Rational& lhs, const Rational& rhs) {
+// 如果不加const, 会发生什么?
+Rational operator*(const Rational& lhs, const Rational& rhs) {
+    return Rational(lhs.numerator() * rhs.numerator(),
+                    lhs.denominator() * rhs.denominator());
+}
+
+
+void t4() {
+    //
+    Rational a(1, 2), b = a, c;
+    (a * b) = c; // 可通过编译!!
+    cout << c;
+}
+
+
 int main(int argc, char const* argv[]) {
     // t1();
     // t2();
-    t3();
+    // t3();
+    t4();
     return 0;
 }
