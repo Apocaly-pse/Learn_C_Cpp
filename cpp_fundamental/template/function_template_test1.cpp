@@ -20,6 +20,7 @@ inline const T& min1(const T& a, const T& b) {
 void test1() {
     stone r1(2, 1, 3), r2(3, 2, 39), r3;
     r3 = min1(r1, r2);
+    // r3 = min1<stone>(r1, r2);
     cout << r1.get_we() << endl;
     cout << r2.get_we() << endl;
     cout << r3.get_we() << endl;
