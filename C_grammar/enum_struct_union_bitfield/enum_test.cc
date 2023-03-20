@@ -8,6 +8,7 @@ void t1() {
     DAY12 day;
     day = SUN;
     printf("%d, %s\n", day, typeid(DAY12).name());
+    // 7, Z2t1vE5DAY12
 }
 
 
