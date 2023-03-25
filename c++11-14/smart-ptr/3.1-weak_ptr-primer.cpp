@@ -23,8 +23,8 @@ void t1() {
     cout << *p << endl;
     // wp指向的对象可能不存在, 所以不能直接取值,
     // 需要采用lock()[lock()返回弱指针指向对象的shared_ptr]
-    // cout<<*wp<<endl;//弱指针不能直接解引用
-    // cout<<wp<<endl;//弱指针不能直接输出值(地址)
+    // cout << *wp << endl; // 弱指针不能直接解引用
+    // cout << wp << endl; // 弱指针不能直接输出值(地址)
     cout<<wp.lock()<<endl;
     cout<<*(wp.lock())<<endl;
     if (shared_ptr<int> np = wp.lock())

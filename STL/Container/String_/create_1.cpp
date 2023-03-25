@@ -15,7 +15,13 @@ void t1() {
     cout << "s2.max_size()=" << s2.max_size() << endl;
 }
 
+void t2() {
+    /* string a1 = u"and"; */
+    //
+}
+
 int main(int argc, char const *argv[]) {
-    t1();
+    /* t1(); */
+    t2();
     return 0;
 }

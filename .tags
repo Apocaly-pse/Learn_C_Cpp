@@ -1,4 +1,24 @@
-T	effective/effective-mordern-c++/chap3-moving-to-modern-c++/item14_noexcept.cpp	/^void swap(T (&a)[N], T (&b)[N]) noexcept(noexcept(swap(*a, *b)));$/;"	v
-main	effective/effective-mordern-c++/chap3-moving-to-modern-c++/item14_noexcept.cpp	/^int main(int argc, char *argv[]) {$/;"	f
-noexcept	effective/effective-mordern-c++/chap3-moving-to-modern-c++/item14_noexcept.cpp	/^void swap(T (&a)[N], T (&b)[N]) noexcept(noexcept(swap(*a, *b)));$/;"	v
-t1	effective/effective-mordern-c++/chap3-moving-to-modern-c++/item14_noexcept.cpp	/^void t1() {$/;"	f
+Beep	effective/effective-mordern-c++/chap6-lambda-expressions/item34_use-lambda_instead_bind.cpp	/^enum class Sound { Beep, Siren, Whistle };$/;"	m	class:Sound	file:
+CompLevel	effective/effective-mordern-c++/chap6-lambda-expressions/item34_use-lambda_instead_bind.cpp	/^enum class CompLevel { Low, Normal, High };$/;"	c	file:
+Loud	effective/effective-mordern-c++/chap6-lambda-expressions/item34_use-lambda_instead_bind.cpp	/^enum class Volume { Normal, Loud, LoudPlusPlus };$/;"	m	class:Volume	file:
+Low	effective/effective-mordern-c++/chap6-lambda-expressions/item34_use-lambda_instead_bind.cpp	/^enum class CompLevel { Low, Normal, High };$/;"	m	class:CompLevel	file:
+Normal	effective/effective-mordern-c++/chap6-lambda-expressions/item34_use-lambda_instead_bind.cpp	/^enum class CompLevel { Low, Normal, High };$/;"	m	class:CompLevel	file:
+Normal	effective/effective-mordern-c++/chap6-lambda-expressions/item34_use-lambda_instead_bind.cpp	/^enum class Volume { Normal, Loud, LoudPlusPlus };$/;"	m	class:Volume	file:
+PolyWidget	effective/effective-mordern-c++/chap6-lambda-expressions/item34_use-lambda_instead_bind.cpp	/^class PolyWidget {$/;"	c	file:
+Siren	effective/effective-mordern-c++/chap6-lambda-expressions/item34_use-lambda_instead_bind.cpp	/^enum class Sound { Beep, Siren, Whistle };$/;"	m	class:Sound	file:
+Sound	effective/effective-mordern-c++/chap6-lambda-expressions/item34_use-lambda_instead_bind.cpp	/^enum class Sound { Beep, Siren, Whistle };$/;"	c	file:
+Volume	effective/effective-mordern-c++/chap6-lambda-expressions/item34_use-lambda_instead_bind.cpp	/^enum class Volume { Normal, Loud, LoudPlusPlus };$/;"	c	file:
+Widget	effective/effective-mordern-c++/chap6-lambda-expressions/item34_use-lambda_instead_bind.cpp	/^class Widget {};$/;"	c	file:
+compress	effective/effective-mordern-c++/chap6-lambda-expressions/item34_use-lambda_instead_bind.cpp	/^Widget compress(const Widget &w, CompLevel lev) { return Widget(); }$/;"	f
+main	effective/effective-mordern-c++/chap6-lambda-expressions/item34_use-lambda_instead_bind.cpp	/^int main(int argc, char *argv[]) {$/;"	f
+setAlarm	effective/effective-mordern-c++/chap6-lambda-expressions/item34_use-lambda_instead_bind.cpp	/^void setAlarm(Time t, Sound s, Duration d) {}$/;"	f
+setAlarm	effective/effective-mordern-c++/chap6-lambda-expressions/item34_use-lambda_instead_bind.cpp	/^void setAlarm(Time t, Sound s, Duration d, Volume v) {}$/;"	f
+setSoundB_modify	effective/effective-mordern-c++/chap6-lambda-expressions/item34_use-lambda_instead_bind.cpp	/^auto setSoundB_modify = std::bind($/;"	v
+setSoundB_modify_14	effective/effective-mordern-c++/chap6-lambda-expressions/item34_use-lambda_instead_bind.cpp	/^auto setSoundB_modify_14 = std::bind($/;"	v
+setSoundL	effective/effective-mordern-c++/chap6-lambda-expressions/item34_use-lambda_instead_bind.cpp	/^auto setSoundL = [](Sound s) {$/;"	v
+setSoundL_14	effective/effective-mordern-c++/chap6-lambda-expressions/item34_use-lambda_instead_bind.cpp	/^auto setSoundL_14 = [](Sound s) {$/;"	v
+t1	effective/effective-mordern-c++/chap6-lambda-expressions/item34_use-lambda_instead_bind.cpp	/^void t1() {$/;"	f
+t2	effective/effective-mordern-c++/chap6-lambda-expressions/item34_use-lambda_instead_bind.cpp	/^void t2() {$/;"	f
+t3	effective/effective-mordern-c++/chap6-lambda-expressions/item34_use-lambda_instead_bind.cpp	/^void t3() {$/;"	f
+t4	effective/effective-mordern-c++/chap6-lambda-expressions/item34_use-lambda_instead_bind.cpp	/^void t4() {$/;"	f
+t5	effective/effective-mordern-c++/chap6-lambda-expressions/item34_use-lambda_instead_bind.cpp	/^void t5() {$/;"	f

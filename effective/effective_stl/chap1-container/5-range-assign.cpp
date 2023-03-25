@@ -38,9 +38,9 @@ int main(int argc, char const *argv[]) {
     cout << "v1: " << v1;
     cout << "v2: " << v2;
     cout << "after assign: \n";
-    // t1();
+    t1();
     // t2();
-    t3();
+    // t3();
     // t4();
     cout << "v1: " << v1;
     cout << "v2: " << v2;
