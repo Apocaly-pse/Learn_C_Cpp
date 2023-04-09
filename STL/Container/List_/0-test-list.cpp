@@ -13,6 +13,7 @@ int main(int argc, char const *argv[]) {
     cout << lst.size() << endl;
     if (lst.size() != 0) cout << "true" << endl;
     cout << lst.size() << endl;
+    cout << sizeof(list<string>) << endl; // 24, 3指针
     return 0;
 }
 /*

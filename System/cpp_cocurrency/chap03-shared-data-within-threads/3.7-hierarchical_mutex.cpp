@@ -48,7 +48,7 @@ public:
 
 
 thread_local unsigned long hierarchical_mutex::this_thread_hierarchy_value(
-    ULONG_MAX); // 7
+    ULONG_MAX);                             // 7
 
 hierarchical_mutex high_level_mutex(10000); // 1
 hierarchical_mutex low_level_mutex(5000);   // 2
@@ -80,7 +80,7 @@ void other_stuff() {
     do_other_stuff();
 }
 
-void thread_b() // 9
+void thread_b()                                          // 9
 {
     std::lock_guard<hierarchical_mutex> lk(other_mutex); // 10
     other_stuff();

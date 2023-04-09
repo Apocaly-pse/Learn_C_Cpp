@@ -47,7 +47,8 @@ void t3() {
     cout << "n=" << n << endl; // 1
     auto fn_ = bind(less<int>(), _1, 50);
     cout << count_if(v.cbegin(), v.cend(), fn_) << endl; // 4
-    cout << count_if(v.begin(), v.end(), bind(less<int>(), _1, 50)) << endl; // 4
+    cout << count_if(v.begin(), v.end(), bind(less<int>(), _1, 50))
+         << endl; // 4
 }
 
 int main(int argc, char const *argv[]) {

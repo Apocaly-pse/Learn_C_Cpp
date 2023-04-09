@@ -13,5 +13,8 @@ int main() {
     // [s.data(), s.data() + s.size()] is guaranteed to be an NTBS since C++11
     cout << typeid(s.data()).name() << endl;
     cout << typeid(data(s)).name() << endl;
+    // string s1{"sas"s};
+    // auto ss{"and"};
+    // string s3 = "";
     std::cout << a;
 }

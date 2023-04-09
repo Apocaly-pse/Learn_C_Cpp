@@ -4,6 +4,7 @@
 
 using namespace std;
 
+// vector<vector<int>> f() { return {}; }
 
 int main(int argc, char const *argv[]) {
     std::vector<int> v{1};

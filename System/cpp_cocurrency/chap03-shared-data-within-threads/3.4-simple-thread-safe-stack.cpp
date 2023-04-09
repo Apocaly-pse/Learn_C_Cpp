@@ -16,6 +16,7 @@ public:
     threadsafe_stack(const threadsafe_stack&);
 
     threadsafe_stack& operator=(const threadsafe_stack&) = delete;
+
     void push(T new_val);
     shared_ptr<T> pop(); // method3, 智能指针, 指向弹出元素
     void pop(T& val);    // method1, 传入引用, 但是会浪费资源

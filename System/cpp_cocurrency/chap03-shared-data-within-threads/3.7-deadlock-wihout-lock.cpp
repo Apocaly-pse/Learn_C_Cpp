@@ -3,15 +3,22 @@
 
 using namespace std;
 
-void foo(thread& t) {
-    t.join();
+void foo();
+void bar();
+
+void foo() {
+    thread t1(bar);
+    t1.join();
     cout << "foo done" << endl;
+}
+void bar() {
+    thread t2(foo);
+    t2.join();
+    cout << "bar done" << endl;
 }
 
 int main() {
-    thread t1(foo, ref(t2));
-    t2 = thread(foo, ref(t1));
-    t1.join();
-    t2.join();
+    foo();
+    bar();
     return 0;
 }

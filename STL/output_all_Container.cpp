@@ -1,10 +1,9 @@
-#include <iostream>
-#include <vector>
 #include <algorithm>
-#include <list>
 #include <deque>
-
+#include <iostream>
+#include <list>
 #include <string>
+#include <vector>
 using namespace std;
 using ll = long long;
 

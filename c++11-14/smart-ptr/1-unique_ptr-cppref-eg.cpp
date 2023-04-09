@@ -1,3 +1,4 @@
+// #include <bits/stdc++.h>
 #include <cassert>
 #include <cstdio>
 #include <fstream>
@@ -93,7 +94,9 @@ int main() {
 
         throw std::runtime_error(
             ""); // `p` would leak here if it were instead a plain pointer
-    } catch (const std::exception&) { std::cout << "Caught exception\n"; }
+    } catch (const std::exception&) {
+        std::cout << "Caught exception\n";
+    }
 
     std::cout << "\n"
                  "5) Array form of unique_ptr demo\n";
